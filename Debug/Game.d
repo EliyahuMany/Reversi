@@ -1,4 +1,5 @@
-Game.o: ../Game.cpp ../Game.h ../Board.h ../Human.h ../Cell.h
+Game.o: ../Game.cpp ../Game.h ../Board.h ../Human.h ../Cell.h \
+ ../Players.h ../AIPlayer.h
 
 ../Game.h:
 
@@ -7,3 +8,7 @@ Game.o: ../Game.cpp ../Game.h ../Board.h ../Human.h ../Cell.h
 ../Human.h:
 
 ../Cell.h:
+
+../Players.h:
+
+../AIPlayer.h:

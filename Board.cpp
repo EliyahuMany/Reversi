@@ -9,47 +9,66 @@
 #include "Board.h"
 
 Board::Board(int size) {
-	this->board = new char*[size];
-	for (int i = 0; i < size; i++) {
-		this->board[i] = new char[size];
-	}
 	this->size = size;
-	for (int i = 0; i < this->size; i++) {
-		for (int j = 0; j < this->size; j++) {
+	this->board = new char *[size + 1];
+	for (int i = 0; i < size + 1; ++i) {
+		board[i] = new char[size + 1];
+		for (int j = 0; j < size + 1; ++j) {
 			board[i][j] = ' ';
-
 		}
 	}
-	board[this->size / 2][this->size / 2] = 'o';
-	board[this->size / 2 + 1][this->size / 2 + 1] = 'o';
-	board[this->size / 2][this->size / 2 + 1] = 'x';
-	board[this->size / 2 + 1][this->size / 2] = 'x';
+	this->board[size / 2][size / 2] = 'o';
+	this->board[(size / 2) + 1][size / 2] = 'x';
+	this->board[(size / 2) + 1][(size / 2) + 1] = 'o';
+	this->board[size / 2][(size / 2) + 1] = 'x';
 }
 
-void Board::print() const {
-	for (int i = 0; i < this->size; i++) {
-		for (int j = 0; j < this->size; j++) {
+void Board::print() {
+	for (int i = 0; i <= this->size; i++) {
+		for (int j = 0; j <= this->size; ++j) {
 			if (i == 0 && j == 0) {
-				cout << "  | ";
-			} else if (j == 0) {
-				if (i >= 10)
-					cout << i << "| ";
-				else
-					cout << i << " | ";
+				if (this->getSize() >= 10) {
+					cout << "  ";
+				} else {
+					cout << ' ';
+				}
 			} else if (i == 0) {
-				cout << j << " | ";
+				cout << ' ';
+				cout << j;
+				if (j < 10) {
+					cout << ' ';
+				}
+			} else if (j == 0) {
+				if (this->getSize() >= 10) {
+					if (i < 10) {
+						cout << i << ' ';
+					} else {
+						cout << i;
+					}
+				} else {
+					cout << i;
+				}
+			} else if (board[i][j] != ' ') {
+				cout << ' ';
+				cout << board[i][j];
+				cout << ' ';
 			} else {
-				cout << board[i][j] << " | ";
+				cout << "   ";
 			}
+			cout << "|";
 		}
-		cout << '\n';
-		if (this->size == 7)
-			cout << "--------------------------" << endl;
-		else if (this->size == 9)
-			cout << "----------------------------------" << endl;
-		else
-			cout << "------------------------------------------" << endl;
+		cout << endl;
+		if (this->getSize() >= 10) {
+			cout << "---";
+		} else {
+			cout << "--";
+		}
+		for (int k = 0; k < this->getSize(); ++k) {
+			cout << "----";
+		}
+		cout << endl;
 	}
+
 }
 
 char** Board::getBoard() const {

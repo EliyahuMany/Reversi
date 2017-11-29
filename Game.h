@@ -11,6 +11,7 @@
 #include <iostream>
 #include "Board.h"
 #include "Human.h"
+#include "AIPlayer.h"
 using namespace std;
 
 class Game {
@@ -25,8 +26,8 @@ public:
 	void run();
 private:
 	Board b;
-	Player pX;
-	Player pO;
+	Players *pX;
+	Players *pO;
 };
 
 #endif /* GAME_H_ */

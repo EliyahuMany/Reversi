@@ -1,9 +1,14 @@
-main.o: ../main.cpp ../Game.h ../Board.h ../Human.h ../Cell.h
-
-../Game.h:
+main.o: ../main.cpp ../Board.h ../Game.h ../Human.h ../Cell.h \
+ ../Players.h ../AIPlayer.h
 
 ../Board.h:
+
+../Game.h:
 
 ../Human.h:
 
 ../Cell.h:
+
+../Players.h:
+
+../AIPlayer.h:

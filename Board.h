@@ -26,7 +26,7 @@ public:
 	/**
 	 * Print the game board.
 	 */
-	void print() const;
+	void print();
 	/**
 	 * return the board array.
 	 */

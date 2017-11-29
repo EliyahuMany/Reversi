@@ -12,35 +12,24 @@
 #include <vector>
 #include "Cell.h"
 #include "Board.h"
+#include "Players.h"
 using namespace std;
 
-class Player {
+class Human: public Players {
 public:
 	/**
 	 * Constructor - create a player.
 	 */
-	Player(char symbol);
+	Human(char symbol);
 	/**
 	 * search for the available moves of the player and add them to possible move vector.
 	 */
-	void generateMoves(Board &b);
-	/**
-	 * play one turn of this player.
-	 */
-	void play(Board &b, int &myScore, int &otherScore);
+	int play(Board &b, int &myScore, int &otherScore);
 	/**
 	 * change the relevant cells to this player move.
 	 */
-	void flipCells(Board &b, Cell chosenCell, int &myScore, int &otherScore);
-	/**
-	 * return the possible moves vector of this player.
-	 */
-	const vector<Cell>& getPossibleMoves() const {
-		return possibleMoves;
-	}
 private:
 	char symbol, otherSymbol;
-	vector<Cell> possibleMoves;
 };
 
 #endif /* HUMAN_H_ */
