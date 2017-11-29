@@ -4,8 +4,8 @@
  */
 
 #include <iostream>
-#include "Board.h"
-#include "Game.h"
+#include "include/Board.h"
+#include "include/Game.h"
 
 using namespace std;
 

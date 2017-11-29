@@ -5,12 +5,14 @@
  *      Author: eliyahu
  */
 
-#include "../Board.h"
+#include "../include/Board.h"
 #include "gtest/gtest.h"
 
 using namespace std;
 
-TEST (boardTest,startBoard) {
-	Board b(4);
-	EXPECT_EQ(b.getBoard()[2][2], 'o');
+GTEST_API_ int main(int argc, char** argv) {
+    testing::InitGoogleTest(&argc,argv);
+    return RUN_ALL_TESTS();
 }
+
+
