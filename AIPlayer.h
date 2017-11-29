@@ -18,6 +18,7 @@ public:
 	int play(Board &b, int &myScore, int &otherScore);
 	int checkMove(Board& b, int &myScore, int &otherScore, Cell curCell);
 	int curMoveScore(Cell cell, int &myScore, int &otherScore, Board &b);
+	void rivalMoves(Board &b, vector<Cell> &vec);
 private:
 	char symbol, otherSymbol;
 };

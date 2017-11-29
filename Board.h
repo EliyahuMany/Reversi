@@ -19,6 +19,8 @@ public:
 	 * Constructor - make the starting board.
 	 */
 	Board(int);
+
+	Board &makeCopy();
 	/**
 	 * Destructor - delete the board(**).
 	 */
@@ -30,11 +32,12 @@ public:
 	/**
 	 * return the board array.
 	 */
-	char** getBoard() const;
+	char** getBoard();
 	/**
 	 * return the size of the board.
 	 */
 	int getSize();
+
 private:
 	char** board;
 	int size;

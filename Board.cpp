@@ -23,6 +23,16 @@ Board::Board(int size) {
 	this->board[size / 2][(size / 2) + 1] = 'x';
 }
 
+Board &Board::makeCopy() {
+	Board *b = new Board(this->getSize());
+	for (int i = 0; i < size + 1; ++i) {
+		for (int j = 0; j < size + 1; ++j) {
+			b->board[i][j] = this->board[i][j];
+		}
+	}
+	return *b;
+}
+
 void Board::print() {
 	for (int i = 0; i <= this->size; i++) {
 		for (int j = 0; j <= this->size; ++j) {
@@ -71,7 +81,7 @@ void Board::print() {
 
 }
 
-char** Board::getBoard() const {
+char** Board::getBoard() {
 	return this->board;
 }
 
