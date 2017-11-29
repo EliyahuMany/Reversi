@@ -53,6 +53,9 @@ int AIPlayer::checkMove(Board &b, int &myScore, int &otherScore, Cell cell) {
 	Board newBoard(b);
 	this->rivalMoves(b, v);
 
+	myStart = myScore;
+	otherStart = otherScore;
+
 	while (!v.empty()) {
 		curScore = curMoveScore(v.back(), myScore, otherScore, newBoard);
 		if (curScore < worstCase) {
