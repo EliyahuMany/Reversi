@@ -25,6 +25,7 @@ int AIPlayer::play(Board &b, int &myScore, int &otherScore) {
 
 	this->generateMoves(b, this->moves);
 	if (!this->moves.empty()) {
+		cout << "\nAI is playing..." << endl;
 		while (!this->moves.empty()) {
 			curCell = &this->moves.back();
 			curCellScore = checkMove(b.makeCopy(), myScore, otherScore,
