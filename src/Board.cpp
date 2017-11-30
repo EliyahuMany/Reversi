@@ -1,9 +1,8 @@
-/*
- * Board.cpp
- *
- *  Created on: Oct 28, 2017
- *      Author: orian edri
- *      ID:308335454
+/**
+ *      Author: Eliyahu Many
+ *      ID: 308249150
+ *      Author: orian Edri
+ *      ID: 308335454
  */
 
 #include "../include/Board.h"

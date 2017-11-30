@@ -1,8 +1,7 @@
-/*
- * Game.cpp
- *
- *  Created on: Nov 10, 2017
- *      Author: orian edri
+/**
+ *      Author: Eliyahu Many
+ *      ID: 308249150
+ *      Author: orian Edri
  *      ID: 308335454
  */
 

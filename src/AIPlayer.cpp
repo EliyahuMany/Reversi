@@ -1,8 +1,8 @@
-/*
- * AIPlayer.cpp
- *
- *  Created on: Nov 29, 2017
- *      Author: eliyahu
+/**
+ *      Author: Eliyahu Many
+ *      ID: 308249150
+ *      Author: orian Edri
+ *      ID: 308335454
  */
 
 #include "../include/AIPlayer.h"

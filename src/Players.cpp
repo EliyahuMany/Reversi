@@ -1,8 +1,8 @@
-/*
- * Players.cpp
- *
- *  Created on: Nov 29, 2017
- *      Author: eliyahu
+/**
+ *      Author: Eliyahu Many
+ *      ID: 308249150
+ *      Author: orian Edri
+ *      ID: 308335454
  */
 
 #include "../include/Players.h"
@@ -111,4 +111,8 @@ void Players::changeCells(vector<Cell> cellsToChange, int &myScore,
         otherScore--;
         cellsToChange.pop_back();
     }
+}
+
+char Players::getSymbol() const {
+    return symbol;
 }
