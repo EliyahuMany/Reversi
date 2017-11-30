@@ -20,51 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a38ee67a-cc58-4219-b4d0-85643e275da5" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/Players_Test.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/Players_Test.h" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Progress/15" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Progress/18" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Progress/count.txt" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/raversi.dir/src/AIPlayer.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/raversi.dir/src/AIPlayer.cpp.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/raversi.dir/src/Board.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/raversi.dir/src/Board.cpp.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/raversi.dir/src/Cell.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/raversi.dir/src/Cell.cpp.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/raversi.dir/src/Human.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/raversi.dir/src/Human.cpp.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/raversi.dir/src/Players.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/raversi.dir/src/Players.cpp.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-release-1.8.0/googlemock/gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o" afterPath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-release-1.8.0/googlemock/gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-release-1.8.0/googlemock/gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o" afterPath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-release-1.8.0/googlemock/gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-release-1.8.0/googlemock/gtest/libgtest.a" afterPath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-release-1.8.0/googlemock/gtest/libgtest.a" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-release-1.8.0/googlemock/gtest/libgtest_main.a" afterPath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-release-1.8.0/googlemock/gtest/libgtest_main.a" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/raversi" afterPath="$PROJECT_DIR$/cmake-build-debug/raversi" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/raversiTest" afterPath="$PROJECT_DIR$/cmake-build-debug/raversiTest" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMakeLists.txt" afterPath="$PROJECT_DIR$/CMakeLists.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/raversiTest.dir/DependInfo.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/raversiTest.dir/DependInfo.cmake" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/raversiTest.dir/build.make" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/raversiTest.dir/build.make" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/raversiTest.dir/cmake_clean.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/raversiTest.dir/cmake_clean.cmake" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/raversiTest.dir/depend.make" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/raversiTest.dir/depend.make" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/raversiTest.dir/link.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/raversiTest.dir/link.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/raversiTest.dir/progress.make" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/raversiTest.dir/progress.make" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-release-1.8.0/googlemock/gtest/CMakeFiles/gtest.dir/CXX.includecache" afterPath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-release-1.8.0/googlemock/gtest/CMakeFiles/gtest.dir/CXX.includecache" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-release-1.8.0/googlemock/gtest/CMakeFiles/gtest.dir/depend.internal" afterPath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-release-1.8.0/googlemock/gtest/CMakeFiles/gtest.dir/depend.internal" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-release-1.8.0/googlemock/gtest/CMakeFiles/gtest_main.dir/CXX.includecache" afterPath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-release-1.8.0/googlemock/gtest/CMakeFiles/gtest_main.dir/CXX.includecache" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-release-1.8.0/googlemock/gtest/CMakeFiles/gtest_main.dir/depend.internal" afterPath="$PROJECT_DIR$/cmake-build-debug/lib/googletest-release-1.8.0/googlemock/gtest/CMakeFiles/gtest_main.dir/depend.internal" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/raversi.cbp" afterPath="$PROJECT_DIR$/cmake-build-debug/raversi.cbp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/include/AIPlayer.h" afterPath="$PROJECT_DIR$/include/AIPlayer.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/include/Cell.h" afterPath="$PROJECT_DIR$/include/Cell.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/include/Game.h" afterPath="$PROJECT_DIR$/include/Game.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.cpp" afterPath="$PROJECT_DIR$/main.cpp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AIPlayer.cpp" afterPath="$PROJECT_DIR$/src/AIPlayer.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Board.cpp" afterPath="$PROJECT_DIR$/src/Board.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Cell.cpp" afterPath="$PROJECT_DIR$/src/Cell.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Game.cpp" afterPath="$PROJECT_DIR$/src/Game.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Human.cpp" afterPath="$PROJECT_DIR$/src/Human.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/Board_test.cpp" afterPath="$PROJECT_DIR$/test/Board_test.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/Board_test.h" afterPath="$PROJECT_DIR$/test/Board_test.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Players.cpp" afterPath="$PROJECT_DIR$/src/Players.cpp" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -101,8 +61,8 @@
           <file leaf-file-name="Players.cpp" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/Players.cpp">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="532">
-                  <caret line="99" column="14" lean-forward="true" selection-start-line="99" selection-start-column="14" selection-end-line="99" selection-end-column="14" />
+                <state relative-caret-position="568">
+                  <caret line="101" column="52" lean-forward="false" selection-start-line="101" selection-start-column="52" selection-end-line="101" selection-end-column="52" />
                   <folding />
                 </state>
               </provider>
@@ -167,8 +127,8 @@
           <file leaf-file-name="AIPlayer.cpp" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/AIPlayer.cpp">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="564">
-                  <caret line="70" column="21" lean-forward="false" selection-start-line="70" selection-start-column="21" selection-end-line="70" selection-end-column="21" />
+                <state relative-caret-position="798">
+                  <caret line="86" column="37" lean-forward="true" selection-start-line="86" selection-start-column="37" selection-end-line="87" selection-end-column="29" />
                   <folding />
                 </state>
               </provider>
@@ -232,6 +192,7 @@
         <option value="$PROJECT_DIR$/test/Players_Test.h" />
         <option value="$PROJECT_DIR$/test/Players_Test.cpp" />
         <option value="$PROJECT_DIR$/include/AIPlayer.h" />
+        <option value="$PROJECT_DIR$/src/Players.cpp" />
         <option value="$PROJECT_DIR$/src/AIPlayer.cpp" />
       </list>
     </option>
@@ -356,7 +317,7 @@
       <option name="presentableId" value="Default" />
       <updated>1511991104374</updated>
       <workItem from="1511991105550" duration="8352000" />
-      <workItem from="1512035770845" duration="12194000" />
+      <workItem from="1512035770845" duration="13095000" />
     </task>
     <task id="LOCAL-00001" summary="Merge branch 'master' of https://github.com/orianED/raversi&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;cmake-build-debug/CMakeFiles/raversi.dir/src/AIPlayer.cpp.o&#10;#&#9;cmake-build-debug/CMakeFiles/raversi.dir/src/Board.cpp.o&#10;#&#9;cmake-build-debug/CMakeFiles/raversi.dir/src/Cell.cpp.o&#10;#&#9;cmake-build-debug/CMakeFiles/raversi.dir/src/Human.cpp.o&#10;#&#9;cmake-build-debug/CMakeFiles/raversi.dir/src/Players.cpp.o">
       <created>1512035807643</created>
@@ -365,7 +326,14 @@
       <option name="project" value="LOCAL" />
       <updated>1512035807643</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add game options">
+      <created>1512050769949</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1512050769949</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -374,7 +342,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20546000" />
+    <option name="totallyTimeSpent" value="21447000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="-11" width="1922" height="1092" extended-state="6" />
@@ -409,7 +377,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Merge branch 'master' of https://github.com/orianED/raversi&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;cmake-build-debug/CMakeFiles/raversi.dir/src/AIPlayer.cpp.o&#10;#&#9;cmake-build-debug/CMakeFiles/raversi.dir/src/Board.cpp.o&#10;#&#9;cmake-build-debug/CMakeFiles/raversi.dir/src/Cell.cpp.o&#10;#&#9;cmake-build-debug/CMakeFiles/raversi.dir/src/Human.cpp.o&#10;#&#9;cmake-build-debug/CMakeFiles/raversi.dir/src/Players.cpp.o" />
-    <option name="LAST_COMMIT_MESSAGE" value="Merge branch 'master' of https://github.com/orianED/raversi&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;cmake-build-debug/CMakeFiles/raversi.dir/src/AIPlayer.cpp.o&#10;#&#9;cmake-build-debug/CMakeFiles/raversi.dir/src/Board.cpp.o&#10;#&#9;cmake-build-debug/CMakeFiles/raversi.dir/src/Cell.cpp.o&#10;#&#9;cmake-build-debug/CMakeFiles/raversi.dir/src/Human.cpp.o&#10;#&#9;cmake-build-debug/CMakeFiles/raversi.dir/src/Players.cpp.o" />
+    <MESSAGE value="add game options" />
+    <option name="LAST_COMMIT_MESSAGE" value="add game options" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -569,14 +538,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/Board_test.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="576">
-          <caret line="32" column="46" lean-forward="false" selection-start-line="32" selection-start-column="46" selection-end-line="32" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/Players_Test.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -584,14 +545,6 @@
           <folding>
             <element signature="e#103#127#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/Players_Test.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" column="63" lean-forward="false" selection-start-line="10" selection-start-column="63" selection-end-line="10" selection-end-column="63" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -603,18 +556,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Players.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="532">
-          <caret line="99" column="14" lean-forward="true" selection-start-line="99" selection-start-column="14" selection-end-line="99" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Game.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
           <caret line="25" column="28" lean-forward="true" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/AIPlayer.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="20" column="29" lean-forward="false" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/Players_Test.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="63" lean-forward="false" selection-start-line="10" selection-start-column="63" selection-end-line="10" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/Board_test.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="576">
+          <caret line="32" column="46" lean-forward="false" selection-start-line="32" selection-start-column="46" selection-end-line="32" selection-end-column="46" />
           <folding />
         </state>
       </provider>
@@ -629,18 +598,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/include/AIPlayer.h">
+    <entry file="file://$PROJECT_DIR$/src/Players.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="20" column="29" lean-forward="false" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="29" />
+        <state relative-caret-position="568">
+          <caret line="101" column="52" lean-forward="false" selection-start-line="101" selection-start-column="52" selection-end-line="101" selection-end-column="52" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/AIPlayer.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="564">
-          <caret line="70" column="21" lean-forward="false" selection-start-line="70" selection-start-column="21" selection-end-line="70" selection-end-column="21" />
+        <state relative-caret-position="798">
+          <caret line="86" column="37" lean-forward="true" selection-start-line="86" selection-start-column="37" selection-end-line="87" selection-end-column="29" />
           <folding />
         </state>
       </provider>

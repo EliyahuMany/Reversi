@@ -52,7 +52,7 @@ int AIPlayer::checkMove(Board &b, int &myScore, int &otherScore, Cell cell) {
     int curScore = b.getSize() * b.getSize();
 
     this->makeMove(cell, myStart, otherStart, b);
-//	Board newBoard(b);
+    Board newBoard(b.getSize());
     this->changeSymbolForRival();
     this->generateMoves(b, v);
 
@@ -60,14 +60,15 @@ int AIPlayer::checkMove(Board &b, int &myScore, int &otherScore, Cell cell) {
     otherStart = otherScore;
 
     while (!v.empty()) {
-        curScore = curMoveScore(v.back(), myStart, otherStart, b);
+        b.makeCopy(newBoard);
+        curScore = curMoveScore(v.back(), myStart, otherStart, newBoard);
         if (curScore < worstCase) {
             worstCase = curScore;
         }
         myStart = myScore;
         otherStart = otherScore;
         v.pop_back();
-        b.print();
+        newBoard.print();
         cout << endl;
     }
     this->changeSymbolForRival();
