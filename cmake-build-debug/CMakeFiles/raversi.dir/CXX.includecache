@@ -6,87 +6,87 @@
 
 #IncludeRegexTransform: 
 
-/home/eliyahu/CLionProjects/raversi/include/AIPlayer.h
+/home/orian/CLionProjects/raversi/include/AIPlayer.h
 Board.h
-/home/eliyahu/CLionProjects/raversi/include/Board.h
+/home/orian/CLionProjects/raversi/include/Board.h
 Cell.h
-/home/eliyahu/CLionProjects/raversi/include/Cell.h
+/home/orian/CLionProjects/raversi/include/Cell.h
 Players.h
-/home/eliyahu/CLionProjects/raversi/include/Players.h
+/home/orian/CLionProjects/raversi/include/Players.h
 
-/home/eliyahu/CLionProjects/raversi/include/Board.h
+/home/orian/CLionProjects/raversi/include/Board.h
 iostream
 -
 string.h
 -
 
-/home/eliyahu/CLionProjects/raversi/include/Cell.h
+/home/orian/CLionProjects/raversi/include/Cell.h
 iostream
 -
 vector
 -
 Board.h
-/home/eliyahu/CLionProjects/raversi/include/Board.h
+/home/orian/CLionProjects/raversi/include/Board.h
 
-/home/eliyahu/CLionProjects/raversi/include/Game.h
+/home/orian/CLionProjects/raversi/include/Game.h
 iostream
 -
 Board.h
-/home/eliyahu/CLionProjects/raversi/include/Board.h
+/home/orian/CLionProjects/raversi/include/Board.h
 Human.h
-/home/eliyahu/CLionProjects/raversi/include/Human.h
+/home/orian/CLionProjects/raversi/include/Human.h
 AIPlayer.h
-/home/eliyahu/CLionProjects/raversi/include/AIPlayer.h
+/home/orian/CLionProjects/raversi/include/AIPlayer.h
 
-/home/eliyahu/CLionProjects/raversi/include/Human.h
+/home/orian/CLionProjects/raversi/include/Human.h
 iostream
 -
 vector
 -
 Cell.h
-/home/eliyahu/CLionProjects/raversi/include/Cell.h
+/home/orian/CLionProjects/raversi/include/Cell.h
 Board.h
-/home/eliyahu/CLionProjects/raversi/include/Board.h
+/home/orian/CLionProjects/raversi/include/Board.h
 Players.h
-/home/eliyahu/CLionProjects/raversi/include/Players.h
+/home/orian/CLionProjects/raversi/include/Players.h
 
-/home/eliyahu/CLionProjects/raversi/include/Players.h
+/home/orian/CLionProjects/raversi/include/Players.h
 Cell.h
-/home/eliyahu/CLionProjects/raversi/include/Cell.h
+/home/orian/CLionProjects/raversi/include/Cell.h
 Board.h
-/home/eliyahu/CLionProjects/raversi/include/Board.h
+/home/orian/CLionProjects/raversi/include/Board.h
 vector
 -
 
-/home/eliyahu/CLionProjects/raversi/main.cpp
+/home/orian/CLionProjects/raversi/main.cpp
 iostream
 -
 include/Board.h
-/home/eliyahu/CLionProjects/raversi/include/Board.h
+/home/orian/CLionProjects/raversi/include/Board.h
 include/Game.h
-/home/eliyahu/CLionProjects/raversi/include/Game.h
+/home/orian/CLionProjects/raversi/include/Game.h
 
-/home/eliyahu/CLionProjects/raversi/src/AIPlayer.cpp
+/home/orian/CLionProjects/raversi/src/AIPlayer.cpp
 ../include/AIPlayer.h
-/home/eliyahu/CLionProjects/raversi/include/AIPlayer.h
+/home/orian/CLionProjects/raversi/include/AIPlayer.h
 
-/home/eliyahu/CLionProjects/raversi/src/Board.cpp
+/home/orian/CLionProjects/raversi/src/Board.cpp
 ../include/Board.h
-/home/eliyahu/CLionProjects/raversi/include/Board.h
+/home/orian/CLionProjects/raversi/include/Board.h
 
-/home/eliyahu/CLionProjects/raversi/src/Cell.cpp
+/home/orian/CLionProjects/raversi/src/Cell.cpp
 ../include/Cell.h
-/home/eliyahu/CLionProjects/raversi/include/Cell.h
+/home/orian/CLionProjects/raversi/include/Cell.h
 
-/home/eliyahu/CLionProjects/raversi/src/Game.cpp
+/home/orian/CLionProjects/raversi/src/Game.cpp
 ../include/Game.h
-/home/eliyahu/CLionProjects/raversi/include/Game.h
+/home/orian/CLionProjects/raversi/include/Game.h
 
-/home/eliyahu/CLionProjects/raversi/src/Human.cpp
+/home/orian/CLionProjects/raversi/src/Human.cpp
 ../include/Human.h
-/home/eliyahu/CLionProjects/raversi/include/Human.h
+/home/orian/CLionProjects/raversi/include/Human.h
 
-/home/eliyahu/CLionProjects/raversi/src/Players.cpp
+/home/orian/CLionProjects/raversi/src/Players.cpp
 ../include/Players.h
-/home/eliyahu/CLionProjects/raversi/include/Players.h
+/home/orian/CLionProjects/raversi/include/Players.h
 
