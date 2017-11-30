@@ -33,3 +33,8 @@ void Game::run() {
 	else
 		cout << "Draw" << endl;
 }
+
+Game::~Game() {
+   delete pX;
+	delete pO;
+}
