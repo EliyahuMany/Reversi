@@ -1,9 +1,15 @@
-//
-// Created by eliyahu on 11/29/17.
-//
+/**
+ *      Author: Eliyahu Many
+ *      ID: 308249150
+ *      Author: orian Edri
+ *      ID: 308335454
+ */
 
 #include "Board_test.h"
 
+/**
+ * check if the board initialize well. if the getters work.
+ */
 TEST_F(Board_test, StartingBoard) {
         int center = b->getSize() / 2;
         EXPECT_EQ(center , 4) << ("getSize() doesn't work well");
@@ -21,6 +27,9 @@ TEST_F(Board_test, StartingBoard) {
         EXPECT_EQ(board[center][center+1] , 'X') << ("wrong char in this cell");
 }
 
+/**
+ * make a copy of a board and check if they equla.
+ */
 TEST_F(Board_test,CopyBoard){
     Board copyB(this->b->getSize());
     this->b->getBoard()[3][3]='X';

@@ -13,18 +13,19 @@ Game::Game(int size, int choose) :
         this->pO = new Human('O');
     else
         this->pO = new AIPlayer('O');
+    this->xScore = 2;
+    this->oScore = 2;
 }
 
 void Game::run() {
-    int xScore = 2, oScore = 2;
     int flagX = 1, flagO = 1; //mark if X/O can play.
     this->b.print();
     while (flagX != 0 || flagO != 0) {
-        flagX = pX->play(this->b, xScore, oScore);
+        flagX = pX->play(this->b, this->xScore, this->oScore);
         if (flagX) {
             this->b.print();
         }
-        flagO = pO->play(this->b, oScore, xScore);
+        flagO = pO->play(this->b, this->oScore, this->xScore);
         if (flagO) {
             this->b.print();
         }
@@ -35,6 +36,14 @@ void Game::run() {
         cout << "O is the winner!" << endl;
     else
         cout << "Draw" << endl;
+}
+
+int Game::getXScore() const {
+    return this->xScore;
+}
+
+int Game::getOScore() const {
+    return this->oScore;
 }
 
 Game::~Game() {

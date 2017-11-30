@@ -32,10 +32,15 @@ public:
     */
     virtual ~Game();
 
+    int getXScore() const;
+
+    int getOScore() const;
+
 private:
     Board b;
     Players *pX;
     Players *pO;
+    int xScore, oScore;
 };
 
 #endif /* GAME_H_ */

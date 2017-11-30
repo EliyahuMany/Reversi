@@ -39,19 +39,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/eliyahu/Downloads/clion-2017.2.3/bin/cmake/bin/cmake
+CMAKE_COMMAND = /home/orian/Downloads/clion-2017.2.3/bin/cmake/bin/cmake
 
 # The command to remove a file.
-RM = /home/eliyahu/Downloads/clion-2017.2.3/bin/cmake/bin/cmake -E remove -f
+RM = /home/orian/Downloads/clion-2017.2.3/bin/cmake/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/eliyahu/CLionProjects/raversi
+CMAKE_SOURCE_DIR = /home/orian/CLionProjects/raversi
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/eliyahu/CLionProjects/raversi/cmake-build-debug
+CMAKE_BINARY_DIR = /home/orian/CLionProjects/raversi/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -59,13 +59,13 @@ CMAKE_BINARY_DIR = /home/eliyahu/CLionProjects/raversi/cmake-build-debug
 # Special rule for the target install
 install: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/home/eliyahu/Downloads/clion-2017.2.3/bin/cmake/bin/cmake -P cmake_install.cmake
+	/home/orian/Downloads/clion-2017.2.3/bin/cmake/bin/cmake -P cmake_install.cmake
 .PHONY : install
 
 # Special rule for the target install
 install/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/home/eliyahu/Downloads/clion-2017.2.3/bin/cmake/bin/cmake -P cmake_install.cmake
+	/home/orian/Downloads/clion-2017.2.3/bin/cmake/bin/cmake -P cmake_install.cmake
 .PHONY : install/fast
 
 # Special rule for the target list_install_components
@@ -81,7 +81,7 @@ list_install_components/fast: list_install_components
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/home/eliyahu/Downloads/clion-2017.2.3/bin/cmake/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/home/orian/Downloads/clion-2017.2.3/bin/cmake/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -92,7 +92,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/home/eliyahu/Downloads/clion-2017.2.3/bin/cmake/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/home/orian/Downloads/clion-2017.2.3/bin/cmake/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -103,32 +103,32 @@ edit_cache/fast: edit_cache
 # Special rule for the target install/strip
 install/strip: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/home/eliyahu/Downloads/clion-2017.2.3/bin/cmake/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+	/home/orian/Downloads/clion-2017.2.3/bin/cmake/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip
 
 # Special rule for the target install/strip
 install/strip/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/home/eliyahu/Downloads/clion-2017.2.3/bin/cmake/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+	/home/orian/Downloads/clion-2017.2.3/bin/cmake/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip/fast
 
 # Special rule for the target install/local
 install/local: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/home/eliyahu/Downloads/clion-2017.2.3/bin/cmake/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+	/home/orian/Downloads/clion-2017.2.3/bin/cmake/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local
 
 # Special rule for the target install/local
 install/local/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/home/eliyahu/Downloads/clion-2017.2.3/bin/cmake/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+	/home/orian/Downloads/clion-2017.2.3/bin/cmake/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/eliyahu/CLionProjects/raversi/cmake-build-debug/CMakeFiles /home/eliyahu/CLionProjects/raversi/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/orian/CLionProjects/raversi/cmake-build-debug/CMakeFiles /home/orian/CLionProjects/raversi/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/eliyahu/CLionProjects/raversi/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/orian/CLionProjects/raversi/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -495,6 +495,33 @@ test/Board_test.cpp.s:
 	$(MAKE) -f CMakeFiles/raversiTest.dir/build.make CMakeFiles/raversiTest.dir/test/Board_test.cpp.s
 .PHONY : test/Board_test.cpp.s
 
+test/Game_Test.o: test/Game_Test.cpp.o
+
+.PHONY : test/Game_Test.o
+
+# target to build an object file
+test/Game_Test.cpp.o:
+	$(MAKE) -f CMakeFiles/raversiTest.dir/build.make CMakeFiles/raversiTest.dir/test/Game_Test.cpp.o
+.PHONY : test/Game_Test.cpp.o
+
+test/Game_Test.i: test/Game_Test.cpp.i
+
+.PHONY : test/Game_Test.i
+
+# target to preprocess a source file
+test/Game_Test.cpp.i:
+	$(MAKE) -f CMakeFiles/raversiTest.dir/build.make CMakeFiles/raversiTest.dir/test/Game_Test.cpp.i
+.PHONY : test/Game_Test.cpp.i
+
+test/Game_Test.s: test/Game_Test.cpp.s
+
+.PHONY : test/Game_Test.s
+
+# target to generate assembly for a file
+test/Game_Test.cpp.s:
+	$(MAKE) -f CMakeFiles/raversiTest.dir/build.make CMakeFiles/raversiTest.dir/test/Game_Test.cpp.s
+.PHONY : test/Game_Test.cpp.s
+
 test/Players_Test.o: test/Players_Test.cpp.o
 
 .PHONY : test/Players_Test.o
@@ -567,6 +594,9 @@ help:
 	@echo "... test/Board_test.o"
 	@echo "... test/Board_test.i"
 	@echo "... test/Board_test.s"
+	@echo "... test/Game_Test.o"
+	@echo "... test/Game_Test.i"
+	@echo "... test/Game_Test.s"
 	@echo "... test/Players_Test.o"
 	@echo "... test/Players_Test.i"
 	@echo "... test/Players_Test.s"

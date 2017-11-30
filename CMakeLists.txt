@@ -35,7 +35,7 @@ set(TEST_FILES
         src/Human.cpp
         include/Human.h
         src/Players.cpp
-        include/Players.h test/Board_test.cpp test/Board_test.h test/Players_Test.cpp test/Players_Test.h)
+        include/Players.h test/Board_test.cpp test/Board_test.h test/Players_Test.cpp test/Players_Test.h test/Game_Test.cpp test/Game_Test.h)
 
 add_executable(raversi ${SOURCE_FILES} main.cpp)
 add_executable(raversiTest ${TEST_FILES} ${SOURCE_FILES})
