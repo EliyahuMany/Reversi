@@ -17,10 +17,10 @@ Board::Board(int size) {
 			board[i][j] = ' ';
 		}
 	}
-	this->board[size / 2][size / 2] = 'o';
-	this->board[(size / 2) + 1][size / 2] = 'x';
-	this->board[(size / 2) + 1][(size / 2) + 1] = 'o';
-	this->board[size / 2][(size / 2) + 1] = 'x';
+	this->board[size / 2][size / 2] = 'O';
+	this->board[(size / 2) + 1][size / 2] = 'X';
+	this->board[(size / 2) + 1][(size / 2) + 1] = 'O';
+	this->board[size / 2][(size / 2) + 1] = 'X';
 }
 
 void Board::makeCopy(Board &bCopy) {

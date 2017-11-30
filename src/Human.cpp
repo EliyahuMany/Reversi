@@ -11,10 +11,10 @@
 Human::Human(char symbol) :
 		Players(symbol) {
 	this->symbol = symbol;
-	if (this->symbol == 'x') {
-		this->otherSymbol = 'o';
+	if (this->symbol == 'X') {
+		this->otherSymbol = 'O';
 	} else {
-		this->otherSymbol = 'x';
+		this->otherSymbol = 'X';
 	}
 }
 

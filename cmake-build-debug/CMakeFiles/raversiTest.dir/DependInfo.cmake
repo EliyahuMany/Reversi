@@ -12,6 +12,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/orian/CLionProjects/raversi/src/Players.cpp" "/home/orian/CLionProjects/raversi/cmake-build-debug/CMakeFiles/raversiTest.dir/src/Players.cpp.o"
   "/home/orian/CLionProjects/raversi/test/AllTests.cpp" "/home/orian/CLionProjects/raversi/cmake-build-debug/CMakeFiles/raversiTest.dir/test/AllTests.cpp.o"
   "/home/orian/CLionProjects/raversi/test/Board_test.cpp" "/home/orian/CLionProjects/raversi/cmake-build-debug/CMakeFiles/raversiTest.dir/test/Board_test.cpp.o"
+  "/home/orian/CLionProjects/raversi/test/Players_Test.cpp" "/home/orian/CLionProjects/raversi/cmake-build-debug/CMakeFiles/raversiTest.dir/test/Players_Test.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

@@ -7,6 +7,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/raversiTest.dir/src/Human.cpp.o"
   "CMakeFiles/raversiTest.dir/src/Players.cpp.o"
   "CMakeFiles/raversiTest.dir/test/Board_test.cpp.o"
+  "CMakeFiles/raversiTest.dir/test/Players_Test.cpp.o"
   "raversiTest.pdb"
   "raversiTest"
 )

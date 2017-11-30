@@ -495,6 +495,33 @@ test/Board_test.cpp.s:
 	$(MAKE) -f CMakeFiles/raversiTest.dir/build.make CMakeFiles/raversiTest.dir/test/Board_test.cpp.s
 .PHONY : test/Board_test.cpp.s
 
+test/Players_Test.o: test/Players_Test.cpp.o
+
+.PHONY : test/Players_Test.o
+
+# target to build an object file
+test/Players_Test.cpp.o:
+	$(MAKE) -f CMakeFiles/raversiTest.dir/build.make CMakeFiles/raversiTest.dir/test/Players_Test.cpp.o
+.PHONY : test/Players_Test.cpp.o
+
+test/Players_Test.i: test/Players_Test.cpp.i
+
+.PHONY : test/Players_Test.i
+
+# target to preprocess a source file
+test/Players_Test.cpp.i:
+	$(MAKE) -f CMakeFiles/raversiTest.dir/build.make CMakeFiles/raversiTest.dir/test/Players_Test.cpp.i
+.PHONY : test/Players_Test.cpp.i
+
+test/Players_Test.s: test/Players_Test.cpp.s
+
+.PHONY : test/Players_Test.s
+
+# target to generate assembly for a file
+test/Players_Test.cpp.s:
+	$(MAKE) -f CMakeFiles/raversiTest.dir/build.make CMakeFiles/raversiTest.dir/test/Players_Test.cpp.s
+.PHONY : test/Players_Test.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -540,6 +567,9 @@ help:
 	@echo "... test/Board_test.o"
 	@echo "... test/Board_test.i"
 	@echo "... test/Board_test.s"
+	@echo "... test/Players_Test.o"
+	@echo "... test/Players_Test.i"
+	@echo "... test/Players_Test.s"
 .PHONY : help
 
 

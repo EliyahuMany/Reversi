@@ -19,7 +19,7 @@ public:
 	/**
 	 * Constructor - create a game session.
 	 */
-	Game(int size);
+	Game(int size, int choose);
 	/**
 	 * run the game until the players can't make a move.
 	 */

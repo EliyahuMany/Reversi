@@ -11,14 +11,14 @@
 
 class Board_test : public testing::Test {
     virtual void SetUp() {
-        bo = new Board(8);
+        b = new Board(8);
     }
     virtual void TearDown() {
-        delete bo;
+        delete b;
     }
 
 protected:
-    Board* bo;
+    Board* b;
 
 };
 

@@ -461,6 +461,12 @@
 		<Unit filename="/home/orian/CLionProjects/raversi/test/Board_test.h">
 			<Option target="raversiTest"/>
 		</Unit>
+		<Unit filename="/home/orian/CLionProjects/raversi/test/Players_Test.cpp">
+			<Option target="raversiTest"/>
+		</Unit>
+		<Unit filename="/home/orian/CLionProjects/raversi/test/Players_Test.h">
+			<Option target="raversiTest"/>
+		</Unit>
 		<Unit filename="/home/orian/CLionProjects/raversi/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
