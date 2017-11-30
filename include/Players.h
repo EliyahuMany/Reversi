@@ -22,7 +22,7 @@ public:
 	virtual int play(Board &b, int &myScore, int &otherScore)=0;
 protected:
 	vector<Cell> moves;
-	char symbol;
+	char symbol, otherSymbol;
 };
 
 #endif /* PLAYERS_H_ */

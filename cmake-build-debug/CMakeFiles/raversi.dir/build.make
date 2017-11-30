@@ -34,19 +34,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/orian/Downloads/clion-2017.2.3/bin/cmake/bin/cmake
+CMAKE_COMMAND = /home/eliyahu/Downloads/clion-2017.2.3/bin/cmake/bin/cmake
 
 # The command to remove a file.
-RM = /home/orian/Downloads/clion-2017.2.3/bin/cmake/bin/cmake -E remove -f
+RM = /home/eliyahu/Downloads/clion-2017.2.3/bin/cmake/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/orian/CLionProjects/raversi
+CMAKE_SOURCE_DIR = /home/eliyahu/CLionProjects/raversi
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/orian/CLionProjects/raversi/cmake-build-debug
+CMAKE_BINARY_DIR = /home/eliyahu/CLionProjects/raversi/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/raversi.dir/depend.make
@@ -59,16 +59,16 @@ include CMakeFiles/raversi.dir/flags.make
 
 CMakeFiles/raversi.dir/src/AIPlayer.cpp.o: CMakeFiles/raversi.dir/flags.make
 CMakeFiles/raversi.dir/src/AIPlayer.cpp.o: ../src/AIPlayer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/orian/CLionProjects/raversi/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/raversi.dir/src/AIPlayer.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/raversi.dir/src/AIPlayer.cpp.o -c /home/orian/CLionProjects/raversi/src/AIPlayer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/eliyahu/CLionProjects/raversi/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/raversi.dir/src/AIPlayer.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/raversi.dir/src/AIPlayer.cpp.o -c /home/eliyahu/CLionProjects/raversi/src/AIPlayer.cpp
 
 CMakeFiles/raversi.dir/src/AIPlayer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/raversi.dir/src/AIPlayer.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/orian/CLionProjects/raversi/src/AIPlayer.cpp > CMakeFiles/raversi.dir/src/AIPlayer.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/eliyahu/CLionProjects/raversi/src/AIPlayer.cpp > CMakeFiles/raversi.dir/src/AIPlayer.cpp.i
 
 CMakeFiles/raversi.dir/src/AIPlayer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/raversi.dir/src/AIPlayer.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/orian/CLionProjects/raversi/src/AIPlayer.cpp -o CMakeFiles/raversi.dir/src/AIPlayer.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/eliyahu/CLionProjects/raversi/src/AIPlayer.cpp -o CMakeFiles/raversi.dir/src/AIPlayer.cpp.s
 
 CMakeFiles/raversi.dir/src/AIPlayer.cpp.o.requires:
 
@@ -83,16 +83,16 @@ CMakeFiles/raversi.dir/src/AIPlayer.cpp.o.provides.build: CMakeFiles/raversi.dir
 
 CMakeFiles/raversi.dir/src/Board.cpp.o: CMakeFiles/raversi.dir/flags.make
 CMakeFiles/raversi.dir/src/Board.cpp.o: ../src/Board.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/orian/CLionProjects/raversi/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/raversi.dir/src/Board.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/raversi.dir/src/Board.cpp.o -c /home/orian/CLionProjects/raversi/src/Board.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/eliyahu/CLionProjects/raversi/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/raversi.dir/src/Board.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/raversi.dir/src/Board.cpp.o -c /home/eliyahu/CLionProjects/raversi/src/Board.cpp
 
 CMakeFiles/raversi.dir/src/Board.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/raversi.dir/src/Board.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/orian/CLionProjects/raversi/src/Board.cpp > CMakeFiles/raversi.dir/src/Board.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/eliyahu/CLionProjects/raversi/src/Board.cpp > CMakeFiles/raversi.dir/src/Board.cpp.i
 
 CMakeFiles/raversi.dir/src/Board.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/raversi.dir/src/Board.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/orian/CLionProjects/raversi/src/Board.cpp -o CMakeFiles/raversi.dir/src/Board.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/eliyahu/CLionProjects/raversi/src/Board.cpp -o CMakeFiles/raversi.dir/src/Board.cpp.s
 
 CMakeFiles/raversi.dir/src/Board.cpp.o.requires:
 
@@ -107,16 +107,16 @@ CMakeFiles/raversi.dir/src/Board.cpp.o.provides.build: CMakeFiles/raversi.dir/sr
 
 CMakeFiles/raversi.dir/src/Cell.cpp.o: CMakeFiles/raversi.dir/flags.make
 CMakeFiles/raversi.dir/src/Cell.cpp.o: ../src/Cell.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/orian/CLionProjects/raversi/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/raversi.dir/src/Cell.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/raversi.dir/src/Cell.cpp.o -c /home/orian/CLionProjects/raversi/src/Cell.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/eliyahu/CLionProjects/raversi/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/raversi.dir/src/Cell.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/raversi.dir/src/Cell.cpp.o -c /home/eliyahu/CLionProjects/raversi/src/Cell.cpp
 
 CMakeFiles/raversi.dir/src/Cell.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/raversi.dir/src/Cell.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/orian/CLionProjects/raversi/src/Cell.cpp > CMakeFiles/raversi.dir/src/Cell.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/eliyahu/CLionProjects/raversi/src/Cell.cpp > CMakeFiles/raversi.dir/src/Cell.cpp.i
 
 CMakeFiles/raversi.dir/src/Cell.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/raversi.dir/src/Cell.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/orian/CLionProjects/raversi/src/Cell.cpp -o CMakeFiles/raversi.dir/src/Cell.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/eliyahu/CLionProjects/raversi/src/Cell.cpp -o CMakeFiles/raversi.dir/src/Cell.cpp.s
 
 CMakeFiles/raversi.dir/src/Cell.cpp.o.requires:
 
@@ -131,16 +131,16 @@ CMakeFiles/raversi.dir/src/Cell.cpp.o.provides.build: CMakeFiles/raversi.dir/src
 
 CMakeFiles/raversi.dir/src/Game.cpp.o: CMakeFiles/raversi.dir/flags.make
 CMakeFiles/raversi.dir/src/Game.cpp.o: ../src/Game.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/orian/CLionProjects/raversi/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/raversi.dir/src/Game.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/raversi.dir/src/Game.cpp.o -c /home/orian/CLionProjects/raversi/src/Game.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/eliyahu/CLionProjects/raversi/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/raversi.dir/src/Game.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/raversi.dir/src/Game.cpp.o -c /home/eliyahu/CLionProjects/raversi/src/Game.cpp
 
 CMakeFiles/raversi.dir/src/Game.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/raversi.dir/src/Game.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/orian/CLionProjects/raversi/src/Game.cpp > CMakeFiles/raversi.dir/src/Game.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/eliyahu/CLionProjects/raversi/src/Game.cpp > CMakeFiles/raversi.dir/src/Game.cpp.i
 
 CMakeFiles/raversi.dir/src/Game.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/raversi.dir/src/Game.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/orian/CLionProjects/raversi/src/Game.cpp -o CMakeFiles/raversi.dir/src/Game.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/eliyahu/CLionProjects/raversi/src/Game.cpp -o CMakeFiles/raversi.dir/src/Game.cpp.s
 
 CMakeFiles/raversi.dir/src/Game.cpp.o.requires:
 
@@ -155,16 +155,16 @@ CMakeFiles/raversi.dir/src/Game.cpp.o.provides.build: CMakeFiles/raversi.dir/src
 
 CMakeFiles/raversi.dir/src/Human.cpp.o: CMakeFiles/raversi.dir/flags.make
 CMakeFiles/raversi.dir/src/Human.cpp.o: ../src/Human.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/orian/CLionProjects/raversi/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/raversi.dir/src/Human.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/raversi.dir/src/Human.cpp.o -c /home/orian/CLionProjects/raversi/src/Human.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/eliyahu/CLionProjects/raversi/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/raversi.dir/src/Human.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/raversi.dir/src/Human.cpp.o -c /home/eliyahu/CLionProjects/raversi/src/Human.cpp
 
 CMakeFiles/raversi.dir/src/Human.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/raversi.dir/src/Human.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/orian/CLionProjects/raversi/src/Human.cpp > CMakeFiles/raversi.dir/src/Human.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/eliyahu/CLionProjects/raversi/src/Human.cpp > CMakeFiles/raversi.dir/src/Human.cpp.i
 
 CMakeFiles/raversi.dir/src/Human.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/raversi.dir/src/Human.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/orian/CLionProjects/raversi/src/Human.cpp -o CMakeFiles/raversi.dir/src/Human.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/eliyahu/CLionProjects/raversi/src/Human.cpp -o CMakeFiles/raversi.dir/src/Human.cpp.s
 
 CMakeFiles/raversi.dir/src/Human.cpp.o.requires:
 
@@ -179,16 +179,16 @@ CMakeFiles/raversi.dir/src/Human.cpp.o.provides.build: CMakeFiles/raversi.dir/sr
 
 CMakeFiles/raversi.dir/src/Players.cpp.o: CMakeFiles/raversi.dir/flags.make
 CMakeFiles/raversi.dir/src/Players.cpp.o: ../src/Players.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/orian/CLionProjects/raversi/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/raversi.dir/src/Players.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/raversi.dir/src/Players.cpp.o -c /home/orian/CLionProjects/raversi/src/Players.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/eliyahu/CLionProjects/raversi/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/raversi.dir/src/Players.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/raversi.dir/src/Players.cpp.o -c /home/eliyahu/CLionProjects/raversi/src/Players.cpp
 
 CMakeFiles/raversi.dir/src/Players.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/raversi.dir/src/Players.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/orian/CLionProjects/raversi/src/Players.cpp > CMakeFiles/raversi.dir/src/Players.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/eliyahu/CLionProjects/raversi/src/Players.cpp > CMakeFiles/raversi.dir/src/Players.cpp.i
 
 CMakeFiles/raversi.dir/src/Players.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/raversi.dir/src/Players.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/orian/CLionProjects/raversi/src/Players.cpp -o CMakeFiles/raversi.dir/src/Players.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/eliyahu/CLionProjects/raversi/src/Players.cpp -o CMakeFiles/raversi.dir/src/Players.cpp.s
 
 CMakeFiles/raversi.dir/src/Players.cpp.o.requires:
 
@@ -203,16 +203,16 @@ CMakeFiles/raversi.dir/src/Players.cpp.o.provides.build: CMakeFiles/raversi.dir/
 
 CMakeFiles/raversi.dir/main.cpp.o: CMakeFiles/raversi.dir/flags.make
 CMakeFiles/raversi.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/orian/CLionProjects/raversi/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/raversi.dir/main.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/raversi.dir/main.cpp.o -c /home/orian/CLionProjects/raversi/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/eliyahu/CLionProjects/raversi/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/raversi.dir/main.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/raversi.dir/main.cpp.o -c /home/eliyahu/CLionProjects/raversi/main.cpp
 
 CMakeFiles/raversi.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/raversi.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/orian/CLionProjects/raversi/main.cpp > CMakeFiles/raversi.dir/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/eliyahu/CLionProjects/raversi/main.cpp > CMakeFiles/raversi.dir/main.cpp.i
 
 CMakeFiles/raversi.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/raversi.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/orian/CLionProjects/raversi/main.cpp -o CMakeFiles/raversi.dir/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/eliyahu/CLionProjects/raversi/main.cpp -o CMakeFiles/raversi.dir/main.cpp.s
 
 CMakeFiles/raversi.dir/main.cpp.o.requires:
 
@@ -247,7 +247,7 @@ raversi: CMakeFiles/raversi.dir/src/Players.cpp.o
 raversi: CMakeFiles/raversi.dir/main.cpp.o
 raversi: CMakeFiles/raversi.dir/build.make
 raversi: CMakeFiles/raversi.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/orian/CLionProjects/raversi/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable raversi"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/eliyahu/CLionProjects/raversi/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable raversi"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/raversi.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -270,6 +270,6 @@ CMakeFiles/raversi.dir/clean:
 .PHONY : CMakeFiles/raversi.dir/clean
 
 CMakeFiles/raversi.dir/depend:
-	cd /home/orian/CLionProjects/raversi/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/orian/CLionProjects/raversi /home/orian/CLionProjects/raversi /home/orian/CLionProjects/raversi/cmake-build-debug /home/orian/CLionProjects/raversi/cmake-build-debug /home/orian/CLionProjects/raversi/cmake-build-debug/CMakeFiles/raversi.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/eliyahu/CLionProjects/raversi/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/eliyahu/CLionProjects/raversi /home/eliyahu/CLionProjects/raversi /home/eliyahu/CLionProjects/raversi/cmake-build-debug /home/eliyahu/CLionProjects/raversi/cmake-build-debug /home/eliyahu/CLionProjects/raversi/cmake-build-debug/CMakeFiles/raversi.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/raversi.dir/depend
 

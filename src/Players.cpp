@@ -100,7 +100,6 @@ void Players::makeMove(Cell cell, int &myScore, int &otherScore, Board &b) {
     myScore++;
     changeCells(v, myScore, otherScore, b);
     b.getBoard()[cell.getX()][cell.getY()] = symbol;
-
 }
 
 void Players::changeCells(vector<Cell> cellsToChange, int &myScore,

@@ -19,10 +19,6 @@ public:
 	int checkMove(Board& b, int &myScore, int &otherScore, Cell curCell);
 	int curMoveScore(Cell cell, int &myScore, int &otherScore, Board &b);
 	void changeSymbolForRival();
-
-
-private:
-	char symbol, otherSymbol;
 };
 
 #endif /* AIPLAYER_H_ */
