@@ -68,8 +68,6 @@ int AIPlayer::checkMove(Board &b, int &myScore, int &otherScore, Cell cell) {
         myStart = myScore;
         otherStart = otherScore;
         v.pop_back();
-        newBoard.print();
-        cout << endl;
     }
     this->changeSymbolForRival();
     // delete board;

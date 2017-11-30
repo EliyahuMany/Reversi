@@ -35,8 +35,6 @@ void Game::run() {
         cout << "O is the winner!" << endl;
     else
         cout << "Draw" << endl;
-    cout << "O" << oScore << endl;
-    cout << "X" << xScore << endl;
 }
 
 Game::~Game() {
