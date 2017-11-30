@@ -24,6 +24,9 @@ public:
 	 * run the game until the players can't make a move.
 	 */
 	void run();
+
+	virtual ~Game();
+
 private:
 	Board b;
 	Players *pX;

@@ -26,7 +26,7 @@ Board::Board(int size) {
 void Board::makeCopy(Board &bCopy) {
 	for (int i = 0; i < size + 1; ++i) {
 		for (int j = 0; j < size + 1; ++j) {
-			this->board[i][j] = bCopy.board[i][j];
+			bCopy.getBoard()[i][j] = this->board[i][j];
 		}
 	}
 }
@@ -88,7 +88,7 @@ int Board::getSize() {
 }
 
 Board::~Board() {
-	for (int i = 0; i < this->size; i++)
+	for (int i = 0; i < this->size + 1; i++)
 		delete[] board[i];
 	delete[] board;
 }

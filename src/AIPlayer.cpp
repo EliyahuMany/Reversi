@@ -22,13 +22,14 @@ int AIPlayer::play(Board &b, int &myScore, int &otherScore) {
 	Cell *bestChoose;
 	int curCellScore = -1 * b.getSize() * b.getSize();
 	int bestCellScore = -1 * b.getSize() * b.getSize();
-    Board *bCopy=new Board((b.getSize()));
+    Board bCopy(b.getSize());
 	this->generateMoves(b, this->moves);
 	if (!this->moves.empty()) {
 		cout << "\nAI is playing..." << endl;
 		while (!this->moves.empty()) {
 			curCell = &this->moves.back();
-			curCellScore = checkMove(b.makeCopy(&bCopy), myScore, otherScore,
+            b.makeCopy(bCopy);
+			curCellScore = checkMove(bCopy, myScore, otherScore,
 					*curCell);
 			if (curCellScore > bestCellScore) {
 				bestCellScore = curCellScore;
