@@ -20,32 +20,17 @@ public:
     Players(char symbol);
 
     /*
-     * generateMoves function check all the moves the player
-     * can play and return it in vector of Cells.
-     */
-    void generateMoves(Board &b, vector<Cell> &vec);
-
-    /*
-     * makeMove function set the move by the cell into the board.
-     */
-    void makeMove(Cell cell, int &myScore, int &otherScore, Board &b);
-
-    /*
-     *
-     */
-    void changeCells(vector<Cell> cellsToChange, int &myScore, int &otherScore,
-                     Board &b);
-
-    /*
      * play - virtual function, the function ask the player to play
      * the move, each player in his way.
      */
-    virtual int play(Board &b, int &myScore, int &otherScore)=0;
+    virtual Cell &play(Board &b, int &myScore, int &otherScore)=0;
 
     /*
     * getSymbol - return the symbol of the player.
     */
     char getSymbol() const;
+
+    vector<Cell> &getMoves();
 
 protected:
     vector<Cell> moves;

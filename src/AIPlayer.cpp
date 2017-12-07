@@ -7,8 +7,8 @@
 
 #include "../include/AIPlayer.h"
 
-AIPlayer::AIPlayer(char symbol) :
-        Players(symbol) {
+AIPlayer::AIPlayer(char symbol, GameLogic gl) :
+        Players(symbol), gl(gl) {
     this->symbol = symbol;
     if (this->symbol == 'X') {
         this->otherSymbol = 'O';
@@ -17,31 +17,25 @@ AIPlayer::AIPlayer(char symbol) :
     }
 }
 
-int AIPlayer::play(Board &b, int &myScore, int &otherScore) {
+Cell &AIPlayer::play(Board &b, int &myScore, int &otherScore) {
     Cell *curCell;
     Cell *bestChoose;
     int curCellScore = -1 * b.getSize() * b.getSize();
     int bestCellScore = -1 * b.getSize() * b.getSize();
     Board bCopy(b.getSize());
-    this->generateMoves(b, this->moves);
-    if (!this->moves.empty()) {
-        cout << "\nAI is playing..." << endl;
-        while (!this->moves.empty()) {
-            curCell = &this->moves.back();
-            b.makeCopy(bCopy);
-            curCellScore = checkMove(bCopy, myScore, otherScore,
-                                     *curCell);
-            if (curCellScore > bestCellScore) {
-                bestCellScore = curCellScore;
-                bestChoose = curCell;
-            }
-            this->moves.pop_back();
+    cout << "\nAI is playing..." << endl;
+    while (!this->moves.empty()) {
+        curCell = &this->moves.back();
+        b.makeCopy(bCopy);
+        curCellScore = checkMove(bCopy, myScore, otherScore,
+                                 *curCell);
+        if (curCellScore > bestCellScore) {
+            bestCellScore = curCellScore;
+            bestChoose = curCell;
         }
-        makeMove(*bestChoose, myScore, otherScore, b);
-        return 1;
-    } else {
-        return 0;
+        this->moves.pop_back();
     }
+    return *bestChoose;
 }
 
 int AIPlayer::checkMove(Board &b, int &myScore, int &otherScore, Cell cell) {
@@ -51,10 +45,10 @@ int AIPlayer::checkMove(Board &b, int &myScore, int &otherScore, Cell cell) {
     int worstCase = b.getSize() * b.getSize();
     int curScore = b.getSize() * b.getSize();
 
-    this->makeMove(cell, myStart, otherStart, b);
+    this->gl.makeMove(cell, myStart, otherStart, this, b);
     Board newBoard(b.getSize());
     this->changeSymbolForRival();
-    this->generateMoves(b, v);
+    this->gl.generateMoves(this, v, b);
 
     myStart = myScore;
     otherStart = otherScore;
@@ -75,7 +69,7 @@ int AIPlayer::checkMove(Board &b, int &myScore, int &otherScore, Cell cell) {
 }
 
 int AIPlayer::curMoveScore(Cell cell, int &myScore, int &otherScore, Board &b) {
-    this->makeMove(cell, myScore, otherScore, b);
+    this->gl.makeMove(cell, myScore, otherScore, this, b);
     return myScore - otherScore;
 }
 

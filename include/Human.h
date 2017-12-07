@@ -26,7 +26,7 @@ public:
     /**
      * search for the available moves of the player and add them to possible move vector.
      */
-    int play(Board &b, int &myScore, int &otherScore);
+    Cell &play(Board &b, int &myScore, int &otherScore);
 
 };
 

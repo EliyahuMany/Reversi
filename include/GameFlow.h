@@ -12,6 +12,7 @@
 #include "Board.h"
 #include "Human.h"
 #include "AIPlayer.h"
+#include "GameLogic.h"
 
 using namespace std;
 
@@ -37,7 +38,7 @@ public:
     int getOScore() const;
 
 private:
-    Board b;
+    GameLogic gameL;
     Players *pX;
     Players *pO;
     int xScore, oScore;

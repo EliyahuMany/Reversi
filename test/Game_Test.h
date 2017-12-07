@@ -12,7 +12,7 @@
 #include "../include/Board.h"
 #include "../include/Players.h"
 #include "../include/Human.h"
-#include "../include/Game.h"
+#include "../include/GameFlow.h"
 #include "../include/AIPlayer.h"
 #include <vector>
 

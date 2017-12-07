@@ -15,8 +15,10 @@ set(SOURCE_FILES
         include/Board.h
         src/Cell.cpp
         include/Cell.h
-        src/Game.cpp
-        include/Game.h
+        src/GameFlow.cpp
+        include/GameFlow.h
+        src/GameLogic.cpp
+        include/GameLogic.h
         src/Human.cpp
         include/Human.h
         src/Players.cpp
@@ -30,12 +32,14 @@ set(TEST_FILES
         include/Board.h
         src/Cell.cpp
         include/Cell.h
-        src/Game.cpp
-        include/Game.h
+        src/GameFlow.cpp
+        include/GameFlow.h
+        src/GameLogic.cpp
+        include/GameLogic.h
         src/Human.cpp
         include/Human.h
         src/Players.cpp
-        include/Players.h test/Board_test.cpp test/Board_test.h test/Players_Test.cpp test/Players_Test.h test/Game_Test.cpp test/Game_Test.h)
+        include/Players.h test/Board_test.cpp test/Board_test.h test/Players_Test.cpp test/Players_Test.h test/Game_Test.cpp test/Game_Test.h src/GameLogic.cpp include/GameLogic.h)
 
 add_executable(raversi ${SOURCE_FILES} main.cpp)
 add_executable(raversiTest ${TEST_FILES} ${SOURCE_FILES})

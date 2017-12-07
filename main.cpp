@@ -5,7 +5,7 @@
 
 #include <iostream>
 #include "include/Board.h"
-#include "include/Game.h"
+#include "include/GameFlow.h"
 
 using namespace std;
 

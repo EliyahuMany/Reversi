@@ -11,19 +11,20 @@
 #include "Board.h"
 #include "Cell.h"
 #include "Players.h"
+#include "GameLogic.h"
 
 class AIPlayer : public Players {
 public:
     /*
      * Constractur - create the Ai player.
      */
-    AIPlayer(char symbol);
+    AIPlayer(char symbol, GameLogic gl);
 
     /*
      * play function connect between the player and the functions
      * to check which move is the best.
      */
-    int play(Board &b, int &myScore, int &otherScore);
+    Cell &play(Board &b, int &myScore, int &otherScore);
 
     /*
      * checkMove function check what is the worst case when the AI
@@ -42,6 +43,9 @@ public:
      * then the AI can check the rival moves.
      */
     void changeSymbolForRival();
+
+private:
+    GameLogic gl;
 };
 
 #endif /* AIPLAYER_H_ */

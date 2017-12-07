@@ -39,19 +39,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/orian/Downloads/clion-2017.2.3/bin/cmake/bin/cmake
+CMAKE_COMMAND = /home/eliyahu/Downloads/clion-2017.2.3/bin/cmake/bin/cmake
 
 # The command to remove a file.
-RM = /home/orian/Downloads/clion-2017.2.3/bin/cmake/bin/cmake -E remove -f
+RM = /home/eliyahu/Downloads/clion-2017.2.3/bin/cmake/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/orian/CLionProjects/raversi
+CMAKE_SOURCE_DIR = /home/eliyahu/CLionProjects/raversi
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/orian/CLionProjects/raversi/cmake-build-debug
+CMAKE_BINARY_DIR = /home/eliyahu/CLionProjects/raversi/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -59,13 +59,13 @@ CMAKE_BINARY_DIR = /home/orian/CLionProjects/raversi/cmake-build-debug
 # Special rule for the target install
 install: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/home/orian/Downloads/clion-2017.2.3/bin/cmake/bin/cmake -P cmake_install.cmake
+	/home/eliyahu/Downloads/clion-2017.2.3/bin/cmake/bin/cmake -P cmake_install.cmake
 .PHONY : install
 
 # Special rule for the target install
 install/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/home/orian/Downloads/clion-2017.2.3/bin/cmake/bin/cmake -P cmake_install.cmake
+	/home/eliyahu/Downloads/clion-2017.2.3/bin/cmake/bin/cmake -P cmake_install.cmake
 .PHONY : install/fast
 
 # Special rule for the target list_install_components
@@ -81,7 +81,7 @@ list_install_components/fast: list_install_components
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/home/orian/Downloads/clion-2017.2.3/bin/cmake/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/home/eliyahu/Downloads/clion-2017.2.3/bin/cmake/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -92,7 +92,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/home/orian/Downloads/clion-2017.2.3/bin/cmake/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/home/eliyahu/Downloads/clion-2017.2.3/bin/cmake/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -103,32 +103,32 @@ edit_cache/fast: edit_cache
 # Special rule for the target install/strip
 install/strip: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/home/orian/Downloads/clion-2017.2.3/bin/cmake/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+	/home/eliyahu/Downloads/clion-2017.2.3/bin/cmake/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip
 
 # Special rule for the target install/strip
 install/strip/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/home/orian/Downloads/clion-2017.2.3/bin/cmake/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+	/home/eliyahu/Downloads/clion-2017.2.3/bin/cmake/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip/fast
 
 # Special rule for the target install/local
 install/local: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/home/orian/Downloads/clion-2017.2.3/bin/cmake/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+	/home/eliyahu/Downloads/clion-2017.2.3/bin/cmake/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local
 
 # Special rule for the target install/local
 install/local/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/home/orian/Downloads/clion-2017.2.3/bin/cmake/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+	/home/eliyahu/Downloads/clion-2017.2.3/bin/cmake/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/orian/CLionProjects/raversi/cmake-build-debug/CMakeFiles /home/orian/CLionProjects/raversi/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/eliyahu/CLionProjects/raversi/cmake-build-debug/CMakeFiles /home/eliyahu/CLionProjects/raversi/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/orian/CLionProjects/raversi/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/eliyahu/CLionProjects/raversi/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -351,35 +351,65 @@ src/Cell.cpp.s:
 	$(MAKE) -f CMakeFiles/raversi.dir/build.make CMakeFiles/raversi.dir/src/Cell.cpp.s
 .PHONY : src/Cell.cpp.s
 
-src/Game.o: src/Game.cpp.o
+src/GameFlow.o: src/GameFlow.cpp.o
 
-.PHONY : src/Game.o
+.PHONY : src/GameFlow.o
 
 # target to build an object file
-src/Game.cpp.o:
-	$(MAKE) -f CMakeFiles/raversiTest.dir/build.make CMakeFiles/raversiTest.dir/src/Game.cpp.o
-	$(MAKE) -f CMakeFiles/raversi.dir/build.make CMakeFiles/raversi.dir/src/Game.cpp.o
-.PHONY : src/Game.cpp.o
+src/GameFlow.cpp.o:
+	$(MAKE) -f CMakeFiles/raversiTest.dir/build.make CMakeFiles/raversiTest.dir/src/GameFlow.cpp.o
+	$(MAKE) -f CMakeFiles/raversi.dir/build.make CMakeFiles/raversi.dir/src/GameFlow.cpp.o
+.PHONY : src/GameFlow.cpp.o
 
-src/Game.i: src/Game.cpp.i
+src/GameFlow.i: src/GameFlow.cpp.i
 
-.PHONY : src/Game.i
+.PHONY : src/GameFlow.i
 
 # target to preprocess a source file
-src/Game.cpp.i:
-	$(MAKE) -f CMakeFiles/raversiTest.dir/build.make CMakeFiles/raversiTest.dir/src/Game.cpp.i
-	$(MAKE) -f CMakeFiles/raversi.dir/build.make CMakeFiles/raversi.dir/src/Game.cpp.i
-.PHONY : src/Game.cpp.i
+src/GameFlow.cpp.i:
+	$(MAKE) -f CMakeFiles/raversiTest.dir/build.make CMakeFiles/raversiTest.dir/src/GameFlow.cpp.i
+	$(MAKE) -f CMakeFiles/raversi.dir/build.make CMakeFiles/raversi.dir/src/GameFlow.cpp.i
+.PHONY : src/GameFlow.cpp.i
 
-src/Game.s: src/Game.cpp.s
+src/GameFlow.s: src/GameFlow.cpp.s
 
-.PHONY : src/Game.s
+.PHONY : src/GameFlow.s
 
 # target to generate assembly for a file
-src/Game.cpp.s:
-	$(MAKE) -f CMakeFiles/raversiTest.dir/build.make CMakeFiles/raversiTest.dir/src/Game.cpp.s
-	$(MAKE) -f CMakeFiles/raversi.dir/build.make CMakeFiles/raversi.dir/src/Game.cpp.s
-.PHONY : src/Game.cpp.s
+src/GameFlow.cpp.s:
+	$(MAKE) -f CMakeFiles/raversiTest.dir/build.make CMakeFiles/raversiTest.dir/src/GameFlow.cpp.s
+	$(MAKE) -f CMakeFiles/raversi.dir/build.make CMakeFiles/raversi.dir/src/GameFlow.cpp.s
+.PHONY : src/GameFlow.cpp.s
+
+src/GameLogic.o: src/GameLogic.cpp.o
+
+.PHONY : src/GameLogic.o
+
+# target to build an object file
+src/GameLogic.cpp.o:
+	$(MAKE) -f CMakeFiles/raversiTest.dir/build.make CMakeFiles/raversiTest.dir/src/GameLogic.cpp.o
+	$(MAKE) -f CMakeFiles/raversi.dir/build.make CMakeFiles/raversi.dir/src/GameLogic.cpp.o
+.PHONY : src/GameLogic.cpp.o
+
+src/GameLogic.i: src/GameLogic.cpp.i
+
+.PHONY : src/GameLogic.i
+
+# target to preprocess a source file
+src/GameLogic.cpp.i:
+	$(MAKE) -f CMakeFiles/raversiTest.dir/build.make CMakeFiles/raversiTest.dir/src/GameLogic.cpp.i
+	$(MAKE) -f CMakeFiles/raversi.dir/build.make CMakeFiles/raversi.dir/src/GameLogic.cpp.i
+.PHONY : src/GameLogic.cpp.i
+
+src/GameLogic.s: src/GameLogic.cpp.s
+
+.PHONY : src/GameLogic.s
+
+# target to generate assembly for a file
+src/GameLogic.cpp.s:
+	$(MAKE) -f CMakeFiles/raversiTest.dir/build.make CMakeFiles/raversiTest.dir/src/GameLogic.cpp.s
+	$(MAKE) -f CMakeFiles/raversi.dir/build.make CMakeFiles/raversi.dir/src/GameLogic.cpp.s
+.PHONY : src/GameLogic.cpp.s
 
 src/Human.o: src/Human.cpp.o
 
@@ -579,9 +609,12 @@ help:
 	@echo "... src/Cell.o"
 	@echo "... src/Cell.i"
 	@echo "... src/Cell.s"
-	@echo "... src/Game.o"
-	@echo "... src/Game.i"
-	@echo "... src/Game.s"
+	@echo "... src/GameFlow.o"
+	@echo "... src/GameFlow.i"
+	@echo "... src/GameFlow.s"
+	@echo "... src/GameLogic.o"
+	@echo "... src/GameLogic.i"
+	@echo "... src/GameLogic.s"
 	@echo "... src/Human.o"
 	@echo "... src/Human.i"
 	@echo "... src/Human.s"
