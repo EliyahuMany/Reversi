@@ -7,6 +7,9 @@ file(REMOVE_RECURSE
   "CMakeFiles/raversi.dir/src/Human.cpp.o"
   "CMakeFiles/raversi.dir/src/Players.cpp.o"
   "CMakeFiles/raversi.dir/main.cpp.o"
+  "CMakeFiles/raversi.dir/src/Client.cpp.o"
+  "CMakeFiles/raversi.dir/src/RemotePlayer.cpp.o"
+  "CMakeFiles/raversi.dir/src/LocalPlayer.cpp.o"
   "raversi.pdb"
   "raversi"
 )

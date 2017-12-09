@@ -16,22 +16,23 @@
 
 using namespace std;
 
-class Game {
+class GameFlow {
 public:
     /**
      * Constructor - create a game session.
      */
-    Game(int size, int choose);
+    GameFlow(int size, int choose);
 
     /**
      * run the game until the players can't make a move.
      */
     void run();
 
+
     /**
     * Destractuor - delete the game.
     */
-    virtual ~Game();
+    virtual ~GameFlow();
 
     int getXScore() const;
 
@@ -42,6 +43,7 @@ private:
     Players *pX;
     Players *pO;
     int xScore, oScore;
+    bool oIsRemote;
 };
 
 #endif /* GAME_H_ */

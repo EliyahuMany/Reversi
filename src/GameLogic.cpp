@@ -55,10 +55,13 @@ void GameLogic::generateMoves(Players *player, vector<Cell> &vec, Board &b) {
     } //1st for
 }
 
-void GameLogic::makeMove(Cell cell, int &myScore, int &otherScore, Players *player, Board &b) {
+int GameLogic::makeMove(Cell cell, int &myScore, int &otherScore, Players *player, Board &b) {
     int temp;
     vector<Cell> v;
 
+    if(cell.isEmpty()){
+        return 0;
+    }
     for (int k = -1; k <= 1; ++k) {
         for (int l = -1; l <= 1; ++l) {
             temp = 1;
@@ -92,6 +95,7 @@ void GameLogic::makeMove(Cell cell, int &myScore, int &otherScore, Players *play
     myScore++;
     changeCells(v, myScore, otherScore, player, b);
     b.getBoard()[cell.getX()][cell.getY()] = player->getSymbol();
+    return 1;
 }
 
 void GameLogic::changeCells(vector<Cell> cellsToChange, int &myScore, int &otherScore, Players *player,

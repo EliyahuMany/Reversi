@@ -41,4 +41,3 @@ Cell &Human::play(Board &b, int &myScore, int &otherScore) {
         cout << "Wrong entry!" << endl;
     }
 }
-

@@ -6,6 +6,7 @@
 #include <iostream>
 #include "include/Board.h"
 #include "include/GameFlow.h"
+#include "include/Client.h"
 
 using namespace std;
 
@@ -21,8 +22,9 @@ int main() {
         cout << "Choose an option from the menu:" << endl;
         cout << "1. Human vs Human" << endl;
         cout << "2. Human vs AI" << endl;
+        cout << "3. Human vs Wireless Player" << endl;
         cin >> choose;
-        if (choose == 1 || choose == 2)
+        if (choose == 1 || choose == 2 || choose == 3)
             break;
         cout << "Wrong input!" << endl;
         cin.clear();
@@ -39,7 +41,7 @@ int main() {
         cin.clear();
         cin.ignore(100, '\n');
     }
-    Game game = Game(size, choose);
+    GameFlow game = GameFlow(size, choose);
     game.run();
     return 0;
 }

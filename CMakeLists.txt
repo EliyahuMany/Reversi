@@ -41,7 +41,7 @@ set(TEST_FILES
         src/Players.cpp
         include/Players.h test/Board_test.cpp test/Board_test.h test/Players_Test.cpp test/Players_Test.h test/Game_Test.cpp test/Game_Test.h src/GameLogic.cpp include/GameLogic.h)
 
-add_executable(raversi ${SOURCE_FILES} main.cpp)
+add_executable(raversi ${SOURCE_FILES} main.cpp src/Client.cpp include/Client.h src/RemotePlayer.cpp include/RemotePlayer.h src/LocalPlayer.cpp include/LocalPlayer.h)
 add_executable(raversiTest ${TEST_FILES} ${SOURCE_FILES})
 
 target_link_libraries(raversiTest gtest gtest_main)

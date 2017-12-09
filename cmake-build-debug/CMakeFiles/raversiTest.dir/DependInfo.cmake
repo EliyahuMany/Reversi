@@ -4,17 +4,17 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/eliyahu/CLionProjects/raversi/src/AIPlayer.cpp" "/home/eliyahu/CLionProjects/raversi/cmake-build-debug/CMakeFiles/raversiTest.dir/src/AIPlayer.cpp.o"
-  "/home/eliyahu/CLionProjects/raversi/src/Board.cpp" "/home/eliyahu/CLionProjects/raversi/cmake-build-debug/CMakeFiles/raversiTest.dir/src/Board.cpp.o"
-  "/home/eliyahu/CLionProjects/raversi/src/Cell.cpp" "/home/eliyahu/CLionProjects/raversi/cmake-build-debug/CMakeFiles/raversiTest.dir/src/Cell.cpp.o"
-  "/home/eliyahu/CLionProjects/raversi/src/GameFlow.cpp" "/home/eliyahu/CLionProjects/raversi/cmake-build-debug/CMakeFiles/raversiTest.dir/src/GameFlow.cpp.o"
-  "/home/eliyahu/CLionProjects/raversi/src/GameLogic.cpp" "/home/eliyahu/CLionProjects/raversi/cmake-build-debug/CMakeFiles/raversiTest.dir/src/GameLogic.cpp.o"
-  "/home/eliyahu/CLionProjects/raversi/src/Human.cpp" "/home/eliyahu/CLionProjects/raversi/cmake-build-debug/CMakeFiles/raversiTest.dir/src/Human.cpp.o"
-  "/home/eliyahu/CLionProjects/raversi/src/Players.cpp" "/home/eliyahu/CLionProjects/raversi/cmake-build-debug/CMakeFiles/raversiTest.dir/src/Players.cpp.o"
-  "/home/eliyahu/CLionProjects/raversi/test/AllTests.cpp" "/home/eliyahu/CLionProjects/raversi/cmake-build-debug/CMakeFiles/raversiTest.dir/test/AllTests.cpp.o"
-  "/home/eliyahu/CLionProjects/raversi/test/Board_test.cpp" "/home/eliyahu/CLionProjects/raversi/cmake-build-debug/CMakeFiles/raversiTest.dir/test/Board_test.cpp.o"
-  "/home/eliyahu/CLionProjects/raversi/test/Game_Test.cpp" "/home/eliyahu/CLionProjects/raversi/cmake-build-debug/CMakeFiles/raversiTest.dir/test/Game_Test.cpp.o"
-  "/home/eliyahu/CLionProjects/raversi/test/Players_Test.cpp" "/home/eliyahu/CLionProjects/raversi/cmake-build-debug/CMakeFiles/raversiTest.dir/test/Players_Test.cpp.o"
+  "/home/orian/CLionProjects/raversi/src/AIPlayer.cpp" "/home/orian/CLionProjects/raversi/cmake-build-debug/CMakeFiles/raversiTest.dir/src/AIPlayer.cpp.o"
+  "/home/orian/CLionProjects/raversi/src/Board.cpp" "/home/orian/CLionProjects/raversi/cmake-build-debug/CMakeFiles/raversiTest.dir/src/Board.cpp.o"
+  "/home/orian/CLionProjects/raversi/src/Cell.cpp" "/home/orian/CLionProjects/raversi/cmake-build-debug/CMakeFiles/raversiTest.dir/src/Cell.cpp.o"
+  "/home/orian/CLionProjects/raversi/src/GameFlow.cpp" "/home/orian/CLionProjects/raversi/cmake-build-debug/CMakeFiles/raversiTest.dir/src/GameFlow.cpp.o"
+  "/home/orian/CLionProjects/raversi/src/GameLogic.cpp" "/home/orian/CLionProjects/raversi/cmake-build-debug/CMakeFiles/raversiTest.dir/src/GameLogic.cpp.o"
+  "/home/orian/CLionProjects/raversi/src/Human.cpp" "/home/orian/CLionProjects/raversi/cmake-build-debug/CMakeFiles/raversiTest.dir/src/Human.cpp.o"
+  "/home/orian/CLionProjects/raversi/src/Players.cpp" "/home/orian/CLionProjects/raversi/cmake-build-debug/CMakeFiles/raversiTest.dir/src/Players.cpp.o"
+  "/home/orian/CLionProjects/raversi/test/AllTests.cpp" "/home/orian/CLionProjects/raversi/cmake-build-debug/CMakeFiles/raversiTest.dir/test/AllTests.cpp.o"
+  "/home/orian/CLionProjects/raversi/test/Board_test.cpp" "/home/orian/CLionProjects/raversi/cmake-build-debug/CMakeFiles/raversiTest.dir/test/Board_test.cpp.o"
+  "/home/orian/CLionProjects/raversi/test/Game_Test.cpp" "/home/orian/CLionProjects/raversi/cmake-build-debug/CMakeFiles/raversiTest.dir/test/Game_Test.cpp.o"
+  "/home/orian/CLionProjects/raversi/test/Players_Test.cpp" "/home/orian/CLionProjects/raversi/cmake-build-debug/CMakeFiles/raversiTest.dir/test/Players_Test.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -26,8 +26,8 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/eliyahu/CLionProjects/raversi/cmake-build-debug/lib/googletest-release-1.8.0/googlemock/gtest/CMakeFiles/gtest.dir/DependInfo.cmake"
-  "/home/eliyahu/CLionProjects/raversi/cmake-build-debug/lib/googletest-release-1.8.0/googlemock/gtest/CMakeFiles/gtest_main.dir/DependInfo.cmake"
+  "/home/orian/CLionProjects/raversi/cmake-build-debug/lib/googletest-release-1.8.0/googlemock/gtest/CMakeFiles/gtest.dir/DependInfo.cmake"
+  "/home/orian/CLionProjects/raversi/cmake-build-debug/lib/googletest-release-1.8.0/googlemock/gtest/CMakeFiles/gtest_main.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

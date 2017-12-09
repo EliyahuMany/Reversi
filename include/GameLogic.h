@@ -23,7 +23,7 @@ public:
     /*
      * makeMove function set the move by the cell into the board.
      */
-    void makeMove(Cell cell, int &myScore, int &otherScore, Players *player, Board &b);
+    int makeMove(Cell cell, int &myScore, int &otherScore, Players *player, Board &b);
 
     /*
      * changeCells function change all the vector cell to the new symbol.
