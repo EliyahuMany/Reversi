@@ -1,0 +1,104 @@
+commit 4a56ac07a0d0c0d545b247c77b1728836aaf8552
+Author: Orian Edri <orian.derei@gmail.com>
+Date:   Thu Nov 30 23:54:41 2017 +0200
+
+    ending
+
+commit 358fd6abc52254251245d68516ab0274040043be
+Author: Eliyahu Many <alihom3@gmail.com>
+Date:   Thu Nov 30 17:39:46 2017 +0200
+
+    fix print
+
+commit 0f8b79935ac6a717b487cc3736f078518fcd5867
+Author: Eliyahu Many <alihom3@gmail.com>
+Date:   Thu Nov 30 17:14:53 2017 +0200
+
+    add remarks
+
+commit f98da18a046dad816bd5c2def415375e57cf3f25
+Author: Eliyahu Many <alihom3@gmail.com>
+Date:   Thu Nov 30 16:54:14 2017 +0200
+
+    just want to make a long log
+
+commit 1ea38c711f57dda3bf2adca9ee9d431da6d3da0c
+Author: Orian Edri <orian.derei@gmail.com>
+Date:   Thu Nov 30 16:20:52 2017 +0200
+
+    change AI
+
+commit c253c5d9f16f48d8abfbe034cbe87d1d03de0c37
+Author: Orian Edri <orian.derei@gmail.com>
+Date:   Thu Nov 30 16:06:09 2017 +0200
+
+    add game options
+
+commit c5357ecb825baced314acab94fb64374a9be51cf
+Merge: 6c19f37 48c812b
+Author: Orian Edri <orian.derei@gmail.com>
+Date:   Thu Nov 30 11:56:47 2017 +0200
+
+    Merge branch 'master' of https://github.com/orianED/raversi
+    
+    # Conflicts:
+    #	.idea/workspace.xml
+    #	cmake-build-debug/CMakeFiles/raversi.dir/src/AIPlayer.cpp.o
+    #	cmake-build-debug/CMakeFiles/raversi.dir/src/Board.cpp.o
+    #	cmake-build-debug/CMakeFiles/raversi.dir/src/Cell.cpp.o
+    #	cmake-build-debug/CMakeFiles/raversi.dir/src/Human.cpp.o
+    #	cmake-build-debug/CMakeFiles/raversi.dir/src/Players.cpp.o
+
+commit 6c19f37bb385c4832c93a3af185d48f83a323e1f
+Author: Orian Edri <orian.derei@gmail.com>
+Date:   Thu Nov 30 11:55:31 2017 +0200
+
+    update
+
+commit 5a6d4ccc088703221362afab2ef4523e5a17143b
+Author: Orian Edri <orian.derei@gmail.com>
+Date:   Thu Nov 30 11:52:51 2017 +0200
+
+    update
+
+commit 48c812be941f418a358e6c79037d16ee0b73ce54
+Author: Eliyahu Many <alihom3@gmail.com>
+Date:   Thu Nov 30 10:14:44 2017 +0200
+
+    Fixed the leaks
+
+commit bd1d7c3068fd72c1f90f98a506715c6dc72182f5
+Author: Eliyahu Many <alihom3@gmail.com>
+Date:   Thu Nov 30 01:12:40 2017 +0200
+
+    Eclipse is shit, move to clion
+
+commit 8e8c454535943c0ead940b32db2375c1f39c3a79
+Author: Eliyahu Many <alihom3@gmail.com>
+Date:   Wed Nov 29 21:09:46 2017 +0200
+
+    gtests
+
+commit 11713183bf04ec02b8f4fbe13fb668759df4c54a
+Author: Eliyahu Many <alihom3@gmail.com>
+Date:   Wed Nov 29 19:32:42 2017 +0200
+
+    Fix AI Plyer score algoritem
+
+commit c9f9cdaa870803c775e6b4695004f8e32989b9a9
+Author: Eliyahu Many <alihom3@gmail.com>
+Date:   Wed Nov 29 19:23:18 2017 +0200
+
+    upgrade AI Player
+
+commit 0084f1e9e215e46e8dfca26b57e0599111457862
+Author: Eliyahu Many <alihom3@gmail.com>
+Date:   Wed Nov 29 17:35:08 2017 +0200
+
+    fix Draw problem
+
+commit f234f44cad160802b29d40c84312b993a3cc8833
+Author: Orian Edri <orian.derei@gmail.com>
+Date:   Wed Nov 29 14:02:42 2017 +0200
+
+    first commit
