@@ -14,6 +14,8 @@ Cell &RemotePlayer::play(Board &b, int &myScore, int &otherScore) {
     char *c = new char[20];
     client.receiveMove(c);
     if (strcmp(c, "NoMove") == 0) {
+        cout << "No possible move" << endl;
+        cout << endl;
         this->cell.emptyTrue();
     } else {
         this->cell.setCell(((int) c[0]) - 48, ((int) c[2]) - 48);

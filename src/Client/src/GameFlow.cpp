@@ -42,12 +42,14 @@ void GameFlow::run() {
         flagX = this->gameL.makeMove(pX->play(this->gameL.getGameBoard(), this->xScore, this->oScore), this->xScore,
                                      this->oScore, this->pX,
                                      this->gameL.getGameBoard());
-        this->gameL.getGameBoard().print();
+        if (flagX == 1)
+            this->gameL.getGameBoard().print();
         this->gameL.generateMoves(this->pO, this->pO->getMoves(), this->gameL.getGameBoard());
         flagO = this->gameL.makeMove(pO->play(this->gameL.getGameBoard(), this->oScore, this->xScore), this->oScore,
                                      this->xScore, this->pO,
                                      this->gameL.getGameBoard());
-        this->gameL.getGameBoard().print();
+        if (flagO == 1)
+            this->gameL.getGameBoard().print();
     }
 
     if (xScore > oScore) {
@@ -60,9 +62,7 @@ void GameFlow::run() {
         cout << "Draw" <<
              endl;
     }
-    this->gameL.
-
-            deleteBoard();
+    this->gameL.deleteBoard();
 
 }
 

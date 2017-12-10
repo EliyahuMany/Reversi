@@ -19,7 +19,7 @@ Client::Client(const char *serverIP, int serverPort) : serverIP(serverIP), serve
 }
 
 int Client::connectToServer() {
-    int s;
+    int numOfPlayer;
     clientSocket = socket(AF_INET, SOCK_STREAM, 0);
     if (clientSocket == -1) {
         throw "Error opening socket";
@@ -48,13 +48,17 @@ int Client::connectToServer() {
     }
     cout << "Connected to server" << endl;
 
-    int n = read(clientSocket, &s, sizeof(s));
+    int n = read(clientSocket, &numOfPlayer, sizeof(numOfPlayer));
     if (n == -1) {
         cout << "Reading failed" << endl;
         return 0;
     }
-    cout << s << endl;
-    return s;
+    if (numOfPlayer == 1) {
+        cout << "Waiting to other player to connect" << endl;
+        n = read(clientSocket, &numOfPlayer, sizeof(numOfPlayer));
+    }
+
+    return numOfPlayer;
 }
 
 void Client::sendMove(char *move) {
