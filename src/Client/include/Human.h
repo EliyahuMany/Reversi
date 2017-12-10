@@ -27,7 +27,8 @@ public:
      * search for the available moves of the player and add them to possible move vector.
      */
     Cell &play(Board &b, int &myScore, int &otherScore);
-
+private:
+        Cell cell;
 };
 
 #endif /* HUMAN_H_ */

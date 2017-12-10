@@ -4,17 +4,17 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/orian/CLionProjects/raversi/main.cpp" "/home/orian/CLionProjects/raversi/cmake-build-debug/CMakeFiles/raversi.dir/main.cpp.o"
-  "/home/orian/CLionProjects/raversi/src/AIPlayer.cpp" "/home/orian/CLionProjects/raversi/cmake-build-debug/CMakeFiles/raversi.dir/src/AIPlayer.cpp.o"
-  "/home/orian/CLionProjects/raversi/src/Board.cpp" "/home/orian/CLionProjects/raversi/cmake-build-debug/CMakeFiles/raversi.dir/src/Board.cpp.o"
-  "/home/orian/CLionProjects/raversi/src/Cell.cpp" "/home/orian/CLionProjects/raversi/cmake-build-debug/CMakeFiles/raversi.dir/src/Cell.cpp.o"
-  "/home/orian/CLionProjects/raversi/src/Client.cpp" "/home/orian/CLionProjects/raversi/cmake-build-debug/CMakeFiles/raversi.dir/src/Client.cpp.o"
-  "/home/orian/CLionProjects/raversi/src/GameFlow.cpp" "/home/orian/CLionProjects/raversi/cmake-build-debug/CMakeFiles/raversi.dir/src/GameFlow.cpp.o"
-  "/home/orian/CLionProjects/raversi/src/GameLogic.cpp" "/home/orian/CLionProjects/raversi/cmake-build-debug/CMakeFiles/raversi.dir/src/GameLogic.cpp.o"
-  "/home/orian/CLionProjects/raversi/src/Human.cpp" "/home/orian/CLionProjects/raversi/cmake-build-debug/CMakeFiles/raversi.dir/src/Human.cpp.o"
-  "/home/orian/CLionProjects/raversi/src/LocalPlayer.cpp" "/home/orian/CLionProjects/raversi/cmake-build-debug/CMakeFiles/raversi.dir/src/LocalPlayer.cpp.o"
-  "/home/orian/CLionProjects/raversi/src/Players.cpp" "/home/orian/CLionProjects/raversi/cmake-build-debug/CMakeFiles/raversi.dir/src/Players.cpp.o"
-  "/home/orian/CLionProjects/raversi/src/RemotePlayer.cpp" "/home/orian/CLionProjects/raversi/cmake-build-debug/CMakeFiles/raversi.dir/src/RemotePlayer.cpp.o"
+  "/home/eliyahu/CLionProjects/backup/raversi/src/Client/main.cpp" "/home/eliyahu/CLionProjects/backup/raversi/src/Client/cmake-build-debug/CMakeFiles/raversi.dir/main.cpp.o"
+  "/home/eliyahu/CLionProjects/backup/raversi/src/Client/src/AIPlayer.cpp" "/home/eliyahu/CLionProjects/backup/raversi/src/Client/cmake-build-debug/CMakeFiles/raversi.dir/src/AIPlayer.cpp.o"
+  "/home/eliyahu/CLionProjects/backup/raversi/src/Client/src/Board.cpp" "/home/eliyahu/CLionProjects/backup/raversi/src/Client/cmake-build-debug/CMakeFiles/raversi.dir/src/Board.cpp.o"
+  "/home/eliyahu/CLionProjects/backup/raversi/src/Client/src/Cell.cpp" "/home/eliyahu/CLionProjects/backup/raversi/src/Client/cmake-build-debug/CMakeFiles/raversi.dir/src/Cell.cpp.o"
+  "/home/eliyahu/CLionProjects/backup/raversi/src/Client/src/Client.cpp" "/home/eliyahu/CLionProjects/backup/raversi/src/Client/cmake-build-debug/CMakeFiles/raversi.dir/src/Client.cpp.o"
+  "/home/eliyahu/CLionProjects/backup/raversi/src/Client/src/GameFlow.cpp" "/home/eliyahu/CLionProjects/backup/raversi/src/Client/cmake-build-debug/CMakeFiles/raversi.dir/src/GameFlow.cpp.o"
+  "/home/eliyahu/CLionProjects/backup/raversi/src/Client/src/GameLogic.cpp" "/home/eliyahu/CLionProjects/backup/raversi/src/Client/cmake-build-debug/CMakeFiles/raversi.dir/src/GameLogic.cpp.o"
+  "/home/eliyahu/CLionProjects/backup/raversi/src/Client/src/Human.cpp" "/home/eliyahu/CLionProjects/backup/raversi/src/Client/cmake-build-debug/CMakeFiles/raversi.dir/src/Human.cpp.o"
+  "/home/eliyahu/CLionProjects/backup/raversi/src/Client/src/LocalPlayer.cpp" "/home/eliyahu/CLionProjects/backup/raversi/src/Client/cmake-build-debug/CMakeFiles/raversi.dir/src/LocalPlayer.cpp.o"
+  "/home/eliyahu/CLionProjects/backup/raversi/src/Client/src/Players.cpp" "/home/eliyahu/CLionProjects/backup/raversi/src/Client/cmake-build-debug/CMakeFiles/raversi.dir/src/Players.cpp.o"
+  "/home/eliyahu/CLionProjects/backup/raversi/src/Client/src/RemotePlayer.cpp" "/home/eliyahu/CLionProjects/backup/raversi/src/Client/cmake-build-debug/CMakeFiles/raversi.dir/src/RemotePlayer.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

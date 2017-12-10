@@ -4,7 +4,7 @@
 
 #include "../include/LocalPlayer.h"
 
-LocalPlayer::LocalPlayer(char symbol, Client &client) : Players(symbol), client(client), c(Cell()) {
+LocalPlayer::LocalPlayer(char symbol, Client &client) : Players(symbol), client(client), cell(Cell()) {
 }
 
 Cell &LocalPlayer::play(Board &b, int &myScore, int &otherScore) {
@@ -13,7 +13,8 @@ Cell &LocalPlayer::play(Board &b, int &myScore, int &otherScore) {
         char *c = new char[s.length() + 1];
         strcpy(c, s.c_str());
         this->client.sendMove(c);
-        return this->c;
+        delete[] c;
+        return this->cell;
     } else {
         string choose;
         cout << this->symbol << ": It's your move." << endl;
@@ -35,6 +36,7 @@ Cell &LocalPlayer::play(Board &b, int &myScore, int &otherScore) {
                     char *c = new char[choose.length() + 1];
                     strcpy(c, choose.c_str());
                     client.sendMove(c);
+                    delete[] c;
                     return this->moves[i];
                 }
             }

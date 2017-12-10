@@ -59,7 +59,7 @@ int GameLogic::makeMove(Cell cell, int &myScore, int &otherScore, Players *playe
     int temp;
     vector<Cell> v;
 
-    if(cell.isEmpty()){
+    if (cell.isEmpty()) {
         return 0;
     }
     for (int k = -1; k <= 1; ++k) {
@@ -113,6 +113,6 @@ Board &GameLogic::getGameBoard() {
     return *this->board;
 }
 
-void GameLogic::deleteBoard(){
+void GameLogic::deleteBoard() {
     delete board;
 }

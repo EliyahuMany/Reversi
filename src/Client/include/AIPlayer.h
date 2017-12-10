@@ -46,6 +46,7 @@ public:
 
 private:
     GameLogic gl;
+    Cell cell;
 };
 
 #endif /* AIPLAYER_H_ */

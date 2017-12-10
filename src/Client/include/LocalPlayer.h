@@ -17,7 +17,7 @@ public:
 
 private:
     Client client;
-    Cell c;//Cell for no move.
+    Cell cell;
 };
 
 

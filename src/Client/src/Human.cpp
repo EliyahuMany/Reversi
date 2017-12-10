@@ -8,7 +8,7 @@
 #include "../include/Human.h"
 
 Human::Human(char symbol) :
-        Players(symbol) {
+        Players(symbol), cell(Cell()) {
     this->symbol = symbol;
     if (this->symbol == 'X') {
         this->otherSymbol = 'O';
@@ -19,6 +19,10 @@ Human::Human(char symbol) :
 
 Cell &Human::play(Board &b, int &myScore, int &otherScore) {
     string choose;
+
+    if (this->getMoves().empty()) {
+        return this->cell;
+    }
     cout << this->symbol << ": It's your move." << endl;
     cout << "Your possible moves:";
     for (unsigned int i = 0; i < this->moves.size(); ++i) {

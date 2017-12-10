@@ -13,7 +13,7 @@
 GameFlow::GameFlow(int size, int choose) : gameL(GameLogic(size)) {
     //online game:
     if (choose == 3) {
-        Client client("127.0.0.1", 4443);
+        Client client("127.0.0.1", 8443);
         int playerNum = client.connectToServer();
         if (playerNum == 1) {
             this->pX = new LocalPlayer('X', client);

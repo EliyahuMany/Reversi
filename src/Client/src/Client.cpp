@@ -58,7 +58,7 @@ int Client::connectToServer() {
 }
 
 void Client::sendMove(char *move) {
-    int n = write(clientSocket, move, sizeof(move));
+    int n = write(clientSocket, move, strlen(move));
     if (n == -1)
         throw "Error writing move";
 }
