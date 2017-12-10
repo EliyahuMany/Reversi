@@ -1,1 +1,1 @@
-CMakeLists.txt not found in /home/orian/CLionProjects/raversi
+CMakeLists.txt not found in /home/eliyahu/CLionProjects/raversi
