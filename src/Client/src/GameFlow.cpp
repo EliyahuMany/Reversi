@@ -5,6 +5,7 @@
  *      ID: 308335454
  */
 
+#include <cstdlib>
 #include "../include/GameFlow.h"
 #include "../include/Client.h"
 #include "../include/RemotePlayer.h"
@@ -14,13 +15,18 @@ GameFlow::GameFlow(int size, int choose) : gameL(GameLogic(size)) {
     //online game:
     if (choose == 3) {
         Client client("127.0.0.1", 8443);
-        int playerNum = client.connectToServer();
-        if (playerNum == 1) {
-            this->pX = new LocalPlayer('X', client);
-            this->pO = new RemotePlayer('O', client);
-        } else if (playerNum == 2) {
-            this->pX = new RemotePlayer('X', client);
-            this->pO = new LocalPlayer('O', client);
+        try {
+            int playerNum = client.connectToServer();
+            if (playerNum == 1) {
+                this->pX = new LocalPlayer('X', client);
+                this->pO = new RemotePlayer('O', client);
+            } else if (playerNum == 2) {
+                this->pX = new RemotePlayer('X', client);
+                this->pO = new LocalPlayer('O', client);
+            }
+        } catch (const char *m) {
+            cout << "Connection failed: " << m << endl;
+            exit(1);
         }
     }//offline game:
     else {

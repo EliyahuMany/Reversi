@@ -6,117 +6,117 @@
 
 #IncludeRegexTransform: 
 
-/home/eliyahu/CLionProjects/raversi/src/Client/include/AIPlayer.h
+/home/orian/Videos/raversi/src/Client/include/AIPlayer.h
 Board.h
-/home/eliyahu/CLionProjects/raversi/src/Client/include/Board.h
+/home/orian/Videos/raversi/src/Client/include/Board.h
 Cell.h
-/home/eliyahu/CLionProjects/raversi/src/Client/include/Cell.h
+/home/orian/Videos/raversi/src/Client/include/Cell.h
 Players.h
-/home/eliyahu/CLionProjects/raversi/src/Client/include/Players.h
+/home/orian/Videos/raversi/src/Client/include/Players.h
 GameLogic.h
-/home/eliyahu/CLionProjects/raversi/src/Client/include/GameLogic.h
+/home/orian/Videos/raversi/src/Client/include/GameLogic.h
 
-/home/eliyahu/CLionProjects/raversi/src/Client/include/Board.h
+/home/orian/Videos/raversi/src/Client/include/Board.h
 iostream
 -
 string.h
 -
 
-/home/eliyahu/CLionProjects/raversi/src/Client/include/Cell.h
+/home/orian/Videos/raversi/src/Client/include/Cell.h
 iostream
 -
 vector
 -
 Board.h
-/home/eliyahu/CLionProjects/raversi/src/Client/include/Board.h
+/home/orian/Videos/raversi/src/Client/include/Board.h
 
-/home/eliyahu/CLionProjects/raversi/src/Client/include/Client.h
+/home/orian/Videos/raversi/src/Client/include/Client.h
 
-/home/eliyahu/CLionProjects/raversi/src/Client/include/ConsolePrint.h
+/home/orian/Videos/raversi/src/Client/include/ConsolePrint.h
 Print.h
-/home/eliyahu/CLionProjects/raversi/src/Client/include/Print.h
+/home/orian/Videos/raversi/src/Client/include/Print.h
 
-/home/eliyahu/CLionProjects/raversi/src/Client/include/GameFlow.h
+/home/orian/Videos/raversi/src/Client/include/GameFlow.h
 iostream
 -
 Board.h
-/home/eliyahu/CLionProjects/raversi/src/Client/include/Board.h
+/home/orian/Videos/raversi/src/Client/include/Board.h
 Human.h
-/home/eliyahu/CLionProjects/raversi/src/Client/include/Human.h
+/home/orian/Videos/raversi/src/Client/include/Human.h
 AIPlayer.h
-/home/eliyahu/CLionProjects/raversi/src/Client/include/AIPlayer.h
+/home/orian/Videos/raversi/src/Client/include/AIPlayer.h
 GameLogic.h
-/home/eliyahu/CLionProjects/raversi/src/Client/include/GameLogic.h
+/home/orian/Videos/raversi/src/Client/include/GameLogic.h
 
-/home/eliyahu/CLionProjects/raversi/src/Client/include/GameLogic.h
+/home/orian/Videos/raversi/src/Client/include/GameLogic.h
 Cell.h
-/home/eliyahu/CLionProjects/raversi/src/Client/include/Cell.h
+/home/orian/Videos/raversi/src/Client/include/Cell.h
 Players.h
-/home/eliyahu/CLionProjects/raversi/src/Client/include/Players.h
+/home/orian/Videos/raversi/src/Client/include/Players.h
 
-/home/eliyahu/CLionProjects/raversi/src/Client/include/Human.h
+/home/orian/Videos/raversi/src/Client/include/Human.h
 iostream
 -
 vector
 -
 Cell.h
-/home/eliyahu/CLionProjects/raversi/src/Client/include/Cell.h
+/home/orian/Videos/raversi/src/Client/include/Cell.h
 Board.h
-/home/eliyahu/CLionProjects/raversi/src/Client/include/Board.h
+/home/orian/Videos/raversi/src/Client/include/Board.h
 Players.h
-/home/eliyahu/CLionProjects/raversi/src/Client/include/Players.h
+/home/orian/Videos/raversi/src/Client/include/Players.h
 
-/home/eliyahu/CLionProjects/raversi/src/Client/include/LocalPlayer.h
+/home/orian/Videos/raversi/src/Client/include/LocalPlayer.h
 Players.h
-/home/eliyahu/CLionProjects/raversi/src/Client/include/Players.h
+/home/orian/Videos/raversi/src/Client/include/Players.h
 Client.h
-/home/eliyahu/CLionProjects/raversi/src/Client/include/Client.h
+/home/orian/Videos/raversi/src/Client/include/Client.h
 
-/home/eliyahu/CLionProjects/raversi/src/Client/include/Players.h
+/home/orian/Videos/raversi/src/Client/include/Players.h
 Cell.h
-/home/eliyahu/CLionProjects/raversi/src/Client/include/Cell.h
+/home/orian/Videos/raversi/src/Client/include/Cell.h
 Board.h
-/home/eliyahu/CLionProjects/raversi/src/Client/include/Board.h
+/home/orian/Videos/raversi/src/Client/include/Board.h
 vector
 -
 
-/home/eliyahu/CLionProjects/raversi/src/Client/include/Print.h
+/home/orian/Videos/raversi/src/Client/include/Print.h
 Cell.h
-/home/eliyahu/CLionProjects/raversi/src/Client/include/Cell.h
+/home/orian/Videos/raversi/src/Client/include/Cell.h
 Board.h
-/home/eliyahu/CLionProjects/raversi/src/Client/include/Board.h
+/home/orian/Videos/raversi/src/Client/include/Board.h
 
-/home/eliyahu/CLionProjects/raversi/src/Client/include/RemotePlayer.h
+/home/orian/Videos/raversi/src/Client/include/RemotePlayer.h
 Players.h
-/home/eliyahu/CLionProjects/raversi/src/Client/include/Players.h
+/home/orian/Videos/raversi/src/Client/include/Players.h
 Client.h
-/home/eliyahu/CLionProjects/raversi/src/Client/include/Client.h
+/home/orian/Videos/raversi/src/Client/include/Client.h
 
-/home/eliyahu/CLionProjects/raversi/src/Client/main.cpp
+/home/orian/Videos/raversi/src/Client/main.cpp
 iostream
 -
 include/Board.h
-/home/eliyahu/CLionProjects/raversi/src/Client/include/Board.h
+/home/orian/Videos/raversi/src/Client/include/Board.h
 include/GameFlow.h
-/home/eliyahu/CLionProjects/raversi/src/Client/include/GameFlow.h
+/home/orian/Videos/raversi/src/Client/include/GameFlow.h
 include/Client.h
-/home/eliyahu/CLionProjects/raversi/src/Client/include/Client.h
+/home/orian/Videos/raversi/src/Client/include/Client.h
 
-/home/eliyahu/CLionProjects/raversi/src/Client/src/AIPlayer.cpp
+/home/orian/Videos/raversi/src/Client/src/AIPlayer.cpp
 ../include/AIPlayer.h
-/home/eliyahu/CLionProjects/raversi/src/Client/include/AIPlayer.h
+/home/orian/Videos/raversi/src/Client/include/AIPlayer.h
 
-/home/eliyahu/CLionProjects/raversi/src/Client/src/Board.cpp
+/home/orian/Videos/raversi/src/Client/src/Board.cpp
 ../include/Board.h
-/home/eliyahu/CLionProjects/raversi/src/Client/include/Board.h
+/home/orian/Videos/raversi/src/Client/include/Board.h
 
-/home/eliyahu/CLionProjects/raversi/src/Client/src/Cell.cpp
+/home/orian/Videos/raversi/src/Client/src/Cell.cpp
 ../include/Cell.h
-/home/eliyahu/CLionProjects/raversi/src/Client/include/Cell.h
+/home/orian/Videos/raversi/src/Client/include/Cell.h
 
-/home/eliyahu/CLionProjects/raversi/src/Client/src/Client.cpp
+/home/orian/Videos/raversi/src/Client/src/Client.cpp
 ../include/Client.h
-/home/eliyahu/CLionProjects/raversi/src/Client/include/Client.h
+/home/orian/Videos/raversi/src/Client/include/Client.h
 iostream
 -
 sys/socket.h
@@ -132,41 +132,43 @@ string.h
 unistd.h
 -
 
-/home/eliyahu/CLionProjects/raversi/src/Client/src/ConsolePrint.cpp
+/home/orian/Videos/raversi/src/Client/src/ConsolePrint.cpp
 ../include/ConsolePrint.h
-/home/eliyahu/CLionProjects/raversi/src/Client/include/ConsolePrint.h
+/home/orian/Videos/raversi/src/Client/include/ConsolePrint.h
 
-/home/eliyahu/CLionProjects/raversi/src/Client/src/GameFlow.cpp
+/home/orian/Videos/raversi/src/Client/src/GameFlow.cpp
+cstdlib
+-
 ../include/GameFlow.h
-/home/eliyahu/CLionProjects/raversi/src/Client/include/GameFlow.h
+/home/orian/Videos/raversi/src/Client/include/GameFlow.h
 ../include/Client.h
-/home/eliyahu/CLionProjects/raversi/src/Client/include/Client.h
+/home/orian/Videos/raversi/src/Client/include/Client.h
 ../include/RemotePlayer.h
-/home/eliyahu/CLionProjects/raversi/src/Client/include/RemotePlayer.h
+/home/orian/Videos/raversi/src/Client/include/RemotePlayer.h
 ../include/LocalPlayer.h
-/home/eliyahu/CLionProjects/raversi/src/Client/include/LocalPlayer.h
+/home/orian/Videos/raversi/src/Client/include/LocalPlayer.h
 
-/home/eliyahu/CLionProjects/raversi/src/Client/src/GameLogic.cpp
+/home/orian/Videos/raversi/src/Client/src/GameLogic.cpp
 ../include/GameLogic.h
-/home/eliyahu/CLionProjects/raversi/src/Client/include/GameLogic.h
+/home/orian/Videos/raversi/src/Client/include/GameLogic.h
 
-/home/eliyahu/CLionProjects/raversi/src/Client/src/Human.cpp
+/home/orian/Videos/raversi/src/Client/src/Human.cpp
 ../include/Human.h
-/home/eliyahu/CLionProjects/raversi/src/Client/include/Human.h
+/home/orian/Videos/raversi/src/Client/include/Human.h
 
-/home/eliyahu/CLionProjects/raversi/src/Client/src/LocalPlayer.cpp
+/home/orian/Videos/raversi/src/Client/src/LocalPlayer.cpp
 ../include/LocalPlayer.h
-/home/eliyahu/CLionProjects/raversi/src/Client/include/LocalPlayer.h
+/home/orian/Videos/raversi/src/Client/include/LocalPlayer.h
 
-/home/eliyahu/CLionProjects/raversi/src/Client/src/Players.cpp
+/home/orian/Videos/raversi/src/Client/src/Players.cpp
 ../include/Players.h
-/home/eliyahu/CLionProjects/raversi/src/Client/include/Players.h
+/home/orian/Videos/raversi/src/Client/include/Players.h
 
-/home/eliyahu/CLionProjects/raversi/src/Client/src/Print.cpp
+/home/orian/Videos/raversi/src/Client/src/Print.cpp
 ../include/Print.h
-/home/eliyahu/CLionProjects/raversi/src/Client/include/Print.h
+/home/orian/Videos/raversi/src/Client/include/Print.h
 
-/home/eliyahu/CLionProjects/raversi/src/Client/src/RemotePlayer.cpp
+/home/orian/Videos/raversi/src/Client/src/RemotePlayer.cpp
 ../include/RemotePlayer.h
-/home/eliyahu/CLionProjects/raversi/src/Client/include/RemotePlayer.h
+/home/orian/Videos/raversi/src/Client/include/RemotePlayer.h
 

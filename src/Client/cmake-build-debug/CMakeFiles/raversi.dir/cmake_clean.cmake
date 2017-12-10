@@ -3,6 +3,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/raversi.dir/src/Board.cpp.o"
   "CMakeFiles/raversi.dir/src/Cell.cpp.o"
   "CMakeFiles/raversi.dir/src/GameFlow.cpp.o"
+  "CMakeFiles/raversi.dir/src/Print.cpp.o"
+  "CMakeFiles/raversi.dir/src/ConsolePrint.cpp.o"
   "CMakeFiles/raversi.dir/src/GameLogic.cpp.o"
   "CMakeFiles/raversi.dir/src/Human.cpp.o"
   "CMakeFiles/raversi.dir/src/Players.cpp.o"
@@ -10,8 +12,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/raversi.dir/src/Client.cpp.o"
   "CMakeFiles/raversi.dir/src/RemotePlayer.cpp.o"
   "CMakeFiles/raversi.dir/src/LocalPlayer.cpp.o"
-  "CMakeFiles/raversi.dir/src/Print.cpp.o"
-  "CMakeFiles/raversi.dir/src/ConsolePrint.cpp.o"
   "raversi.pdb"
   "raversi"
 )
