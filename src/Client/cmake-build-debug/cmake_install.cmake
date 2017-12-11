@@ -1,4 +1,4 @@
-# Install script for directory: /home/eliyahu/CLionProjects/raversi/src/Client
+# Install script for directory: /home/orian/Videos/raversi/src/Client
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,7 +34,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/eliyahu/CLionProjects/raversi/src/Client/cmake-build-debug/lib/googletest-release-1.8.0/cmake_install.cmake")
+  include("/home/orian/Videos/raversi/src/Client/cmake-build-debug/lib/googletest-release-1.8.0/cmake_install.cmake")
 
 endif()
 
@@ -46,5 +46,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/eliyahu/CLionProjects/raversi/src/Client/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/orian/Videos/raversi/src/Client/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

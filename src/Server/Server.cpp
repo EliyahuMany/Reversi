@@ -31,16 +31,14 @@ void Server::start() {
         throw "Error on binding";
     }
 
-    // Start listening to incoming connections
     listen(serverSocket, MAX_CONNECTED_CLIENTS);
 
-    // Define the client socket's structures
     struct sockaddr_in clientAddress;
     socklen_t clientAddressLen;
 
     while (true) {
         cout << "Waiting for client connections..." << endl;
-
+        //first client
         int clientSocket1 = accept(serverSocket, (struct sockaddr *) &clientAddress, &clientAddressLen);
         cout << "First client connected" << endl;
         if (clientSocket1 == -1)
@@ -48,8 +46,8 @@ void Server::start() {
         int num_of_client = 1;
         int n = write(clientSocket1, &num_of_client, sizeof(num_of_client));
         if (n == -1)
-            throw "Error on write the client number";
-
+            throw "Error on write the first client number";
+        //second client
         int clientSocket2 = accept(serverSocket, (struct sockaddr *) &clientAddress, &clientAddressLen);
         cout << "Second client connected" << endl;
         if (clientSocket2 == -1)
@@ -57,12 +55,12 @@ void Server::start() {
         num_of_client = 2;
         n = write(clientSocket2, &num_of_client, sizeof(num_of_client));
         if (n == -1)
-            throw "Error on write to first client to start";
-
+            throw "Error on write the second client number";
+        //write to first client to start
         num_of_client = 1;
         n = write(clientSocket1, &num_of_client, sizeof(num_of_client));
         if (n == -1)
-            throw "Error on write the client number";
+            throw "Error on write to first client to start";
 
         handleClient(clientSocket1, clientSocket2);
 

@@ -5,6 +5,7 @@
  *      ID: 308335454
  */
 
+#include <fstream>
 #include <cstdlib>
 #include "../include/GameFlow.h"
 #include "../include/Client.h"
@@ -14,7 +15,16 @@
 GameFlow::GameFlow(int size, int choose, Print &printer) : gameL(GameLogic(size)), printer(printer) {
     //online game:
     if (choose == 3) {
-        Client client("127.0.0.1", 8443, this->printer);
+        ifstream cFile;
+        cFile.open("../../../exe/client_config.txt");
+        string ip, port;
+        if (cFile.is_open()) {
+            getline(cFile, ip);
+            getline(cFile, port);
+        } else
+            exit(1);
+        cFile.close();
+        Client client(ip.c_str(), atoi(port.c_str()), this->printer);
         try {
             int playerNum = client.connectToServer();
             if (playerNum == 1) {
