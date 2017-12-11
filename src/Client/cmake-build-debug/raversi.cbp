@@ -399,6 +399,7 @@
 			<Option target="raversi"/>
 		</Unit>
 		<Unit filename="/home/orian/Videos/raversi/src/Client/include/Client.h">
+			<Option target="raversiTest"/>
 			<Option target="raversi"/>
 		</Unit>
 		<Unit filename="/home/orian/Videos/raversi/src/Client/include/ConsolePrint.h">
@@ -418,6 +419,7 @@
 			<Option target="raversi"/>
 		</Unit>
 		<Unit filename="/home/orian/Videos/raversi/src/Client/include/LocalPlayer.h">
+			<Option target="raversiTest"/>
 			<Option target="raversi"/>
 		</Unit>
 		<Unit filename="/home/orian/Videos/raversi/src/Client/include/Players.h">
@@ -429,6 +431,7 @@
 			<Option target="raversi"/>
 		</Unit>
 		<Unit filename="/home/orian/Videos/raversi/src/Client/include/RemotePlayer.h">
+			<Option target="raversiTest"/>
 			<Option target="raversi"/>
 		</Unit>
 		<Unit filename="/home/orian/Videos/raversi/src/Client/lib/googletest-release-1.8.0/googlemock/src/gmock-all.cc">
@@ -462,6 +465,7 @@
 			<Option target="raversi"/>
 		</Unit>
 		<Unit filename="/home/orian/Videos/raversi/src/Client/src/Client.cpp">
+			<Option target="raversiTest"/>
 			<Option target="raversi"/>
 		</Unit>
 		<Unit filename="/home/orian/Videos/raversi/src/Client/src/ConsolePrint.cpp">
@@ -481,6 +485,7 @@
 			<Option target="raversi"/>
 		</Unit>
 		<Unit filename="/home/orian/Videos/raversi/src/Client/src/LocalPlayer.cpp">
+			<Option target="raversiTest"/>
 			<Option target="raversi"/>
 		</Unit>
 		<Unit filename="/home/orian/Videos/raversi/src/Client/src/Players.cpp">
@@ -492,6 +497,7 @@
 			<Option target="raversi"/>
 		</Unit>
 		<Unit filename="/home/orian/Videos/raversi/src/Client/src/RemotePlayer.cpp">
+			<Option target="raversiTest"/>
 			<Option target="raversi"/>
 		</Unit>
 		<Unit filename="/home/orian/Videos/raversi/src/Client/test/AllTests.cpp">

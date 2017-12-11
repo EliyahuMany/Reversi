@@ -357,6 +357,7 @@ src/Client.o: src/Client.cpp.o
 
 # target to build an object file
 src/Client.cpp.o:
+	$(MAKE) -f CMakeFiles/raversiTest.dir/build.make CMakeFiles/raversiTest.dir/src/Client.cpp.o
 	$(MAKE) -f CMakeFiles/raversi.dir/build.make CMakeFiles/raversi.dir/src/Client.cpp.o
 .PHONY : src/Client.cpp.o
 
@@ -366,6 +367,7 @@ src/Client.i: src/Client.cpp.i
 
 # target to preprocess a source file
 src/Client.cpp.i:
+	$(MAKE) -f CMakeFiles/raversiTest.dir/build.make CMakeFiles/raversiTest.dir/src/Client.cpp.i
 	$(MAKE) -f CMakeFiles/raversi.dir/build.make CMakeFiles/raversi.dir/src/Client.cpp.i
 .PHONY : src/Client.cpp.i
 
@@ -375,6 +377,7 @@ src/Client.s: src/Client.cpp.s
 
 # target to generate assembly for a file
 src/Client.cpp.s:
+	$(MAKE) -f CMakeFiles/raversiTest.dir/build.make CMakeFiles/raversiTest.dir/src/Client.cpp.s
 	$(MAKE) -f CMakeFiles/raversi.dir/build.make CMakeFiles/raversi.dir/src/Client.cpp.s
 .PHONY : src/Client.cpp.s
 
@@ -504,6 +507,7 @@ src/LocalPlayer.o: src/LocalPlayer.cpp.o
 
 # target to build an object file
 src/LocalPlayer.cpp.o:
+	$(MAKE) -f CMakeFiles/raversiTest.dir/build.make CMakeFiles/raversiTest.dir/src/LocalPlayer.cpp.o
 	$(MAKE) -f CMakeFiles/raversi.dir/build.make CMakeFiles/raversi.dir/src/LocalPlayer.cpp.o
 .PHONY : src/LocalPlayer.cpp.o
 
@@ -513,6 +517,7 @@ src/LocalPlayer.i: src/LocalPlayer.cpp.i
 
 # target to preprocess a source file
 src/LocalPlayer.cpp.i:
+	$(MAKE) -f CMakeFiles/raversiTest.dir/build.make CMakeFiles/raversiTest.dir/src/LocalPlayer.cpp.i
 	$(MAKE) -f CMakeFiles/raversi.dir/build.make CMakeFiles/raversi.dir/src/LocalPlayer.cpp.i
 .PHONY : src/LocalPlayer.cpp.i
 
@@ -522,6 +527,7 @@ src/LocalPlayer.s: src/LocalPlayer.cpp.s
 
 # target to generate assembly for a file
 src/LocalPlayer.cpp.s:
+	$(MAKE) -f CMakeFiles/raversiTest.dir/build.make CMakeFiles/raversiTest.dir/src/LocalPlayer.cpp.s
 	$(MAKE) -f CMakeFiles/raversi.dir/build.make CMakeFiles/raversi.dir/src/LocalPlayer.cpp.s
 .PHONY : src/LocalPlayer.cpp.s
 
@@ -591,6 +597,7 @@ src/RemotePlayer.o: src/RemotePlayer.cpp.o
 
 # target to build an object file
 src/RemotePlayer.cpp.o:
+	$(MAKE) -f CMakeFiles/raversiTest.dir/build.make CMakeFiles/raversiTest.dir/src/RemotePlayer.cpp.o
 	$(MAKE) -f CMakeFiles/raversi.dir/build.make CMakeFiles/raversi.dir/src/RemotePlayer.cpp.o
 .PHONY : src/RemotePlayer.cpp.o
 
@@ -600,6 +607,7 @@ src/RemotePlayer.i: src/RemotePlayer.cpp.i
 
 # target to preprocess a source file
 src/RemotePlayer.cpp.i:
+	$(MAKE) -f CMakeFiles/raversiTest.dir/build.make CMakeFiles/raversiTest.dir/src/RemotePlayer.cpp.i
 	$(MAKE) -f CMakeFiles/raversi.dir/build.make CMakeFiles/raversi.dir/src/RemotePlayer.cpp.i
 .PHONY : src/RemotePlayer.cpp.i
 
@@ -609,6 +617,7 @@ src/RemotePlayer.s: src/RemotePlayer.cpp.s
 
 # target to generate assembly for a file
 src/RemotePlayer.cpp.s:
+	$(MAKE) -f CMakeFiles/raversiTest.dir/build.make CMakeFiles/raversiTest.dir/src/RemotePlayer.cpp.s
 	$(MAKE) -f CMakeFiles/raversi.dir/build.make CMakeFiles/raversi.dir/src/RemotePlayer.cpp.s
 .PHONY : src/RemotePlayer.cpp.s
 

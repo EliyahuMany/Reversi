@@ -10,9 +10,8 @@
  * generate a vector of a player acording to some board.
  */
 TEST_F(Players_Test, MovesVector) {
-    Board b(8);
     vector<Cell> moves;
-    this->pX->generateMoves(b, moves);
+    this->g->generateMoves(this->pX, moves, this->g->getGameBoard());
     EXPECT_TRUE(!moves.empty()) << ("couldn't generate moves");
 }
 

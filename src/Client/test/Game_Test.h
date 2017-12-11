@@ -14,6 +14,7 @@
 #include "../include/Human.h"
 #include "../include/GameFlow.h"
 #include "../include/AIPlayer.h"
+#include "../include/ConsolePrint.h"
 #include <vector>
 
 class Game_Test : public testing::Test {
@@ -21,8 +22,10 @@ class Game_Test : public testing::Test {
      * test constructor.
      */
     virtual void SetUp() {
-        g = new Game(2, 2);
+        this->p = new ConsolePrint();
+        g = new GameFlow(2, 2, *p);
     }
+
     /**
      * test destructor.
      */
@@ -31,7 +34,8 @@ class Game_Test : public testing::Test {
     }
 
 protected:
-    Game *g;
+    GameFlow *g;
+    Print *p;
 };
 
 

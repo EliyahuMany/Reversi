@@ -12,6 +12,9 @@ file(REMOVE_RECURSE
   "CMakeFiles/raversiTest.dir/test/Board_test.cpp.o"
   "CMakeFiles/raversiTest.dir/test/Players_Test.cpp.o"
   "CMakeFiles/raversiTest.dir/test/Game_Test.cpp.o"
+  "CMakeFiles/raversiTest.dir/src/Client.cpp.o"
+  "CMakeFiles/raversiTest.dir/src/LocalPlayer.cpp.o"
+  "CMakeFiles/raversiTest.dir/src/RemotePlayer.cpp.o"
   "raversiTest.pdb"
   "raversiTest"
 )

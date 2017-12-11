@@ -369,6 +369,78 @@ CMakeFiles/raversiTest.dir/test/Game_Test.cpp.o.provides: CMakeFiles/raversiTest
 CMakeFiles/raversiTest.dir/test/Game_Test.cpp.o.provides.build: CMakeFiles/raversiTest.dir/test/Game_Test.cpp.o
 
 
+CMakeFiles/raversiTest.dir/src/Client.cpp.o: CMakeFiles/raversiTest.dir/flags.make
+CMakeFiles/raversiTest.dir/src/Client.cpp.o: ../src/Client.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/orian/Videos/raversi/src/Client/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/raversiTest.dir/src/Client.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/raversiTest.dir/src/Client.cpp.o -c /home/orian/Videos/raversi/src/Client/src/Client.cpp
+
+CMakeFiles/raversiTest.dir/src/Client.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/raversiTest.dir/src/Client.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/orian/Videos/raversi/src/Client/src/Client.cpp > CMakeFiles/raversiTest.dir/src/Client.cpp.i
+
+CMakeFiles/raversiTest.dir/src/Client.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/raversiTest.dir/src/Client.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/orian/Videos/raversi/src/Client/src/Client.cpp -o CMakeFiles/raversiTest.dir/src/Client.cpp.s
+
+CMakeFiles/raversiTest.dir/src/Client.cpp.o.requires:
+
+.PHONY : CMakeFiles/raversiTest.dir/src/Client.cpp.o.requires
+
+CMakeFiles/raversiTest.dir/src/Client.cpp.o.provides: CMakeFiles/raversiTest.dir/src/Client.cpp.o.requires
+	$(MAKE) -f CMakeFiles/raversiTest.dir/build.make CMakeFiles/raversiTest.dir/src/Client.cpp.o.provides.build
+.PHONY : CMakeFiles/raversiTest.dir/src/Client.cpp.o.provides
+
+CMakeFiles/raversiTest.dir/src/Client.cpp.o.provides.build: CMakeFiles/raversiTest.dir/src/Client.cpp.o
+
+
+CMakeFiles/raversiTest.dir/src/LocalPlayer.cpp.o: CMakeFiles/raversiTest.dir/flags.make
+CMakeFiles/raversiTest.dir/src/LocalPlayer.cpp.o: ../src/LocalPlayer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/orian/Videos/raversi/src/Client/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/raversiTest.dir/src/LocalPlayer.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/raversiTest.dir/src/LocalPlayer.cpp.o -c /home/orian/Videos/raversi/src/Client/src/LocalPlayer.cpp
+
+CMakeFiles/raversiTest.dir/src/LocalPlayer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/raversiTest.dir/src/LocalPlayer.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/orian/Videos/raversi/src/Client/src/LocalPlayer.cpp > CMakeFiles/raversiTest.dir/src/LocalPlayer.cpp.i
+
+CMakeFiles/raversiTest.dir/src/LocalPlayer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/raversiTest.dir/src/LocalPlayer.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/orian/Videos/raversi/src/Client/src/LocalPlayer.cpp -o CMakeFiles/raversiTest.dir/src/LocalPlayer.cpp.s
+
+CMakeFiles/raversiTest.dir/src/LocalPlayer.cpp.o.requires:
+
+.PHONY : CMakeFiles/raversiTest.dir/src/LocalPlayer.cpp.o.requires
+
+CMakeFiles/raversiTest.dir/src/LocalPlayer.cpp.o.provides: CMakeFiles/raversiTest.dir/src/LocalPlayer.cpp.o.requires
+	$(MAKE) -f CMakeFiles/raversiTest.dir/build.make CMakeFiles/raversiTest.dir/src/LocalPlayer.cpp.o.provides.build
+.PHONY : CMakeFiles/raversiTest.dir/src/LocalPlayer.cpp.o.provides
+
+CMakeFiles/raversiTest.dir/src/LocalPlayer.cpp.o.provides.build: CMakeFiles/raversiTest.dir/src/LocalPlayer.cpp.o
+
+
+CMakeFiles/raversiTest.dir/src/RemotePlayer.cpp.o: CMakeFiles/raversiTest.dir/flags.make
+CMakeFiles/raversiTest.dir/src/RemotePlayer.cpp.o: ../src/RemotePlayer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/orian/Videos/raversi/src/Client/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/raversiTest.dir/src/RemotePlayer.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/raversiTest.dir/src/RemotePlayer.cpp.o -c /home/orian/Videos/raversi/src/Client/src/RemotePlayer.cpp
+
+CMakeFiles/raversiTest.dir/src/RemotePlayer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/raversiTest.dir/src/RemotePlayer.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/orian/Videos/raversi/src/Client/src/RemotePlayer.cpp > CMakeFiles/raversiTest.dir/src/RemotePlayer.cpp.i
+
+CMakeFiles/raversiTest.dir/src/RemotePlayer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/raversiTest.dir/src/RemotePlayer.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/orian/Videos/raversi/src/Client/src/RemotePlayer.cpp -o CMakeFiles/raversiTest.dir/src/RemotePlayer.cpp.s
+
+CMakeFiles/raversiTest.dir/src/RemotePlayer.cpp.o.requires:
+
+.PHONY : CMakeFiles/raversiTest.dir/src/RemotePlayer.cpp.o.requires
+
+CMakeFiles/raversiTest.dir/src/RemotePlayer.cpp.o.provides: CMakeFiles/raversiTest.dir/src/RemotePlayer.cpp.o.requires
+	$(MAKE) -f CMakeFiles/raversiTest.dir/build.make CMakeFiles/raversiTest.dir/src/RemotePlayer.cpp.o.provides.build
+.PHONY : CMakeFiles/raversiTest.dir/src/RemotePlayer.cpp.o.provides
+
+CMakeFiles/raversiTest.dir/src/RemotePlayer.cpp.o.provides.build: CMakeFiles/raversiTest.dir/src/RemotePlayer.cpp.o
+
+
 # Object files for target raversiTest
 raversiTest_OBJECTS = \
 "CMakeFiles/raversiTest.dir/test/AllTests.cpp.o" \
@@ -383,7 +455,10 @@ raversiTest_OBJECTS = \
 "CMakeFiles/raversiTest.dir/src/Players.cpp.o" \
 "CMakeFiles/raversiTest.dir/test/Board_test.cpp.o" \
 "CMakeFiles/raversiTest.dir/test/Players_Test.cpp.o" \
-"CMakeFiles/raversiTest.dir/test/Game_Test.cpp.o"
+"CMakeFiles/raversiTest.dir/test/Game_Test.cpp.o" \
+"CMakeFiles/raversiTest.dir/src/Client.cpp.o" \
+"CMakeFiles/raversiTest.dir/src/LocalPlayer.cpp.o" \
+"CMakeFiles/raversiTest.dir/src/RemotePlayer.cpp.o"
 
 # External object files for target raversiTest
 raversiTest_EXTERNAL_OBJECTS =
@@ -401,12 +476,15 @@ raversiTest: CMakeFiles/raversiTest.dir/src/Players.cpp.o
 raversiTest: CMakeFiles/raversiTest.dir/test/Board_test.cpp.o
 raversiTest: CMakeFiles/raversiTest.dir/test/Players_Test.cpp.o
 raversiTest: CMakeFiles/raversiTest.dir/test/Game_Test.cpp.o
+raversiTest: CMakeFiles/raversiTest.dir/src/Client.cpp.o
+raversiTest: CMakeFiles/raversiTest.dir/src/LocalPlayer.cpp.o
+raversiTest: CMakeFiles/raversiTest.dir/src/RemotePlayer.cpp.o
 raversiTest: CMakeFiles/raversiTest.dir/build.make
 raversiTest: lib/googletest-release-1.8.0/googlemock/gtest/libgtest.a
 raversiTest: lib/googletest-release-1.8.0/googlemock/gtest/libgtest_main.a
 raversiTest: lib/googletest-release-1.8.0/googlemock/gtest/libgtest.a
 raversiTest: CMakeFiles/raversiTest.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/orian/Videos/raversi/src/Client/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Linking CXX executable raversiTest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/orian/Videos/raversi/src/Client/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Linking CXX executable raversiTest"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/raversiTest.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -427,6 +505,9 @@ CMakeFiles/raversiTest.dir/requires: CMakeFiles/raversiTest.dir/src/Players.cpp.
 CMakeFiles/raversiTest.dir/requires: CMakeFiles/raversiTest.dir/test/Board_test.cpp.o.requires
 CMakeFiles/raversiTest.dir/requires: CMakeFiles/raversiTest.dir/test/Players_Test.cpp.o.requires
 CMakeFiles/raversiTest.dir/requires: CMakeFiles/raversiTest.dir/test/Game_Test.cpp.o.requires
+CMakeFiles/raversiTest.dir/requires: CMakeFiles/raversiTest.dir/src/Client.cpp.o.requires
+CMakeFiles/raversiTest.dir/requires: CMakeFiles/raversiTest.dir/src/LocalPlayer.cpp.o.requires
+CMakeFiles/raversiTest.dir/requires: CMakeFiles/raversiTest.dir/src/RemotePlayer.cpp.o.requires
 
 .PHONY : CMakeFiles/raversiTest.dir/requires
 
