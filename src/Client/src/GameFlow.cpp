@@ -16,7 +16,7 @@ GameFlow::GameFlow(int size, int choose, Print &printer) : gameL(GameLogic(size)
     //online game:
     if (choose == 3) {
         ifstream cFile;
-        cFile.open("../../../exe/client_config.txt");
+        cFile.open("client_config.txt");
         string ip, port;
         if (cFile.is_open()) {
             getline(cFile, ip);

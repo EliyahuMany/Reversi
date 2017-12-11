@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/orian/Videos/raversi/src/Server/Server.cpp
+Server.h
+/home/orian/Videos/raversi/src/Server/Server.h
+Server.h
+/home/orian/Videos/raversi/src/Server/Server.h
+sys/socket.h
+-
+netinet/in.h
+-
+stdio.h
+-
+string.h
+-
+iostream
+-
+unistd.h
+-
+
+/home/orian/Videos/raversi/src/Server/Server.h
+
+/home/orian/Videos/raversi/src/Server/main.cpp
+Server.h
+/home/orian/Videos/raversi/src/Server/Server.h
+iostream
+-
+stdlib.h
+-
+fstream
+-
+

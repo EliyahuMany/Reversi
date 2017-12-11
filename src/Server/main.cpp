@@ -14,7 +14,7 @@ using namespace std;
 
 int main() {
     ifstream sFile;
-    sFile.open("../../../exe/server_config.txt");
+    sFile.open("server_config.txt");
     string port;
     if (sFile.is_open())
         getline(sFile, port);

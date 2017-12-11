@@ -33,17 +33,7 @@ int main() {
         cin.clear();
         cin.ignore(100, '\n');
     }
-    while (true) {
-        printer.string((char *) "Please choose board size (even, bigger than 2):");
-        cin >> size;
-        if (size >= 4 && size % 2 == 0) {
-            break;
-        } else {
-            printer.string((char *) "Wrong input!");
-        }
-        cin.clear();
-        cin.ignore(100, '\n');
-    }
+    size = 8;
     GameFlow game = GameFlow(size, choose, printer);
     game.run();
     return 0;
