@@ -18,7 +18,7 @@ public:
     /*
      * Constractur - create the Ai player.
      */
-    AIPlayer(char symbol, GameLogic gl);
+    AIPlayer(char symbol, GameLogic gl, Print &printer);
 
     /*
      * play function connect between the player and the functions

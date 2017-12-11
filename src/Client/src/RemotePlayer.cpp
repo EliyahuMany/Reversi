@@ -4,22 +4,20 @@
 
 #include "../include/RemotePlayer.h"
 
-RemotePlayer::RemotePlayer(char symbol, Client &client) : Players(symbol), client(client),
-                                                          cell(Cell()) {
+RemotePlayer::RemotePlayer(char symbol, Client &client, Print &printer) : Players(symbol, printer), client(client),
+                                                                          cell(Cell()) {
 }
 
 Cell &RemotePlayer::play(Board &b, int &myScore, int &otherScore) {
-    cout << endl;
-    cout << "Waiting for other player move.." << endl;
+    this->printer.string((char *)"Waiting for other player move..");
     char *c = new char[20];
     client.receiveMove(c);
     if (strcmp(c, "NoMove") == 0) {
-        cout << "No possible move" << endl;
-        cout << endl;
+        this->printer.string((char *)"No possible move");
         this->cell.emptyTrue();
     } else {
         this->cell.setCell(((int) c[0]) - 48, ((int) c[2]) - 48);
-        cout << this->symbol << " play " << "(" << c << ")" << endl;
+        this->printer.played(this->symbol, c);
         this->cell.emptyFalse();
     }
     delete[] c;

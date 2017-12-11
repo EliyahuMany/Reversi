@@ -7,8 +7,8 @@
 
 #include "../include/Human.h"
 
-Human::Human(char symbol) :
-        Players(symbol), cell(Cell()) {
+Human::Human(char symbol, Print &printer) :
+        Players(symbol, printer), cell(Cell()) {
     this->symbol = symbol;
     if (this->symbol == 'X') {
         this->otherSymbol = 'O';
@@ -23,15 +23,9 @@ Cell &Human::play(Board &b, int &myScore, int &otherScore) {
     if (this->getMoves().empty()) {
         return this->cell;
     }
-    cout << this->symbol << ": It's your move." << endl;
-    cout << "Your possible moves:";
-    for (unsigned int i = 0; i < this->moves.size(); ++i) {
-        Cell c = this->moves[i];
-        cout << "(" << c.getX() << "," << c.getY() << ")";
-    }
-    cout << endl;
+    this->printer.playerTurn(this->symbol, this->moves);
     while (true) {
-        cout << "Please enter your move row,col: " << endl;
+        this->printer.string((char *) "Please enter your move row,col: ");
         cin >> choose;
         for (int i = 0; i < this->moves.size(); ++i) {
             if ((int) choose[0] - 48 == this->moves[i].getX()
@@ -42,6 +36,6 @@ Cell &Human::play(Board &b, int &myScore, int &otherScore) {
                 return this->moves[i];
             }
         }
-        cout << "Wrong entry!" << endl;
+        this->printer.string((char *) "Wrong entry!");
     }
 }

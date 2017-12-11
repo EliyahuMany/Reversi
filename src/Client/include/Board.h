@@ -25,10 +25,6 @@ public:
 	 */
 	~Board();
 	/**
-	 * Print the game board.
-	 */
-	void print();
-	/**
 	 * return the board array.
 	 */
 	char** getBoard();

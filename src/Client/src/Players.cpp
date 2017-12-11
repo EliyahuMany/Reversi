@@ -7,8 +7,8 @@
 
 #include "../include/Players.h"
 
-Players::Players(char symbol) :
-        symbol(symbol) {
+Players::Players(char symbol, Print &printer) :
+        symbol(symbol), printer(printer) {
 }
 
 char Players::getSymbol() const {

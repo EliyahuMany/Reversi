@@ -6,9 +6,11 @@
 #define RAVERSI_CLIENT_H
 
 
+#include "Print.h"
+
 class Client {
 public:
-    Client(const char *serverIP, int serverPort);
+    Client(const char *serverIP, int serverPort,Print &printer);
 
     int connectToServer();
 
@@ -20,6 +22,7 @@ private:
     const char *serverIP;
     int serverPort;
     int clientSocket;
+    Print &printer;
 };
 
 

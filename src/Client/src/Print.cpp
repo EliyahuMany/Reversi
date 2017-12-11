@@ -4,4 +4,5 @@
 
 #include "../include/Print.h"
 
-Print::Print(Board &gameBoard) : gameBoard(gameBoard) {}
+Print::Print() {}
+

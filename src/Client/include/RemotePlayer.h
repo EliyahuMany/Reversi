@@ -10,7 +10,7 @@
 
 class RemotePlayer : public Players {
 public:
-    RemotePlayer(char symbol, Client &client);
+    RemotePlayer(char symbol, Client &client, Print &printer);
 
     Cell &play(Board &b, int &myScore, int &otherScore);
 

@@ -7,25 +7,25 @@
 
 #include "Cell.h"
 #include "Board.h"
+#include <string>
+
+using namespace std;
 
 class Print {
 public:
-    Print(Board &gameBoard);
+    Print();
 
-    virtual void board() = 0;
+    virtual void board(Board &board) = 0;
+
+    virtual void string(char *string) = 0;
 
     virtual void winner(char sign) = 0;
 
-    virtual void draw() = 0;
-
     virtual void playerTurn(char sign, vector<Cell> moves) = 0;
 
-    virtual void enterMoves() = 0;
+    virtual void connectionFailed(const char *m) = 0;
 
-    virtual void aiTurn() = 0;
-
-protected:
-    Board gameBoard;
+    virtual void played(char sign, char *cell) = 0;
 };
 
 

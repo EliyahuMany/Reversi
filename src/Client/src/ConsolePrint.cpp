@@ -4,14 +4,22 @@
 
 #include "../include/ConsolePrint.h"
 
-ConsolePrint::ConsolePrint(Board board) : Print(board) {}
+ConsolePrint::ConsolePrint() : Print() {}
+
+void ConsolePrint::string(char *string) {
+    cout << string << endl;
+}
 
 void ConsolePrint::winner(char sign) {
     cout << sign << " is the winner!" << endl;
 }
 
-void ConsolePrint::draw() {
-    cout << "Draw!" << endl;
+void ConsolePrint::connectionFailed(const char *m) {
+    cout << "Connection failed: " << m << endl;
+}
+
+void ConsolePrint::played(char sign, char *cell) {
+    cout << sign << " play " << "(" << cell << ")" << endl;
 }
 
 void ConsolePrint::playerTurn(char sign, vector<Cell> moves) {
@@ -24,19 +32,11 @@ void ConsolePrint::playerTurn(char sign, vector<Cell> moves) {
     cout << endl;
 }
 
-void ConsolePrint::enterMoves() {
-    cout << "Please enter your move row,col: " << endl;
-}
-
-void ConsolePrint::aiTurn() {
-    cout << "\nAI is playing..." << endl;
-}
-
-void ConsolePrint::board() {
-    for (int i = 0; i <= this->gameBoard.getSize(); i++) {
-        for (int j = 0; j <= this->gameBoard.getSize(); ++j) {
+void ConsolePrint::board(Board &board) {
+    for (int i = 0; i <= board.getSize(); i++) {
+        for (int j = 0; j <= board.getSize(); ++j) {
             if (i == 0 && j == 0) {
-                if (this->gameBoard.getSize() >= 10) {
+                if (board.getSize() >= 10) {
                     cout << "  ";
                 } else {
                     cout << ' ';
@@ -48,7 +48,7 @@ void ConsolePrint::board() {
                     cout << ' ';
                 }
             } else if (j == 0) {
-                if (this->gameBoard.getSize() >= 10) {
+                if (board.getSize() >= 10) {
                     if (i < 10) {
                         cout << i << ' ';
                     } else {
@@ -57,9 +57,9 @@ void ConsolePrint::board() {
                 } else {
                     cout << i;
                 }
-            } else if (this->gameBoard.getBoard()[i][j] != ' ') {
+            } else if (board.getBoard()[i][j] != ' ') {
                 cout << ' ';
-                cout << this->gameBoard.getBoard()[i][j];
+                cout << board.getBoard()[i][j];
                 cout << ' ';
             } else {
                 cout << "   ";
@@ -67,12 +67,12 @@ void ConsolePrint::board() {
             cout << "|";
         }
         cout << endl;
-        if (this->gameBoard.getSize() >= 10) {
+        if (board.getSize() >= 10) {
             cout << "---";
         } else {
             cout << "--";
         }
-        for (int k = 0; k < this->gameBoard.getSize(); ++k) {
+        for (int k = 0; k < board.getSize(); ++k) {
             cout << "----";
         }
         cout << endl;

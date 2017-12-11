@@ -783,7 +783,7 @@ using ::testing::Lt;
 using ::testing::Matcher;
 using ::testing::TypedEq;
 
-class MockPrinter : public Printer {
+class MockPrinter : public Print {
  public:
   MOCK_METHOD1(Print, void(int n));
   MOCK_METHOD1(Print, void(char c));

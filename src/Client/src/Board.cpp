@@ -30,54 +30,6 @@ void Board::makeCopy(Board &bCopy) {
 	}
 }
 
-void Board::print() {
-	for (int i = 0; i <= this->size; i++) {
-		for (int j = 0; j <= this->size; ++j) {
-			if (i == 0 && j == 0) {
-				if (this->getSize() >= 10) {
-					cout << "  ";
-				} else {
-					cout << ' ';
-				}
-			} else if (i == 0) {
-				cout << ' ';
-				cout << j;
-				if (j < 10) {
-					cout << ' ';
-				}
-			} else if (j == 0) {
-				if (this->getSize() >= 10) {
-					if (i < 10) {
-						cout << i << ' ';
-					} else {
-						cout << i;
-					}
-				} else {
-					cout << i;
-				}
-			} else if (board[i][j] != ' ') {
-				cout << ' ';
-				cout << board[i][j];
-				cout << ' ';
-			} else {
-				cout << "   ";
-			}
-			cout << "|";
-		}
-		cout << endl;
-		if (this->getSize() >= 10) {
-			cout << "---";
-		} else {
-			cout << "--";
-		}
-		for (int k = 0; k < this->getSize(); ++k) {
-			cout << "----";
-		}
-		cout << endl;
-	}
-
-}
-
 char** Board::getBoard() {
 	return this->board;
 }

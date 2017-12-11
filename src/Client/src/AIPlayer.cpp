@@ -7,8 +7,8 @@
 
 #include "../include/AIPlayer.h"
 
-AIPlayer::AIPlayer(char symbol, GameLogic gl) :
-        Players(symbol), gl(gl), cell(Cell()) {
+AIPlayer::AIPlayer(char symbol, GameLogic gl, Print &printer) :
+        Players(symbol, printer), gl(gl), cell(Cell()) {
     this->symbol = symbol;
     if (this->symbol == 'X') {
         this->otherSymbol = 'O';
@@ -26,7 +26,7 @@ Cell &AIPlayer::play(Board &b, int &myScore, int &otherScore) {
     if (this->getMoves().empty()) {
         return this->cell;
     }
-    cout << "\nAI is playing..." << endl;
+    this->printer.string((char *) "AI is playing...");
     while (!this->moves.empty()) {
         curCell = &this->moves.back();
         b.makeCopy(bCopy);

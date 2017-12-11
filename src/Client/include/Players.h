@@ -9,6 +9,7 @@
 #define PLAYERS_H_
 
 #include "Cell.h"
+#include "Print.h"
 #include "Board.h"
 #include <vector>
 
@@ -17,7 +18,7 @@ public:
     /*
      * Constractur - the Players constractur.
      */
-    Players(char symbol);
+    Players(char symbol, Print &printer);
 
     /*
      * play - virtual function, the function ask the player to play
@@ -35,6 +36,7 @@ public:
 protected:
     vector<Cell> moves;
     char symbol, otherSymbol;
+    Print &printer;
 };
 
 #endif /* PLAYERS_H_ */

@@ -11,30 +11,30 @@
 #include "../include/RemotePlayer.h"
 #include "../include/LocalPlayer.h"
 
-GameFlow::GameFlow(int size, int choose) : gameL(GameLogic(size)) {
+GameFlow::GameFlow(int size, int choose, Print &printer) : gameL(GameLogic(size)), printer(printer) {
     //online game:
     if (choose == 3) {
-        Client client("127.0.0.1", 8443);
+        Client client("127.0.0.1", 8443, this->printer);
         try {
             int playerNum = client.connectToServer();
             if (playerNum == 1) {
-                this->pX = new LocalPlayer('X', client);
-                this->pO = new RemotePlayer('O', client);
+                this->pX = new LocalPlayer('X', client, printer);
+                this->pO = new RemotePlayer('O', client, printer);
             } else if (playerNum == 2) {
-                this->pX = new RemotePlayer('X', client);
-                this->pO = new LocalPlayer('O', client);
+                this->pX = new RemotePlayer('X', client, printer);
+                this->pO = new LocalPlayer('O', client, printer);
             }
         } catch (const char *m) {
-            cout << "Connection failed: " << m << endl;
+            this->printer.connectionFailed(m);
             exit(1);
         }
     }//offline game:
     else {
-        this->pX = new Human('X');
+        this->pX = new Human('X', printer);
         if (choose == 1)
-            this->pO = new Human('O');
+            this->pO = new Human('O', printer);
         else
-            this->pO = new AIPlayer('O', gameL);
+            this->pO = new AIPlayer('O', gameL, printer);
     }
     this->xScore = 2;
     this->oScore = 2;
@@ -42,31 +42,28 @@ GameFlow::GameFlow(int size, int choose) : gameL(GameLogic(size)) {
 
 void GameFlow::run() {
     int flagX = 1, flagO = 1; //mark if X/O can play.
-    this->gameL.getGameBoard().print();
+    this->printer.board(this->gameL.getGameBoard());
     while (flagX != 0 || flagO != 0) {
         this->gameL.generateMoves(this->pX, this->pX->getMoves(), this->gameL.getGameBoard());
         flagX = this->gameL.makeMove(pX->play(this->gameL.getGameBoard(), this->xScore, this->oScore), this->xScore,
                                      this->oScore, this->pX,
                                      this->gameL.getGameBoard());
         if (flagX == 1)
-            this->gameL.getGameBoard().print();
+            this->printer.board(this->gameL.getGameBoard());
         this->gameL.generateMoves(this->pO, this->pO->getMoves(), this->gameL.getGameBoard());
         flagO = this->gameL.makeMove(pO->play(this->gameL.getGameBoard(), this->oScore, this->xScore), this->oScore,
                                      this->xScore, this->pO,
                                      this->gameL.getGameBoard());
         if (flagO == 1)
-            this->gameL.getGameBoard().print();
+            this->printer.board(this->gameL.getGameBoard());
     }
 
     if (xScore > oScore) {
-        cout << "X is the winner!" <<
-             endl;
+        this->printer.string((char *) "X is the winner!");
     } else if (xScore < oScore) {
-        cout << "O is the winner!" <<
-             endl;
+        this->printer.string((char *) "O is the winner!");
     } else {
-        cout << "Draw" <<
-             endl;
+        this->printer.string((char *) "Draw!");
     }
     this->gameL.deleteBoard();
 

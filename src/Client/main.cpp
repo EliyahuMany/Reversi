@@ -4,9 +4,9 @@
  */
 
 #include <iostream>
-#include "include/Board.h"
+#include "include/Print.h"
 #include "include/GameFlow.h"
-#include "include/Client.h"
+#include "include/ConsolePrint.h"
 
 using namespace std;
 
@@ -17,6 +17,7 @@ using namespace std;
 
 int main() {
     int size, choose;
+    ConsolePrint printer;
 
     while (true) {
         cout << "Choose an option from the menu:" << endl;
@@ -41,7 +42,7 @@ int main() {
         cin.clear();
         cin.ignore(100, '\n');
     }
-    GameFlow game = GameFlow(size, choose);
+    GameFlow game = GameFlow(size, choose, printer);
     game.run();
     return 0;
 }

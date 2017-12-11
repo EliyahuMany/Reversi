@@ -4,7 +4,8 @@
 
 #include "../include/LocalPlayer.h"
 
-LocalPlayer::LocalPlayer(char symbol, Client &client) : Players(symbol), client(client), cell(Cell()) {
+LocalPlayer::LocalPlayer(char symbol, Client &client, Print &printer) : Players(symbol, printer), client(client),
+                                                                        cell(Cell()) {
 }
 
 Cell &LocalPlayer::play(Board &b, int &myScore, int &otherScore) {
@@ -17,15 +18,9 @@ Cell &LocalPlayer::play(Board &b, int &myScore, int &otherScore) {
         return this->cell;
     } else {
         string choose;
-        cout << this->symbol << ": It's your move." << endl;
-        cout << "Your possible moves:";
-        for (unsigned int i = 0; i < this->moves.size(); ++i) {
-            Cell cell = this->moves[i];
-            cout << "(" << cell.getX() << "," << cell.getY() << ")";
-        }
-        cout << endl;
+        this->printer.playerTurn(this->symbol, this->moves);
         while (true) {
-            cout << "Please enter your move row,col: " << endl;
+            this->printer.string((char *) "Please enter your move row,col: ");
             cin >> choose;
             for (int i = 0; i < this->moves.size(); ++i) {
                 if ((int) choose[0] - 48 == this->moves[i].getX()
@@ -40,7 +35,7 @@ Cell &LocalPlayer::play(Board &b, int &myScore, int &otherScore) {
                     return this->moves[i];
                 }
             }
-            cout << "Wrong entry!" << endl;
+            this->printer.string((char *) "Wrong entry!");
         }
     }
 }

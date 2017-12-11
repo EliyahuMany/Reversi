@@ -7,22 +7,23 @@
 
 #include "Print.h"
 
+using namespace std;
+
 class ConsolePrint : public Print {
 public:
-    ConsolePrint(Board board);
+    ConsolePrint();
 
-    void board();
+    void board(Board &board);
+
+    void string(char *string);
 
     void winner(char sign);
 
-    void draw();
-
     void playerTurn(char sign, vector<Cell> moves);
 
-    void enterMoves();
+    void connectionFailed(const char *m);
 
-    void aiTurn();
-
+    void played(char sign, char *cell);
 };
 
 

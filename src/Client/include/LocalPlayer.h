@@ -11,7 +11,7 @@
 
 class LocalPlayer : public Players {
 public:
-    LocalPlayer(char symbol, Client &client);
+    LocalPlayer(char symbol, Client &client, Print &printer);
 
     virtual Cell &play(Board &b, int &myScore, int &otherScore);
 

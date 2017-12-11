@@ -14,7 +14,8 @@
 
 using namespace std;
 
-Client::Client(const char *serverIP, int serverPort) : serverIP(serverIP), serverPort(serverPort), clientSocket(0) {
+Client::Client(const char *serverIP, int serverPort, Print &printer) : serverIP(serverIP), serverPort(serverPort),
+                                                                       clientSocket(0), printer(printer) {
     cout << "Client" << endl;
 }
 
@@ -46,15 +47,15 @@ int Client::connectToServer() {
     if (connect(clientSocket, (struct sockaddr *) &serverAddress, sizeof(serverAddress)) == -1) {
         throw "Error connecting to server";
     }
-    cout << "Connected to server" << endl;
+    this->printer.string((char *) "Connected to server");
 
     int n = read(clientSocket, &numOfPlayer, sizeof(numOfPlayer));
     if (n == -1) {
-        cout << "Reading failed" << endl;
+        this->printer.string((char *) "Reading failed");
         return 0;
     }
     if (numOfPlayer == 1) {
-        cout << "Waiting to other player to connect" << endl;
+        this->printer.string((char *) "Waiting to other player to connect");
         n = read(clientSocket, &numOfPlayer, sizeof(numOfPlayer));
     }
 
