@@ -1,7 +1,7 @@
 /**
  *      Author: Eliyahu Many
  *      ID: 308249150
- *      Author: orian Edri
+ *      Author: Orian Edri
  *      ID: 308335454
  */
 
@@ -34,8 +34,14 @@ public:
     */
     virtual ~GameFlow();
 
+    /**
+    * @return the score of player X.
+    */
     int getXScore() const;
 
+    /**
+     * @return the score of player O.
+     */
     int getOScore() const;
 
 private:

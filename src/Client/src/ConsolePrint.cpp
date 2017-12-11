@@ -1,6 +1,9 @@
-//
-// Created by eliyahu on 12/10/17.
-//
+/**
+ *      Author: Eliyahu Many
+ *      ID: 308249150
+ *      Author: Orian Edri
+ *      ID: 308335454
+ */
 
 #include "../include/ConsolePrint.h"
 

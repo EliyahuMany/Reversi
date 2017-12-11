@@ -1,7 +1,7 @@
 /**
  *      Author: Eliyahu Many
  *      ID: 308249150
- *      Author: orian Edri
+ *      Author: Orian Edri
  *      ID: 308335454
  */
 
@@ -31,6 +31,9 @@ public:
     */
     char getSymbol() const;
 
+    /**
+     * @return vector of the moves.
+     */
     vector<Cell> &getMoves();
 
 protected:

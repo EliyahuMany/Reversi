@@ -1,6 +1,9 @@
-//
-// Created by orian on 12/8/17.
-//
+/**
+ *      Author: Eliyahu Many
+ *      ID: 308249150
+ *      Author: Orian Edri
+ *      ID: 308335454
+ */
 
 #include "../include/Client.h"
 

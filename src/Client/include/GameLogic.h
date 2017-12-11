@@ -1,6 +1,9 @@
-//
-// Created by eliyahu on 12/7/17.
-//
+/**
+ *      Author: Eliyahu Many
+ *      ID: 308249150
+ *      Author: Orian Edri
+ *      ID: 308335454
+ */
 
 #ifndef RAVERSI_GAMELOGIC_H
 #define RAVERSI_GAMELOGIC_H
@@ -10,8 +13,16 @@
 
 class GameLogic {
 public:
+
+    /**
+     * Constractur
+     * @param size the size of the board.
+     */
     GameLogic(int size);
 
+    /**
+     * delete the board.
+     */
     void deleteBoard();
 
     /*
@@ -30,6 +41,9 @@ public:
      */
     void changeCells(vector<Cell> cellsToChange, int &myScore, int &otherScore, Players *player, Board &b);
 
+    /**
+     * @return the game board.
+     */
     Board &getGameBoard();
 
 private:

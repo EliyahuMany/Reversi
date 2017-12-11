@@ -1,8 +1,8 @@
-/*
- * Eliyahu Many
- * id: 308249150
- * Orian Edri
- * id: 308335454
+/**
+ *      Author: Eliyahu Many
+ *      ID: 308249150
+ *      Author: Orian Edri
+ *      ID: 308335454
  */
 
 #include <iostream>
@@ -22,24 +22,24 @@ int main() {
     ConsolePrint printer;
 
     while (true) {
-        cout << "Choose an option from the menu:" << endl;
-        cout << "1. Human vs Human" << endl;
-        cout << "2. Human vs AI" << endl;
-        cout << "3. Human vs Wireless Player" << endl;
+        printer.string((char *) "Choose an option from the menu:");
+        printer.string((char *) "1. Human vs Human");
+        printer.string((char *) "2. Human vs AI");
+        printer.string((char *) "3. Human vs Wireless Player");
         cin >> choose;
         if (choose == 1 || choose == 2 || choose == 3)
             break;
-        cout << "Wrong input!" << endl;
+        printer.string((char *) "Wrong input!");
         cin.clear();
         cin.ignore(100, '\n');
     }
     while (true) {
-        cout << "Please choose board size (even, bigger than 2):" << endl;
+        printer.string((char *) "Please choose board size (even, bigger than 2):");
         cin >> size;
         if (size >= 4 && size % 2 == 0) {
             break;
         } else {
-            cout << "Wrong entry!" << endl;
+            printer.string((char *) "Wrong input!");
         }
         cin.clear();
         cin.ignore(100, '\n');

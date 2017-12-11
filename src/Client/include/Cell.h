@@ -1,7 +1,7 @@
 /**
  *      Author: Eliyahu Many
  *      ID: 308249150
- *      Author: orian Edri
+ *      Author: Orian Edri
  *      ID: 308335454
  */
 
@@ -33,12 +33,27 @@ public:
      */
     int getY();
 
+
+    /**
+    * return the boolean isEmptyCell.
+    */
     bool isEmpty();
 
+    /**
+     * setter
+     * @param x the row .
+     * @param y the column.
+     */
     void setCell(int x, int y);
 
+    /**
+     * set the empty boolean as true.
+     */
     void emptyTrue();
 
+    /**
+    * set the empty boolean as false.
+    */
     void emptyFalse();
 
 private:
