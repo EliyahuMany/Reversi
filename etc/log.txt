@@ -1,3 +1,81 @@
+commit 26652c5bdc75a1c38f39a289d7b06bb0b9c9b54c
+Author: Orian Edri <orian.derei@gmail.com>
+Date:   Mon Dec 11 22:35:40 2017 +0200
+
+    We made it, we save the game!
+
+commit 28da152159667d99dd8a465d0c1928f211d3afe5
+Author: Eliyahu Many <alihom3@gmail.com>
+Date:   Mon Dec 11 20:40:55 2017 +0200
+
+    notes
+
+commit 5a813be00a0f5c864af55dcbe18e0552824fa275
+Author: Orian Edri <orian.derei@gmail.com>
+Date:   Mon Dec 11 19:43:25 2017 +0200
+
+    fix tests
+
+commit 8604b225d84a7988f5767bc48a47383a5f3d12b7
+Author: Orian Edri <orian.derei@gmail.com>
+Date:   Mon Dec 11 14:18:34 2017 +0200
+
+    reading from file
+
+commit 1ef54b9e093d3ff95dbf59438d77c34ef031dc45
+Author: Eliyahu Many <alihom3@gmail.com>
+Date:   Mon Dec 11 11:04:23 2017 +0200
+
+    Fix Print classes
+
+commit fc501317bac6f6eec46afdcd193b1eea91dedf8c
+Author: Orian Edri <orian.derei@gmail.com>
+Date:   Sun Dec 10 23:17:28 2017 +0200
+
+    add exe and etc
+
+commit 489bb7bee14c218db7afeeab8f70b3a4d9307b21
+Author: Eliyahu Many <alihom3@gmail.com>
+Date:   Sun Dec 10 22:31:34 2017 +0200
+
+    Print function
+
+commit 51bfbaa0f7d71c7196c53179ffd0f555438c2884
+Author: Orian Edri <orian.derei@gmail.com>
+Date:   Sun Dec 10 22:07:35 2017 +0200
+
+    fix server start
+
+commit 0407615615d689bcbab03acb1e94a65482bcaf75
+Author: Eliyahu Many <alihom3@gmail.com>
+Date:   Sun Dec 10 19:27:41 2017 +0200
+
+    bug fixes
+
+commit cf59e361460626b126d5b63c3b86b3455b2c1486
+Author: Orian Edri <orian.derei@gmail.com>
+Date:   Sat Dec 9 22:17:22 2017 +0200
+
+    client and server
+
+commit 9a503583b59207726bc2bcc036b2edc0b713dd71
+Author: Orian Edri <orian.derei@gmail.com>
+Date:   Sat Dec 9 22:14:10 2017 +0200
+
+    make client and server
+
+commit 552251f6f8ce26a4f98ada07841d66a58b37ce34
+Author: Orian Edri <orian.derei@gmail.com>
+Date:   Sat Dec 9 21:12:16 2017 +0200
+
+    make the client configuration
+
+commit afdb06bebdaf321263a1c329adb4bc90b12cfcf8
+Author: Eliyahu Many <alihom3@gmail.com>
+Date:   Thu Dec 7 22:33:24 2017 +0200
+
+    change the game logic
+
 commit 4a56ac07a0d0c0d545b247c77b1728836aaf8552
 Author: Orian Edri <orian.derei@gmail.com>
 Date:   Thu Nov 30 23:54:41 2017 +0200

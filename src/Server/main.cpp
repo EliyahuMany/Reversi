@@ -5,14 +5,14 @@
  *      ID: 308335454
  */
 
-#include "Server.h"
-#include <iostream>
-#include <stdlib.h>
+#include "include/Server.h"
+#include "include/CommandsManager.h"
 #include <fstream>
 
 using namespace std;
 
 int main() {
+    CommandsManager cmd;
     ifstream sFile;
     sFile.open("server_config.txt");
     string port;
@@ -21,7 +21,7 @@ int main() {
     else
         return 0;
     sFile.close();
-    Server server(atoi(port.c_str()));
+    Server server(atoi(port.c_str()),cmd);
     try {
         server.start();
     } catch (const char *msg) {

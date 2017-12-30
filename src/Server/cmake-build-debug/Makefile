@@ -123,33 +123,6 @@ Server/fast:
 	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/build
 .PHONY : Server/fast
 
-Server.o: Server.cpp.o
-
-.PHONY : Server.o
-
-# target to build an object file
-Server.cpp.o:
-	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/Server.cpp.o
-.PHONY : Server.cpp.o
-
-Server.i: Server.cpp.i
-
-.PHONY : Server.i
-
-# target to preprocess a source file
-Server.cpp.i:
-	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/Server.cpp.i
-.PHONY : Server.cpp.i
-
-Server.s: Server.cpp.s
-
-.PHONY : Server.s
-
-# target to generate assembly for a file
-Server.cpp.s:
-	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/Server.cpp.s
-.PHONY : Server.cpp.s
-
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -177,6 +150,168 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+src/ClientHandler.o: src/ClientHandler.cpp.o
+
+.PHONY : src/ClientHandler.o
+
+# target to build an object file
+src/ClientHandler.cpp.o:
+	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/src/ClientHandler.cpp.o
+.PHONY : src/ClientHandler.cpp.o
+
+src/ClientHandler.i: src/ClientHandler.cpp.i
+
+.PHONY : src/ClientHandler.i
+
+# target to preprocess a source file
+src/ClientHandler.cpp.i:
+	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/src/ClientHandler.cpp.i
+.PHONY : src/ClientHandler.cpp.i
+
+src/ClientHandler.s: src/ClientHandler.cpp.s
+
+.PHONY : src/ClientHandler.s
+
+# target to generate assembly for a file
+src/ClientHandler.cpp.s:
+	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/src/ClientHandler.cpp.s
+.PHONY : src/ClientHandler.cpp.s
+
+src/Command.o: src/Command.cpp.o
+
+.PHONY : src/Command.o
+
+# target to build an object file
+src/Command.cpp.o:
+	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/src/Command.cpp.o
+.PHONY : src/Command.cpp.o
+
+src/Command.i: src/Command.cpp.i
+
+.PHONY : src/Command.i
+
+# target to preprocess a source file
+src/Command.cpp.i:
+	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/src/Command.cpp.i
+.PHONY : src/Command.cpp.i
+
+src/Command.s: src/Command.cpp.s
+
+.PHONY : src/Command.s
+
+# target to generate assembly for a file
+src/Command.cpp.s:
+	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/src/Command.cpp.s
+.PHONY : src/Command.cpp.s
+
+src/CommandsManager.o: src/CommandsManager.cpp.o
+
+.PHONY : src/CommandsManager.o
+
+# target to build an object file
+src/CommandsManager.cpp.o:
+	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/src/CommandsManager.cpp.o
+.PHONY : src/CommandsManager.cpp.o
+
+src/CommandsManager.i: src/CommandsManager.cpp.i
+
+.PHONY : src/CommandsManager.i
+
+# target to preprocess a source file
+src/CommandsManager.cpp.i:
+	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/src/CommandsManager.cpp.i
+.PHONY : src/CommandsManager.cpp.i
+
+src/CommandsManager.s: src/CommandsManager.cpp.s
+
+.PHONY : src/CommandsManager.s
+
+# target to generate assembly for a file
+src/CommandsManager.cpp.s:
+	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/src/CommandsManager.cpp.s
+.PHONY : src/CommandsManager.cpp.s
+
+src/GameInfo.o: src/GameInfo.cpp.o
+
+.PHONY : src/GameInfo.o
+
+# target to build an object file
+src/GameInfo.cpp.o:
+	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/src/GameInfo.cpp.o
+.PHONY : src/GameInfo.cpp.o
+
+src/GameInfo.i: src/GameInfo.cpp.i
+
+.PHONY : src/GameInfo.i
+
+# target to preprocess a source file
+src/GameInfo.cpp.i:
+	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/src/GameInfo.cpp.i
+.PHONY : src/GameInfo.cpp.i
+
+src/GameInfo.s: src/GameInfo.cpp.s
+
+.PHONY : src/GameInfo.s
+
+# target to generate assembly for a file
+src/GameInfo.cpp.s:
+	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/src/GameInfo.cpp.s
+.PHONY : src/GameInfo.cpp.s
+
+src/Server.o: src/Server.cpp.o
+
+.PHONY : src/Server.o
+
+# target to build an object file
+src/Server.cpp.o:
+	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/src/Server.cpp.o
+.PHONY : src/Server.cpp.o
+
+src/Server.i: src/Server.cpp.i
+
+.PHONY : src/Server.i
+
+# target to preprocess a source file
+src/Server.cpp.i:
+	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/src/Server.cpp.i
+.PHONY : src/Server.cpp.i
+
+src/Server.s: src/Server.cpp.s
+
+.PHONY : src/Server.s
+
+# target to generate assembly for a file
+src/Server.cpp.s:
+	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/src/Server.cpp.s
+.PHONY : src/Server.cpp.s
+
+src/StartCommand.o: src/StartCommand.cpp.o
+
+.PHONY : src/StartCommand.o
+
+# target to build an object file
+src/StartCommand.cpp.o:
+	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/src/StartCommand.cpp.o
+.PHONY : src/StartCommand.cpp.o
+
+src/StartCommand.i: src/StartCommand.cpp.i
+
+.PHONY : src/StartCommand.i
+
+# target to preprocess a source file
+src/StartCommand.cpp.i:
+	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/src/StartCommand.cpp.i
+.PHONY : src/StartCommand.cpp.i
+
+src/StartCommand.s: src/StartCommand.cpp.s
+
+.PHONY : src/StartCommand.s
+
+# target to generate assembly for a file
+src/StartCommand.cpp.s:
+	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/src/StartCommand.cpp.s
+.PHONY : src/StartCommand.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -186,12 +321,27 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... Server"
-	@echo "... Server.o"
-	@echo "... Server.i"
-	@echo "... Server.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... src/ClientHandler.o"
+	@echo "... src/ClientHandler.i"
+	@echo "... src/ClientHandler.s"
+	@echo "... src/Command.o"
+	@echo "... src/Command.i"
+	@echo "... src/Command.s"
+	@echo "... src/CommandsManager.o"
+	@echo "... src/CommandsManager.i"
+	@echo "... src/CommandsManager.s"
+	@echo "... src/GameInfo.o"
+	@echo "... src/GameInfo.i"
+	@echo "... src/GameInfo.s"
+	@echo "... src/Server.o"
+	@echo "... src/Server.i"
+	@echo "... src/Server.s"
+	@echo "... src/StartCommand.o"
+	@echo "... src/StartCommand.i"
+	@echo "... src/StartCommand.s"
 .PHONY : help
 
 

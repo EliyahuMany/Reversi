@@ -8,6 +8,18 @@
 #ifndef SERVER_SERVER_H
 #define SERVER_SERVER_H
 
+#include <sys/socket.h>
+#include <netinet/in.h>
+#include <stdio.h>
+#include <string.h>
+#include <iostream>
+#include <unistd.h>
+#include <pthread.h>
+#include <cstdlib>
+#include <vector>
+#include "CommandsManager.h"
+
+using namespace std;
 
 class Server {
 public:
@@ -15,7 +27,7 @@ public:
      * constructor - make the server
      * @param port - port of the server
      */
-    Server(int port);
+    Server(int port, CommandsManager &cmd);
 
     /**
      * start the server
@@ -27,10 +39,13 @@ public:
      */
     void stop();
 
+    void *clientConnection(void *addressInfo);
+
 private:
     int port;
     int serverSocket; // the socket's file descriptor
-    void handleClient(int clientSocket1, int clientSocket2);
+    vector<pthread_t *> serverThreads;
+    CommandsManager cmd;
 };
 
 

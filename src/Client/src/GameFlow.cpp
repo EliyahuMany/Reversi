@@ -53,7 +53,8 @@ GameFlow::GameFlow(int size, int choose, Print &printer) : gameL(GameLogic(size)
 void GameFlow::run() {
     int flagX = 1, flagO = 1; //mark if X/O can play.
     this->printer.board(this->gameL.getGameBoard());
-    while (flagX != 0 || flagO != 0) {
+    while ((flagX != 0 || flagO != 0) && ((this->xScore + this->oScore) < (this->gameL.getGameBoard().getSize() *
+                                                                           this->gameL.getGameBoard().getSize()))) {
         this->gameL.generateMoves(this->pX, this->pX->getMoves(), this->gameL.getGameBoard());
         flagX = this->gameL.makeMove(pX->play(this->gameL.getGameBoard(), this->xScore, this->oScore), this->xScore,
                                      this->oScore, this->pX,

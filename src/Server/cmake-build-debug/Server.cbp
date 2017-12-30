@@ -84,13 +84,40 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/orian/Videos/raversi/src/Server/Server.cpp">
+		<Unit filename="/home/orian/Videos/raversi/src/Server/include/ClientHandler.h">
 			<Option target="Server"/>
 		</Unit>
-		<Unit filename="/home/orian/Videos/raversi/src/Server/Server.h">
+		<Unit filename="/home/orian/Videos/raversi/src/Server/include/CommandsManager.h">
+			<Option target="Server"/>
+		</Unit>
+		<Unit filename="/home/orian/Videos/raversi/src/Server/include/GameInfo.h">
+			<Option target="Server"/>
+		</Unit>
+		<Unit filename="/home/orian/Videos/raversi/src/Server/include/Server.h">
+			<Option target="Server"/>
+		</Unit>
+		<Unit filename="/home/orian/Videos/raversi/src/Server/include/StartCommand.h">
 			<Option target="Server"/>
 		</Unit>
 		<Unit filename="/home/orian/Videos/raversi/src/Server/main.cpp">
+			<Option target="Server"/>
+		</Unit>
+		<Unit filename="/home/orian/Videos/raversi/src/Server/src/ClientHandler.cpp">
+			<Option target="Server"/>
+		</Unit>
+		<Unit filename="/home/orian/Videos/raversi/src/Server/src/Command.cpp">
+			<Option target="Server"/>
+		</Unit>
+		<Unit filename="/home/orian/Videos/raversi/src/Server/src/CommandsManager.cpp">
+			<Option target="Server"/>
+		</Unit>
+		<Unit filename="/home/orian/Videos/raversi/src/Server/src/GameInfo.cpp">
+			<Option target="Server"/>
+		</Unit>
+		<Unit filename="/home/orian/Videos/raversi/src/Server/src/Server.cpp">
+			<Option target="Server"/>
+		</Unit>
+		<Unit filename="/home/orian/Videos/raversi/src/Server/src/StartCommand.cpp">
 			<Option target="Server"/>
 		</Unit>
 		<Unit filename="/home/orian/Videos/raversi/src/Server/CMakeLists.txt">
