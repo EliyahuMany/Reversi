@@ -4,6 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/home/eliyahu/CLionProjects/raversi/src/Server/JoinCommand.cpp" "/home/eliyahu/CLionProjects/raversi/src/Server/cmake-build-debug/CMakeFiles/Server.dir/JoinCommand.cpp.o"
   "/home/eliyahu/CLionProjects/raversi/src/Server/main.cpp" "/home/eliyahu/CLionProjects/raversi/src/Server/cmake-build-debug/CMakeFiles/Server.dir/main.cpp.o"
   "/home/eliyahu/CLionProjects/raversi/src/Server/src/ClientHandler.cpp" "/home/eliyahu/CLionProjects/raversi/src/Server/cmake-build-debug/CMakeFiles/Server.dir/src/ClientHandler.cpp.o"
   "/home/eliyahu/CLionProjects/raversi/src/Server/src/Command.cpp" "/home/eliyahu/CLionProjects/raversi/src/Server/cmake-build-debug/CMakeFiles/Server.dir/src/Command.cpp.o"

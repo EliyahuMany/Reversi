@@ -84,6 +84,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/eliyahu/CLionProjects/raversi/src/Server/JoinCommand.cpp">
+			<Option target="Server"/>
+		</Unit>
+		<Unit filename="/home/eliyahu/CLionProjects/raversi/src/Server/JoinCommand.h">
+			<Option target="Server"/>
+		</Unit>
 		<Unit filename="/home/eliyahu/CLionProjects/raversi/src/Server/include/ClientHandler.h">
 			<Option target="Server"/>
 		</Unit>

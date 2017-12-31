@@ -10,6 +10,7 @@
 
 #include <string>
 #include <iostream>
+
 using namespace std;
 
 class GameInfo {
@@ -23,6 +24,8 @@ public:
     int getClientSocket2() const;
 
     void setClientSocket2(int clientSocket2);
+
+    static void *gameHandler(void *args);
 
 private:
     string gameName;

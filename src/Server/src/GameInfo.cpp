@@ -6,8 +6,13 @@
  */
 
 #include "../include/GameInfo.h"
+#include <pthread.h>
 
 GameInfo::GameInfo(string name, int clientSocket1) : gameName(name), clientSocket1(clientSocket1) {}
+
+void GameInfo::*gameHandler(void *args) {
+
+}
 
 const string &GameInfo::getName() const {
     return this->gameName;
