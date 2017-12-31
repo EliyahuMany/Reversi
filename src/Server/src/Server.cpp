@@ -41,14 +41,15 @@ void Server::start() {
         if (clientSocket == -1)
             throw "Error on accept";
 
-        pthread_t *newThread = new pthread_t();
+        pthread_t newThread;
         ClientHandler ch(clientSocket, cmd);
-        int rc = pthread_create(newThread, NULL, ch.handleClient, (void *) &ch);
+        int rc = pthread_create(&newThread, NULL, ch.handleClient, (void *) &ch);
+        pthread_join(newThread, NULL);
         if (rc) {
             cout << "Error: unable to create thread, " << rc << endl;
             exit(-1);
         }
-        this->serverThreads.push_back(newThread);
+        pthread_exit(NULL);
     }
 }
 

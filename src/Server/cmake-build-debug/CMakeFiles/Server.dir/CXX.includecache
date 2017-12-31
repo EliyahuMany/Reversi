@@ -6,37 +6,37 @@
 
 #IncludeRegexTransform: 
 
-/home/orian/Videos/raversi/src/Server/include/ClientHandler.h
+/home/eliyahu/CLionProjects/raversi/src/Server/include/ClientHandler.h
 iostream
 -
 cstring
 -
 CommandsManager.h
-/home/orian/Videos/raversi/src/Server/include/CommandsManager.h
+/home/eliyahu/CLionProjects/raversi/src/Server/include/CommandsManager.h
 
-/home/orian/Videos/raversi/src/Server/include/Command.h
+/home/eliyahu/CLionProjects/raversi/src/Server/include/Command.h
 GameInfo.h
-/home/orian/Videos/raversi/src/Server/include/GameInfo.h
+/home/eliyahu/CLionProjects/raversi/src/Server/include/GameInfo.h
 string
 -
 vector
 -
 
-/home/orian/Videos/raversi/src/Server/include/CommandsManager.h
+/home/eliyahu/CLionProjects/raversi/src/Server/include/CommandsManager.h
 map
 -
 Command.h
-/home/orian/Videos/raversi/src/Server/include/Command.h
+/home/eliyahu/CLionProjects/raversi/src/Server/include/Command.h
 GameInfo.h
-/home/orian/Videos/raversi/src/Server/include/GameInfo.h
+/home/eliyahu/CLionProjects/raversi/src/Server/include/GameInfo.h
 
-/home/orian/Videos/raversi/src/Server/include/GameInfo.h
+/home/eliyahu/CLionProjects/raversi/src/Server/include/GameInfo.h
 string
 -
 iostream
 -
 
-/home/orian/Videos/raversi/src/Server/include/Server.h
+/home/eliyahu/CLionProjects/raversi/src/Server/include/Server.h
 sys/socket.h
 -
 netinet/in.h
@@ -56,51 +56,51 @@ cstdlib
 vector
 -
 CommandsManager.h
-/home/orian/Videos/raversi/src/Server/include/CommandsManager.h
+/home/eliyahu/CLionProjects/raversi/src/Server/include/CommandsManager.h
 
-/home/orian/Videos/raversi/src/Server/include/StartCommand.h
+/home/eliyahu/CLionProjects/raversi/src/Server/include/StartCommand.h
 Command.h
-/home/orian/Videos/raversi/src/Server/include/Command.h
+/home/eliyahu/CLionProjects/raversi/src/Server/include/Command.h
 
-/home/orian/Videos/raversi/src/Server/main.cpp
+/home/eliyahu/CLionProjects/raversi/src/Server/main.cpp
 include/Server.h
-/home/orian/Videos/raversi/src/Server/include/Server.h
+/home/eliyahu/CLionProjects/raversi/src/Server/include/Server.h
 include/CommandsManager.h
-/home/orian/Videos/raversi/src/Server/include/CommandsManager.h
+/home/eliyahu/CLionProjects/raversi/src/Server/include/CommandsManager.h
 fstream
 -
 
-/home/orian/Videos/raversi/src/Server/src/ClientHandler.cpp
+/home/eliyahu/CLionProjects/raversi/src/Server/src/ClientHandler.cpp
 unistd.h
 -
 sstream
 -
 ../include/ClientHandler.h
-/home/orian/Videos/raversi/src/Server/include/ClientHandler.h
+/home/eliyahu/CLionProjects/raversi/src/Server/include/ClientHandler.h
 
-/home/orian/Videos/raversi/src/Server/src/Command.cpp
+/home/eliyahu/CLionProjects/raversi/src/Server/src/Command.cpp
 ../include/Command.h
-/home/orian/Videos/raversi/src/Server/include/Command.h
+/home/eliyahu/CLionProjects/raversi/src/Server/include/Command.h
 
-/home/orian/Videos/raversi/src/Server/src/CommandsManager.cpp
+/home/eliyahu/CLionProjects/raversi/src/Server/src/CommandsManager.cpp
 ../include/CommandsManager.h
-/home/orian/Videos/raversi/src/Server/include/CommandsManager.h
+/home/eliyahu/CLionProjects/raversi/src/Server/include/CommandsManager.h
 ../include/StartCommand.h
-/home/orian/Videos/raversi/src/Server/include/StartCommand.h
+/home/eliyahu/CLionProjects/raversi/src/Server/include/StartCommand.h
 
-/home/orian/Videos/raversi/src/Server/src/GameInfo.cpp
+/home/eliyahu/CLionProjects/raversi/src/Server/src/GameInfo.cpp
 ../include/GameInfo.h
-/home/orian/Videos/raversi/src/Server/include/GameInfo.h
+/home/eliyahu/CLionProjects/raversi/src/Server/include/GameInfo.h
 
-/home/orian/Videos/raversi/src/Server/src/Server.cpp
+/home/eliyahu/CLionProjects/raversi/src/Server/src/Server.cpp
 ../include/Server.h
-/home/orian/Videos/raversi/src/Server/include/Server.h
+/home/eliyahu/CLionProjects/raversi/src/Server/include/Server.h
 ../include/ClientHandler.h
-/home/orian/Videos/raversi/src/Server/include/ClientHandler.h
+/home/eliyahu/CLionProjects/raversi/src/Server/include/ClientHandler.h
 
-/home/orian/Videos/raversi/src/Server/src/StartCommand.cpp
+/home/eliyahu/CLionProjects/raversi/src/Server/src/StartCommand.cpp
 cstdlib
 -
 ../include/StartCommand.h
-/home/orian/Videos/raversi/src/Server/include/StartCommand.h
+/home/eliyahu/CLionProjects/raversi/src/Server/include/StartCommand.h
 
