@@ -20,6 +20,8 @@ public:
 
     virtual void execute(vector<string> &args) = 0;
 
+    void commandNotify(int clientSocket, string msg);
+
 protected:
     vector<GameInfo> gamesList;
 };

@@ -8,8 +8,8 @@
 
 ClientHandler::ClientHandler(int socket, CommandsManager &cmd) : clientSocket(socket), cmd(cmd) {}
 
-void *ClientHandler::handleClient(void *obj) {
-    ClientHandler ch = *(ClientHandler *) obj;
+void *ClientHandler::handleClient(void *args) {
+    ClientHandler ch = *(ClientHandler *) args;
     char *buf;
     string command;
 

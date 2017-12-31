@@ -39,19 +39,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/eliyahu/Downloads/clion-2017.3.1/bin/cmake/bin/cmake
+CMAKE_COMMAND = /opt/clion-2017.3/bin/cmake/bin/cmake
 
 # The command to remove a file.
-RM = /home/eliyahu/Downloads/clion-2017.3.1/bin/cmake/bin/cmake -E remove -f
+RM = /opt/clion-2017.3/bin/cmake/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/eliyahu/CLionProjects/raversi/src/Server
+CMAKE_SOURCE_DIR = /home/orian/Videos/raversi/src/Server
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/eliyahu/CLionProjects/raversi/src/Server/cmake-build-debug
+CMAKE_BINARY_DIR = /home/orian/Videos/raversi/src/Server/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /home/eliyahu/CLionProjects/raversi/src/Server/cmake-build-de
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/home/eliyahu/Downloads/clion-2017.3.1/bin/cmake/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/opt/clion-2017.3/bin/cmake/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -70,7 +70,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/home/eliyahu/Downloads/clion-2017.3.1/bin/cmake/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/opt/clion-2017.3/bin/cmake/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/eliyahu/CLionProjects/raversi/src/Server/cmake-build-debug/CMakeFiles /home/eliyahu/CLionProjects/raversi/src/Server/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/orian/Videos/raversi/src/Server/cmake-build-debug/CMakeFiles /home/orian/Videos/raversi/src/Server/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/eliyahu/CLionProjects/raversi/src/Server/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/orian/Videos/raversi/src/Server/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -122,6 +122,33 @@ Server: cmake_check_build_system
 Server/fast:
 	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/build
 .PHONY : Server/fast
+
+GameListCommand.o: GameListCommand.cpp.o
+
+.PHONY : GameListCommand.o
+
+# target to build an object file
+GameListCommand.cpp.o:
+	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/GameListCommand.cpp.o
+.PHONY : GameListCommand.cpp.o
+
+GameListCommand.i: GameListCommand.cpp.i
+
+.PHONY : GameListCommand.i
+
+# target to preprocess a source file
+GameListCommand.cpp.i:
+	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/GameListCommand.cpp.i
+.PHONY : GameListCommand.cpp.i
+
+GameListCommand.s: GameListCommand.cpp.s
+
+.PHONY : GameListCommand.s
+
+# target to generate assembly for a file
+GameListCommand.cpp.s:
+	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/GameListCommand.cpp.s
+.PHONY : GameListCommand.cpp.s
 
 main.o: main.cpp.o
 
@@ -348,6 +375,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... Server"
+	@echo "... GameListCommand.o"
+	@echo "... GameListCommand.i"
+	@echo "... GameListCommand.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

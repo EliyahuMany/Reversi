@@ -15,7 +15,7 @@ class ClientHandler {
 public:
     ClientHandler(int socket, CommandsManager &cmd);
 
-    static void *handleClient(void *socket);
+    static void *handleClient(void *args);
 
 private:
     int clientSocket;

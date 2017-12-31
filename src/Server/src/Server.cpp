@@ -36,7 +36,7 @@ void Server::start() {
     cout << "Waiting for client connections..." << endl;
     while (true) {
         //first client
-        long clientSocket = accept(serverSocket, (struct sockaddr *) &clientAddress, &clientAddressLen);
+        int clientSocket = accept(serverSocket, (struct sockaddr *) &clientAddress, &clientAddressLen);
         cout << "First client connected" << endl;
         if (clientSocket == -1)
             throw "Error on accept";
