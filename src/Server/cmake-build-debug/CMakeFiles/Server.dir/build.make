@@ -225,28 +225,28 @@ CMakeFiles/Server.dir/src/StartCommand.cpp.o.provides: CMakeFiles/Server.dir/src
 CMakeFiles/Server.dir/src/StartCommand.cpp.o.provides.build: CMakeFiles/Server.dir/src/StartCommand.cpp.o
 
 
-CMakeFiles/Server.dir/JoinCommand.cpp.o: CMakeFiles/Server.dir/flags.make
-CMakeFiles/Server.dir/JoinCommand.cpp.o: ../JoinCommand.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/eliyahu/CLionProjects/raversi/src/Server/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Server.dir/JoinCommand.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Server.dir/JoinCommand.cpp.o -c /home/eliyahu/CLionProjects/raversi/src/Server/JoinCommand.cpp
+CMakeFiles/Server.dir/src/JoinCommand.cpp.o: CMakeFiles/Server.dir/flags.make
+CMakeFiles/Server.dir/src/JoinCommand.cpp.o: ../src/JoinCommand.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/eliyahu/CLionProjects/raversi/src/Server/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Server.dir/src/JoinCommand.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Server.dir/src/JoinCommand.cpp.o -c /home/eliyahu/CLionProjects/raversi/src/Server/src/JoinCommand.cpp
 
-CMakeFiles/Server.dir/JoinCommand.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Server.dir/JoinCommand.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/eliyahu/CLionProjects/raversi/src/Server/JoinCommand.cpp > CMakeFiles/Server.dir/JoinCommand.cpp.i
+CMakeFiles/Server.dir/src/JoinCommand.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Server.dir/src/JoinCommand.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/eliyahu/CLionProjects/raversi/src/Server/src/JoinCommand.cpp > CMakeFiles/Server.dir/src/JoinCommand.cpp.i
 
-CMakeFiles/Server.dir/JoinCommand.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Server.dir/JoinCommand.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/eliyahu/CLionProjects/raversi/src/Server/JoinCommand.cpp -o CMakeFiles/Server.dir/JoinCommand.cpp.s
+CMakeFiles/Server.dir/src/JoinCommand.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Server.dir/src/JoinCommand.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/eliyahu/CLionProjects/raversi/src/Server/src/JoinCommand.cpp -o CMakeFiles/Server.dir/src/JoinCommand.cpp.s
 
-CMakeFiles/Server.dir/JoinCommand.cpp.o.requires:
+CMakeFiles/Server.dir/src/JoinCommand.cpp.o.requires:
 
-.PHONY : CMakeFiles/Server.dir/JoinCommand.cpp.o.requires
+.PHONY : CMakeFiles/Server.dir/src/JoinCommand.cpp.o.requires
 
-CMakeFiles/Server.dir/JoinCommand.cpp.o.provides: CMakeFiles/Server.dir/JoinCommand.cpp.o.requires
-	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/JoinCommand.cpp.o.provides.build
-.PHONY : CMakeFiles/Server.dir/JoinCommand.cpp.o.provides
+CMakeFiles/Server.dir/src/JoinCommand.cpp.o.provides: CMakeFiles/Server.dir/src/JoinCommand.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/src/JoinCommand.cpp.o.provides.build
+.PHONY : CMakeFiles/Server.dir/src/JoinCommand.cpp.o.provides
 
-CMakeFiles/Server.dir/JoinCommand.cpp.o.provides.build: CMakeFiles/Server.dir/JoinCommand.cpp.o
+CMakeFiles/Server.dir/src/JoinCommand.cpp.o.provides.build: CMakeFiles/Server.dir/src/JoinCommand.cpp.o
 
 
 # Object files for target Server
@@ -258,7 +258,7 @@ Server_OBJECTS = \
 "CMakeFiles/Server.dir/src/GameInfo.cpp.o" \
 "CMakeFiles/Server.dir/src/Command.cpp.o" \
 "CMakeFiles/Server.dir/src/StartCommand.cpp.o" \
-"CMakeFiles/Server.dir/JoinCommand.cpp.o"
+"CMakeFiles/Server.dir/src/JoinCommand.cpp.o"
 
 # External object files for target Server
 Server_EXTERNAL_OBJECTS =
@@ -270,7 +270,7 @@ Server: CMakeFiles/Server.dir/src/ClientHandler.cpp.o
 Server: CMakeFiles/Server.dir/src/GameInfo.cpp.o
 Server: CMakeFiles/Server.dir/src/Command.cpp.o
 Server: CMakeFiles/Server.dir/src/StartCommand.cpp.o
-Server: CMakeFiles/Server.dir/JoinCommand.cpp.o
+Server: CMakeFiles/Server.dir/src/JoinCommand.cpp.o
 Server: CMakeFiles/Server.dir/build.make
 Server: CMakeFiles/Server.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/eliyahu/CLionProjects/raversi/src/Server/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable Server"
@@ -288,7 +288,7 @@ CMakeFiles/Server.dir/requires: CMakeFiles/Server.dir/src/ClientHandler.cpp.o.re
 CMakeFiles/Server.dir/requires: CMakeFiles/Server.dir/src/GameInfo.cpp.o.requires
 CMakeFiles/Server.dir/requires: CMakeFiles/Server.dir/src/Command.cpp.o.requires
 CMakeFiles/Server.dir/requires: CMakeFiles/Server.dir/src/StartCommand.cpp.o.requires
-CMakeFiles/Server.dir/requires: CMakeFiles/Server.dir/JoinCommand.cpp.o.requires
+CMakeFiles/Server.dir/requires: CMakeFiles/Server.dir/src/JoinCommand.cpp.o.requires
 
 .PHONY : CMakeFiles/Server.dir/requires
 

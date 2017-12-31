@@ -36,6 +36,14 @@ string
 iostream
 -
 
+/home/eliyahu/CLionProjects/raversi/src/Server/include/JoinCommand.h
+GameInfo.h
+/home/eliyahu/CLionProjects/raversi/src/Server/include/GameInfo.h
+Command.h
+/home/eliyahu/CLionProjects/raversi/src/Server/include/Command.h
+vector
+-
+
 /home/eliyahu/CLionProjects/raversi/src/Server/include/Server.h
 sys/socket.h
 -
@@ -91,6 +99,14 @@ sstream
 /home/eliyahu/CLionProjects/raversi/src/Server/src/GameInfo.cpp
 ../include/GameInfo.h
 /home/eliyahu/CLionProjects/raversi/src/Server/include/GameInfo.h
+pthread.h
+-
+
+/home/eliyahu/CLionProjects/raversi/src/Server/src/JoinCommand.cpp
+cstdlib
+-
+../include/JoinCommand.h
+/home/eliyahu/CLionProjects/raversi/src/Server/include/JoinCommand.h
 
 /home/eliyahu/CLionProjects/raversi/src/Server/src/Server.cpp
 ../include/Server.h

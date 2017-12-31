@@ -10,7 +10,7 @@
 
 GameInfo::GameInfo(string name, int clientSocket1) : gameName(name), clientSocket1(clientSocket1) {}
 
-void GameInfo::*gameHandler(void *args) {
+void *GameInfo::gameHandler(void *args) {
 
 }
 

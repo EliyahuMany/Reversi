@@ -26,6 +26,11 @@ CMakeFiles/Server.dir/src/CommandsManager.cpp.o
 CMakeFiles/Server.dir/src/GameInfo.cpp.o
  /home/eliyahu/CLionProjects/raversi/src/Server/include/GameInfo.h
  /home/eliyahu/CLionProjects/raversi/src/Server/src/GameInfo.cpp
+CMakeFiles/Server.dir/src/JoinCommand.cpp.o
+ /home/eliyahu/CLionProjects/raversi/src/Server/include/Command.h
+ /home/eliyahu/CLionProjects/raversi/src/Server/include/GameInfo.h
+ /home/eliyahu/CLionProjects/raversi/src/Server/include/JoinCommand.h
+ /home/eliyahu/CLionProjects/raversi/src/Server/src/JoinCommand.cpp
 CMakeFiles/Server.dir/src/Server.cpp.o
  /home/eliyahu/CLionProjects/raversi/src/Server/include/ClientHandler.h
  /home/eliyahu/CLionProjects/raversi/src/Server/include/Command.h

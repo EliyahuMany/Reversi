@@ -26,6 +26,11 @@ CMakeFiles/Server.dir/src/CommandsManager.cpp.o: ../src/CommandsManager.cpp
 CMakeFiles/Server.dir/src/GameInfo.cpp.o: ../include/GameInfo.h
 CMakeFiles/Server.dir/src/GameInfo.cpp.o: ../src/GameInfo.cpp
 
+CMakeFiles/Server.dir/src/JoinCommand.cpp.o: ../include/Command.h
+CMakeFiles/Server.dir/src/JoinCommand.cpp.o: ../include/GameInfo.h
+CMakeFiles/Server.dir/src/JoinCommand.cpp.o: ../include/JoinCommand.h
+CMakeFiles/Server.dir/src/JoinCommand.cpp.o: ../src/JoinCommand.cpp
+
 CMakeFiles/Server.dir/src/Server.cpp.o: ../include/ClientHandler.h
 CMakeFiles/Server.dir/src/Server.cpp.o: ../include/Command.h
 CMakeFiles/Server.dir/src/Server.cpp.o: ../include/CommandsManager.h

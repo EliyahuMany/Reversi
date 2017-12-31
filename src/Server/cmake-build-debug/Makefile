@@ -123,33 +123,6 @@ Server/fast:
 	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/build
 .PHONY : Server/fast
 
-JoinCommand.o: JoinCommand.cpp.o
-
-.PHONY : JoinCommand.o
-
-# target to build an object file
-JoinCommand.cpp.o:
-	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/JoinCommand.cpp.o
-.PHONY : JoinCommand.cpp.o
-
-JoinCommand.i: JoinCommand.cpp.i
-
-.PHONY : JoinCommand.i
-
-# target to preprocess a source file
-JoinCommand.cpp.i:
-	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/JoinCommand.cpp.i
-.PHONY : JoinCommand.cpp.i
-
-JoinCommand.s: JoinCommand.cpp.s
-
-.PHONY : JoinCommand.s
-
-# target to generate assembly for a file
-JoinCommand.cpp.s:
-	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/JoinCommand.cpp.s
-.PHONY : JoinCommand.cpp.s
-
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -285,6 +258,33 @@ src/GameInfo.cpp.s:
 	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/src/GameInfo.cpp.s
 .PHONY : src/GameInfo.cpp.s
 
+src/JoinCommand.o: src/JoinCommand.cpp.o
+
+.PHONY : src/JoinCommand.o
+
+# target to build an object file
+src/JoinCommand.cpp.o:
+	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/src/JoinCommand.cpp.o
+.PHONY : src/JoinCommand.cpp.o
+
+src/JoinCommand.i: src/JoinCommand.cpp.i
+
+.PHONY : src/JoinCommand.i
+
+# target to preprocess a source file
+src/JoinCommand.cpp.i:
+	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/src/JoinCommand.cpp.i
+.PHONY : src/JoinCommand.cpp.i
+
+src/JoinCommand.s: src/JoinCommand.cpp.s
+
+.PHONY : src/JoinCommand.s
+
+# target to generate assembly for a file
+src/JoinCommand.cpp.s:
+	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/src/JoinCommand.cpp.s
+.PHONY : src/JoinCommand.cpp.s
+
 src/Server.o: src/Server.cpp.o
 
 .PHONY : src/Server.o
@@ -348,9 +348,6 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... Server"
-	@echo "... JoinCommand.o"
-	@echo "... JoinCommand.i"
-	@echo "... JoinCommand.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
@@ -366,6 +363,9 @@ help:
 	@echo "... src/GameInfo.o"
 	@echo "... src/GameInfo.i"
 	@echo "... src/GameInfo.s"
+	@echo "... src/JoinCommand.o"
+	@echo "... src/JoinCommand.i"
+	@echo "... src/JoinCommand.s"
 	@echo "... src/Server.o"
 	@echo "... src/Server.i"
 	@echo "... src/Server.s"

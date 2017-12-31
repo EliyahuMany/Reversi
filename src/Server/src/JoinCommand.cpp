@@ -21,7 +21,7 @@ void JoinCommand::execute(vector<string> &args) {
         }
     }
     pthread_t gameThread;
-    pthread_create(&gameThread, NULL, this->gamesList[i].gameHandler, (void *) this->gamesList[i]);
+    pthread_create(&gameThread, NULL, this->gamesList[i].gameHandler, (void *) &this->gamesList[i]);
     pthread_exit(NULL);
 
 }
