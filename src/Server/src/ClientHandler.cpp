@@ -41,5 +41,7 @@ void *ClientHandler::handleClient(void *args) {
             args.push_back(w);
         }
         ch.cmd.executeCommand(command, args);
+        if (command == "close")
+            break;
     }
 }

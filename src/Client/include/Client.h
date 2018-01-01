@@ -25,7 +25,7 @@ public:
      * connect to the server
      * @return the number of the player 1/2
      */
-    int connectToServer();
+    void connectToServer();
 
     /**
      * write the given massage to the server
@@ -38,6 +38,8 @@ public:
     * @param move - char* to save the massage
     */
     void receiveMove(char *move);
+
+    void getPlayerNum(int &numOfPlayer);
 
 private:
     const char *serverIP;

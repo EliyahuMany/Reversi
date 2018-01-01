@@ -471,6 +471,33 @@ src/GameLogic.cpp.s:
 	$(MAKE) -f CMakeFiles/raversi.dir/build.make CMakeFiles/raversi.dir/src/GameLogic.cpp.s
 .PHONY : src/GameLogic.cpp.s
 
+src/GameMenu.o: src/GameMenu.cpp.o
+
+.PHONY : src/GameMenu.o
+
+# target to build an object file
+src/GameMenu.cpp.o:
+	$(MAKE) -f CMakeFiles/raversi.dir/build.make CMakeFiles/raversi.dir/src/GameMenu.cpp.o
+.PHONY : src/GameMenu.cpp.o
+
+src/GameMenu.i: src/GameMenu.cpp.i
+
+.PHONY : src/GameMenu.i
+
+# target to preprocess a source file
+src/GameMenu.cpp.i:
+	$(MAKE) -f CMakeFiles/raversi.dir/build.make CMakeFiles/raversi.dir/src/GameMenu.cpp.i
+.PHONY : src/GameMenu.cpp.i
+
+src/GameMenu.s: src/GameMenu.cpp.s
+
+.PHONY : src/GameMenu.s
+
+# target to generate assembly for a file
+src/GameMenu.cpp.s:
+	$(MAKE) -f CMakeFiles/raversi.dir/build.make CMakeFiles/raversi.dir/src/GameMenu.cpp.s
+.PHONY : src/GameMenu.cpp.s
+
 src/Human.o: src/Human.cpp.o
 
 .PHONY : src/Human.o
@@ -771,6 +798,9 @@ help:
 	@echo "... src/GameLogic.o"
 	@echo "... src/GameLogic.i"
 	@echo "... src/GameLogic.s"
+	@echo "... src/GameMenu.o"
+	@echo "... src/GameMenu.i"
+	@echo "... src/GameMenu.s"
 	@echo "... src/Human.o"
 	@echo "... src/Human.i"
 	@echo "... src/Human.s"

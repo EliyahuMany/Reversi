@@ -15,29 +15,7 @@
 GameFlow::GameFlow(int size, int choose, Print &printer) : gameL(GameLogic(size)), printer(printer) {
     //online game:
     if (choose == 3) {
-        ifstream cFile;
-        cFile.open("client_config.txt");
-        string ip, port;
-        if (cFile.is_open()) {
-            getline(cFile, ip);
-            getline(cFile, port);
-        } else
-            exit(1);
-        cFile.close();
-        Client client(ip.c_str(), atoi(port.c_str()), this->printer);
-        try {
-            int playerNum = client.connectToServer();
-            if (playerNum == 1) {
-                this->pX = new LocalPlayer('X', client, printer);
-                this->pO = new RemotePlayer('O', client, printer);
-            } else if (playerNum == 2) {
-                this->pX = new RemotePlayer('X', client, printer);
-                this->pO = new LocalPlayer('O', client, printer);
-            }
-        } catch (const char *m) {
-            this->printer.connectionFailed(m);
-            exit(1);
-        }
+
     }//offline game:
     else {
         this->pX = new Human('X', printer);

@@ -22,7 +22,7 @@ void JoinCommand::execute(vector<string> &args) {
         }
     }
     if (!isInList) {
-        msg.append("There is no such game name");
+        msg.append("-1");
         this->commandNotify(clientSocket, msg);
         return;
     }

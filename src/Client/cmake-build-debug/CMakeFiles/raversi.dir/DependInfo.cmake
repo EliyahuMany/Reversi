@@ -12,6 +12,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/orian/Videos/raversi/src/Client/src/ConsolePrint.cpp" "/home/orian/Videos/raversi/src/Client/cmake-build-debug/CMakeFiles/raversi.dir/src/ConsolePrint.cpp.o"
   "/home/orian/Videos/raversi/src/Client/src/GameFlow.cpp" "/home/orian/Videos/raversi/src/Client/cmake-build-debug/CMakeFiles/raversi.dir/src/GameFlow.cpp.o"
   "/home/orian/Videos/raversi/src/Client/src/GameLogic.cpp" "/home/orian/Videos/raversi/src/Client/cmake-build-debug/CMakeFiles/raversi.dir/src/GameLogic.cpp.o"
+  "/home/orian/Videos/raversi/src/Client/src/GameMenu.cpp" "/home/orian/Videos/raversi/src/Client/cmake-build-debug/CMakeFiles/raversi.dir/src/GameMenu.cpp.o"
   "/home/orian/Videos/raversi/src/Client/src/Human.cpp" "/home/orian/Videos/raversi/src/Client/cmake-build-debug/CMakeFiles/raversi.dir/src/Human.cpp.o"
   "/home/orian/Videos/raversi/src/Client/src/LocalPlayer.cpp" "/home/orian/Videos/raversi/src/Client/cmake-build-debug/CMakeFiles/raversi.dir/src/LocalPlayer.cpp.o"
   "/home/orian/Videos/raversi/src/Client/src/Players.cpp" "/home/orian/Videos/raversi/src/Client/cmake-build-debug/CMakeFiles/raversi.dir/src/Players.cpp.o"

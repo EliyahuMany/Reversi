@@ -56,6 +56,14 @@ Cell.h
 Players.h
 /home/orian/Videos/raversi/src/Client/include/Players.h
 
+/home/orian/Videos/raversi/src/Client/include/GameMenu.h
+iostream
+-
+Print.h
+/home/orian/Videos/raversi/src/Client/include/Print.h
+Players.h
+/home/orian/Videos/raversi/src/Client/include/Players.h
+
 /home/orian/Videos/raversi/src/Client/include/Human.h
 iostream
 -
@@ -101,12 +109,8 @@ Client.h
 /home/orian/Videos/raversi/src/Client/main.cpp
 iostream
 -
-include/Print.h
-/home/orian/Videos/raversi/src/Client/include/Print.h
-include/GameFlow.h
-/home/orian/Videos/raversi/src/Client/include/GameFlow.h
-include/ConsolePrint.h
-/home/orian/Videos/raversi/src/Client/include/ConsolePrint.h
+include/GameMenu.h
+/home/orian/Videos/raversi/src/Client/include/GameMenu.h
 
 /home/orian/Videos/raversi/src/Client/src/AIPlayer.cpp
 ../include/AIPlayer.h
@@ -159,6 +163,24 @@ cstdlib
 /home/orian/Videos/raversi/src/Client/src/GameLogic.cpp
 ../include/GameLogic.h
 /home/orian/Videos/raversi/src/Client/include/GameLogic.h
+
+/home/orian/Videos/raversi/src/Client/src/GameMenu.cpp
+fstream
+-
+cstdlib
+-
+../include/GameMenu.h
+/home/orian/Videos/raversi/src/Client/include/GameMenu.h
+../include/ConsolePrint.h
+/home/orian/Videos/raversi/src/Client/include/ConsolePrint.h
+../include/GameFlow.h
+/home/orian/Videos/raversi/src/Client/include/GameFlow.h
+../include/Client.h
+/home/orian/Videos/raversi/src/Client/include/Client.h
+../include/LocalPlayer.h
+/home/orian/Videos/raversi/src/Client/include/LocalPlayer.h
+../include/RemotePlayer.h
+/home/orian/Videos/raversi/src/Client/include/RemotePlayer.h
 
 /home/orian/Videos/raversi/src/Client/src/Human.cpp
 ../include/Human.h

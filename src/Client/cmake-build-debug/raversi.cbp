@@ -414,6 +414,9 @@
 			<Option target="raversiTest"/>
 			<Option target="raversi"/>
 		</Unit>
+		<Unit filename="/home/orian/Videos/raversi/src/Client/include/GameMenu.h">
+			<Option target="raversi"/>
+		</Unit>
 		<Unit filename="/home/orian/Videos/raversi/src/Client/include/Human.h">
 			<Option target="raversiTest"/>
 			<Option target="raversi"/>
@@ -478,6 +481,9 @@
 		</Unit>
 		<Unit filename="/home/orian/Videos/raversi/src/Client/src/GameLogic.cpp">
 			<Option target="raversiTest"/>
+			<Option target="raversi"/>
+		</Unit>
+		<Unit filename="/home/orian/Videos/raversi/src/Client/src/GameMenu.cpp">
 			<Option target="raversi"/>
 		</Unit>
 		<Unit filename="/home/orian/Videos/raversi/src/Client/src/Human.cpp">

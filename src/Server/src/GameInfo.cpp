@@ -6,7 +6,6 @@
  */
 
 #include "../include/GameInfo.h"
-#include <pthread.h>
 #include <unistd.h>
 #include <cstring>
 

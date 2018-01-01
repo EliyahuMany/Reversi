@@ -22,8 +22,7 @@ Client::Client(const char *serverIP, int serverPort, Print &printer) : serverIP(
     cout << "Client" << endl;
 }
 
-int Client::connectToServer() {
-    int numOfPlayer;
+void Client::connectToServer() {
     clientSocket = socket(AF_INET, SOCK_STREAM, 0);
     if (clientSocket == -1) {
         throw "Error opening socket";
@@ -51,18 +50,6 @@ int Client::connectToServer() {
         throw "Error connecting to server";
     }
     this->printer.string((char *) "Connected to server");
-
-    int n = read(clientSocket, &numOfPlayer, sizeof(numOfPlayer));
-    if (n == -1) {
-        this->printer.string((char *) "Reading failed");
-        return 0;
-    }
-    if (numOfPlayer == 1) {
-        this->printer.string((char *) "Waiting to other player to connect");
-        n = read(clientSocket, &numOfPlayer, sizeof(numOfPlayer));
-    }
-
-    return numOfPlayer;
 }
 
 void Client::sendMove(char *move) {
@@ -73,6 +60,12 @@ void Client::sendMove(char *move) {
 
 void Client::receiveMove(char *move) {
     int n = read(clientSocket, move, sizeof(move));
+    if (n == -1)
+        throw "Error reading move";
+}
+
+void Client::getPlayerNum(int &numOfPlayer) {
+    int n = read(clientSocket, &numOfPlayer, sizeof(numOfPlayer));
     if (n == -1)
         throw "Error reading move";
 }
