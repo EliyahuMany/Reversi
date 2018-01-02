@@ -34,7 +34,8 @@ void Server::start() {
     }
 
     listen(serverSocket, MAX_CONNECTED_CLIENTS);
-    pthread_create(&serverThreadId, NULL, &acceptClients, (void *) serverSocket);
+    pthread_create(&serverThreadId, NULL, acceptClients, (void *) serverSocket);
+    pthread_join(serverThreadId, NULL);
 }
 
 void Server::stop() {
@@ -46,7 +47,7 @@ void Server::stop() {
 static void *acceptClients(void *socket) {
     long serverSocket = (long) socket;
     struct sockaddr_in clientAddress;
-    socklen_t clientAddressLen;
+    socklen_t clientAddressLen = sizeof(clientAddress);
 
     cout << "Waiting for client connections..." << endl;
     while (true) {
@@ -57,7 +58,7 @@ static void *acceptClients(void *socket) {
             throw "Error on accept";
 
         pthread_t newThread;
-        int rc = pthread_create(&newThread, NULL, &handleClient, (void *) clientSocket);
+        int rc = pthread_create(&newThread, NULL, handleClient, (void *) clientSocket);
         if (rc) {
             cout << "Error: unable to create thread, " << rc << endl;
             exit(-1);

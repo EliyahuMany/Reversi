@@ -41,8 +41,10 @@ void GameMenu::menu() {
             pX = new Human('X', printer);
             pO = new AIPlayer('O', gameLogic, printer);
             break;
+        case 3:
+            this->localPlayerContact(printer, pX, pO);
+            break;
     }
-    this->localPlayerContact(printer, pX, pO);
     GameFlow game = GameFlow(pX, pO, gameLogic, printer);
     game.run();
 }
@@ -93,6 +95,7 @@ void GameMenu::localPlayerContact(Print &printer, Players *pX, Players *pO) {
             break;
         }
     }
+
     client.getPlayerNum(playerNum);
     if (playerNum == 1) {
         pX = new LocalPlayer('X', client, printer);

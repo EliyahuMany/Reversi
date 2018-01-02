@@ -34,19 +34,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/eliyahu/Downloads/clion-2017.3.1/bin/cmake/bin/cmake
+CMAKE_COMMAND = /opt/clion-2017.3/bin/cmake/bin/cmake
 
 # The command to remove a file.
-RM = /home/eliyahu/Downloads/clion-2017.3.1/bin/cmake/bin/cmake -E remove -f
+RM = /opt/clion-2017.3/bin/cmake/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/eliyahu/CLionProjects/raversi/src/Server
+CMAKE_SOURCE_DIR = /home/orian/Videos/raversi/src/Server
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/eliyahu/CLionProjects/raversi/src/Server/cmake-build-debug
+CMAKE_BINARY_DIR = /home/orian/Videos/raversi/src/Server/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/Server.dir/depend.make
@@ -59,16 +59,16 @@ include CMakeFiles/Server.dir/flags.make
 
 CMakeFiles/Server.dir/main.cpp.o: CMakeFiles/Server.dir/flags.make
 CMakeFiles/Server.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/eliyahu/CLionProjects/raversi/src/Server/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Server.dir/main.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Server.dir/main.cpp.o -c /home/eliyahu/CLionProjects/raversi/src/Server/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/orian/Videos/raversi/src/Server/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Server.dir/main.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Server.dir/main.cpp.o -c /home/orian/Videos/raversi/src/Server/main.cpp
 
 CMakeFiles/Server.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Server.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/eliyahu/CLionProjects/raversi/src/Server/main.cpp > CMakeFiles/Server.dir/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/orian/Videos/raversi/src/Server/main.cpp > CMakeFiles/Server.dir/main.cpp.i
 
 CMakeFiles/Server.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Server.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/eliyahu/CLionProjects/raversi/src/Server/main.cpp -o CMakeFiles/Server.dir/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/orian/Videos/raversi/src/Server/main.cpp -o CMakeFiles/Server.dir/main.cpp.s
 
 CMakeFiles/Server.dir/main.cpp.o.requires:
 
@@ -83,16 +83,16 @@ CMakeFiles/Server.dir/main.cpp.o.provides.build: CMakeFiles/Server.dir/main.cpp.
 
 CMakeFiles/Server.dir/src/Server.cpp.o: CMakeFiles/Server.dir/flags.make
 CMakeFiles/Server.dir/src/Server.cpp.o: ../src/Server.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/eliyahu/CLionProjects/raversi/src/Server/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Server.dir/src/Server.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Server.dir/src/Server.cpp.o -c /home/eliyahu/CLionProjects/raversi/src/Server/src/Server.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/orian/Videos/raversi/src/Server/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Server.dir/src/Server.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Server.dir/src/Server.cpp.o -c /home/orian/Videos/raversi/src/Server/src/Server.cpp
 
 CMakeFiles/Server.dir/src/Server.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Server.dir/src/Server.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/eliyahu/CLionProjects/raversi/src/Server/src/Server.cpp > CMakeFiles/Server.dir/src/Server.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/orian/Videos/raversi/src/Server/src/Server.cpp > CMakeFiles/Server.dir/src/Server.cpp.i
 
 CMakeFiles/Server.dir/src/Server.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Server.dir/src/Server.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/eliyahu/CLionProjects/raversi/src/Server/src/Server.cpp -o CMakeFiles/Server.dir/src/Server.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/orian/Videos/raversi/src/Server/src/Server.cpp -o CMakeFiles/Server.dir/src/Server.cpp.s
 
 CMakeFiles/Server.dir/src/Server.cpp.o.requires:
 
@@ -107,16 +107,16 @@ CMakeFiles/Server.dir/src/Server.cpp.o.provides.build: CMakeFiles/Server.dir/src
 
 CMakeFiles/Server.dir/src/CommandsManager.cpp.o: CMakeFiles/Server.dir/flags.make
 CMakeFiles/Server.dir/src/CommandsManager.cpp.o: ../src/CommandsManager.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/eliyahu/CLionProjects/raversi/src/Server/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Server.dir/src/CommandsManager.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Server.dir/src/CommandsManager.cpp.o -c /home/eliyahu/CLionProjects/raversi/src/Server/src/CommandsManager.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/orian/Videos/raversi/src/Server/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Server.dir/src/CommandsManager.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Server.dir/src/CommandsManager.cpp.o -c /home/orian/Videos/raversi/src/Server/src/CommandsManager.cpp
 
 CMakeFiles/Server.dir/src/CommandsManager.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Server.dir/src/CommandsManager.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/eliyahu/CLionProjects/raversi/src/Server/src/CommandsManager.cpp > CMakeFiles/Server.dir/src/CommandsManager.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/orian/Videos/raversi/src/Server/src/CommandsManager.cpp > CMakeFiles/Server.dir/src/CommandsManager.cpp.i
 
 CMakeFiles/Server.dir/src/CommandsManager.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Server.dir/src/CommandsManager.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/eliyahu/CLionProjects/raversi/src/Server/src/CommandsManager.cpp -o CMakeFiles/Server.dir/src/CommandsManager.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/orian/Videos/raversi/src/Server/src/CommandsManager.cpp -o CMakeFiles/Server.dir/src/CommandsManager.cpp.s
 
 CMakeFiles/Server.dir/src/CommandsManager.cpp.o.requires:
 
@@ -131,16 +131,16 @@ CMakeFiles/Server.dir/src/CommandsManager.cpp.o.provides.build: CMakeFiles/Serve
 
 CMakeFiles/Server.dir/src/GameInfo.cpp.o: CMakeFiles/Server.dir/flags.make
 CMakeFiles/Server.dir/src/GameInfo.cpp.o: ../src/GameInfo.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/eliyahu/CLionProjects/raversi/src/Server/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Server.dir/src/GameInfo.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Server.dir/src/GameInfo.cpp.o -c /home/eliyahu/CLionProjects/raversi/src/Server/src/GameInfo.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/orian/Videos/raversi/src/Server/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Server.dir/src/GameInfo.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Server.dir/src/GameInfo.cpp.o -c /home/orian/Videos/raversi/src/Server/src/GameInfo.cpp
 
 CMakeFiles/Server.dir/src/GameInfo.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Server.dir/src/GameInfo.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/eliyahu/CLionProjects/raversi/src/Server/src/GameInfo.cpp > CMakeFiles/Server.dir/src/GameInfo.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/orian/Videos/raversi/src/Server/src/GameInfo.cpp > CMakeFiles/Server.dir/src/GameInfo.cpp.i
 
 CMakeFiles/Server.dir/src/GameInfo.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Server.dir/src/GameInfo.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/eliyahu/CLionProjects/raversi/src/Server/src/GameInfo.cpp -o CMakeFiles/Server.dir/src/GameInfo.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/orian/Videos/raversi/src/Server/src/GameInfo.cpp -o CMakeFiles/Server.dir/src/GameInfo.cpp.s
 
 CMakeFiles/Server.dir/src/GameInfo.cpp.o.requires:
 
@@ -155,16 +155,16 @@ CMakeFiles/Server.dir/src/GameInfo.cpp.o.provides.build: CMakeFiles/Server.dir/s
 
 CMakeFiles/Server.dir/src/Command.cpp.o: CMakeFiles/Server.dir/flags.make
 CMakeFiles/Server.dir/src/Command.cpp.o: ../src/Command.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/eliyahu/CLionProjects/raversi/src/Server/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Server.dir/src/Command.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Server.dir/src/Command.cpp.o -c /home/eliyahu/CLionProjects/raversi/src/Server/src/Command.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/orian/Videos/raversi/src/Server/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Server.dir/src/Command.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Server.dir/src/Command.cpp.o -c /home/orian/Videos/raversi/src/Server/src/Command.cpp
 
 CMakeFiles/Server.dir/src/Command.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Server.dir/src/Command.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/eliyahu/CLionProjects/raversi/src/Server/src/Command.cpp > CMakeFiles/Server.dir/src/Command.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/orian/Videos/raversi/src/Server/src/Command.cpp > CMakeFiles/Server.dir/src/Command.cpp.i
 
 CMakeFiles/Server.dir/src/Command.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Server.dir/src/Command.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/eliyahu/CLionProjects/raversi/src/Server/src/Command.cpp -o CMakeFiles/Server.dir/src/Command.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/orian/Videos/raversi/src/Server/src/Command.cpp -o CMakeFiles/Server.dir/src/Command.cpp.s
 
 CMakeFiles/Server.dir/src/Command.cpp.o.requires:
 
@@ -179,16 +179,16 @@ CMakeFiles/Server.dir/src/Command.cpp.o.provides.build: CMakeFiles/Server.dir/sr
 
 CMakeFiles/Server.dir/src/StartCommand.cpp.o: CMakeFiles/Server.dir/flags.make
 CMakeFiles/Server.dir/src/StartCommand.cpp.o: ../src/StartCommand.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/eliyahu/CLionProjects/raversi/src/Server/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Server.dir/src/StartCommand.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Server.dir/src/StartCommand.cpp.o -c /home/eliyahu/CLionProjects/raversi/src/Server/src/StartCommand.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/orian/Videos/raversi/src/Server/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Server.dir/src/StartCommand.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Server.dir/src/StartCommand.cpp.o -c /home/orian/Videos/raversi/src/Server/src/StartCommand.cpp
 
 CMakeFiles/Server.dir/src/StartCommand.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Server.dir/src/StartCommand.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/eliyahu/CLionProjects/raversi/src/Server/src/StartCommand.cpp > CMakeFiles/Server.dir/src/StartCommand.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/orian/Videos/raversi/src/Server/src/StartCommand.cpp > CMakeFiles/Server.dir/src/StartCommand.cpp.i
 
 CMakeFiles/Server.dir/src/StartCommand.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Server.dir/src/StartCommand.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/eliyahu/CLionProjects/raversi/src/Server/src/StartCommand.cpp -o CMakeFiles/Server.dir/src/StartCommand.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/orian/Videos/raversi/src/Server/src/StartCommand.cpp -o CMakeFiles/Server.dir/src/StartCommand.cpp.s
 
 CMakeFiles/Server.dir/src/StartCommand.cpp.o.requires:
 
@@ -203,16 +203,16 @@ CMakeFiles/Server.dir/src/StartCommand.cpp.o.provides.build: CMakeFiles/Server.d
 
 CMakeFiles/Server.dir/src/JoinCommand.cpp.o: CMakeFiles/Server.dir/flags.make
 CMakeFiles/Server.dir/src/JoinCommand.cpp.o: ../src/JoinCommand.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/eliyahu/CLionProjects/raversi/src/Server/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Server.dir/src/JoinCommand.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Server.dir/src/JoinCommand.cpp.o -c /home/eliyahu/CLionProjects/raversi/src/Server/src/JoinCommand.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/orian/Videos/raversi/src/Server/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Server.dir/src/JoinCommand.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Server.dir/src/JoinCommand.cpp.o -c /home/orian/Videos/raversi/src/Server/src/JoinCommand.cpp
 
 CMakeFiles/Server.dir/src/JoinCommand.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Server.dir/src/JoinCommand.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/eliyahu/CLionProjects/raversi/src/Server/src/JoinCommand.cpp > CMakeFiles/Server.dir/src/JoinCommand.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/orian/Videos/raversi/src/Server/src/JoinCommand.cpp > CMakeFiles/Server.dir/src/JoinCommand.cpp.i
 
 CMakeFiles/Server.dir/src/JoinCommand.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Server.dir/src/JoinCommand.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/eliyahu/CLionProjects/raversi/src/Server/src/JoinCommand.cpp -o CMakeFiles/Server.dir/src/JoinCommand.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/orian/Videos/raversi/src/Server/src/JoinCommand.cpp -o CMakeFiles/Server.dir/src/JoinCommand.cpp.s
 
 CMakeFiles/Server.dir/src/JoinCommand.cpp.o.requires:
 
@@ -227,16 +227,16 @@ CMakeFiles/Server.dir/src/JoinCommand.cpp.o.provides.build: CMakeFiles/Server.di
 
 CMakeFiles/Server.dir/src/GameListCommand.cpp.o: CMakeFiles/Server.dir/flags.make
 CMakeFiles/Server.dir/src/GameListCommand.cpp.o: ../src/GameListCommand.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/eliyahu/CLionProjects/raversi/src/Server/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Server.dir/src/GameListCommand.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Server.dir/src/GameListCommand.cpp.o -c /home/eliyahu/CLionProjects/raversi/src/Server/src/GameListCommand.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/orian/Videos/raversi/src/Server/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Server.dir/src/GameListCommand.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Server.dir/src/GameListCommand.cpp.o -c /home/orian/Videos/raversi/src/Server/src/GameListCommand.cpp
 
 CMakeFiles/Server.dir/src/GameListCommand.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Server.dir/src/GameListCommand.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/eliyahu/CLionProjects/raversi/src/Server/src/GameListCommand.cpp > CMakeFiles/Server.dir/src/GameListCommand.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/orian/Videos/raversi/src/Server/src/GameListCommand.cpp > CMakeFiles/Server.dir/src/GameListCommand.cpp.i
 
 CMakeFiles/Server.dir/src/GameListCommand.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Server.dir/src/GameListCommand.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/eliyahu/CLionProjects/raversi/src/Server/src/GameListCommand.cpp -o CMakeFiles/Server.dir/src/GameListCommand.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/orian/Videos/raversi/src/Server/src/GameListCommand.cpp -o CMakeFiles/Server.dir/src/GameListCommand.cpp.s
 
 CMakeFiles/Server.dir/src/GameListCommand.cpp.o.requires:
 
@@ -251,16 +251,16 @@ CMakeFiles/Server.dir/src/GameListCommand.cpp.o.provides.build: CMakeFiles/Serve
 
 CMakeFiles/Server.dir/src/ServerGames.cpp.o: CMakeFiles/Server.dir/flags.make
 CMakeFiles/Server.dir/src/ServerGames.cpp.o: ../src/ServerGames.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/eliyahu/CLionProjects/raversi/src/Server/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/Server.dir/src/ServerGames.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Server.dir/src/ServerGames.cpp.o -c /home/eliyahu/CLionProjects/raversi/src/Server/src/ServerGames.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/orian/Videos/raversi/src/Server/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/Server.dir/src/ServerGames.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Server.dir/src/ServerGames.cpp.o -c /home/orian/Videos/raversi/src/Server/src/ServerGames.cpp
 
 CMakeFiles/Server.dir/src/ServerGames.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Server.dir/src/ServerGames.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/eliyahu/CLionProjects/raversi/src/Server/src/ServerGames.cpp > CMakeFiles/Server.dir/src/ServerGames.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/orian/Videos/raversi/src/Server/src/ServerGames.cpp > CMakeFiles/Server.dir/src/ServerGames.cpp.i
 
 CMakeFiles/Server.dir/src/ServerGames.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Server.dir/src/ServerGames.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/eliyahu/CLionProjects/raversi/src/Server/src/ServerGames.cpp -o CMakeFiles/Server.dir/src/ServerGames.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/orian/Videos/raversi/src/Server/src/ServerGames.cpp -o CMakeFiles/Server.dir/src/ServerGames.cpp.s
 
 CMakeFiles/Server.dir/src/ServerGames.cpp.o.requires:
 
@@ -299,7 +299,7 @@ Server: CMakeFiles/Server.dir/src/GameListCommand.cpp.o
 Server: CMakeFiles/Server.dir/src/ServerGames.cpp.o
 Server: CMakeFiles/Server.dir/build.make
 Server: CMakeFiles/Server.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/eliyahu/CLionProjects/raversi/src/Server/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable Server"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/orian/Videos/raversi/src/Server/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable Server"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Server.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -324,6 +324,6 @@ CMakeFiles/Server.dir/clean:
 .PHONY : CMakeFiles/Server.dir/clean
 
 CMakeFiles/Server.dir/depend:
-	cd /home/eliyahu/CLionProjects/raversi/src/Server/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/eliyahu/CLionProjects/raversi/src/Server /home/eliyahu/CLionProjects/raversi/src/Server /home/eliyahu/CLionProjects/raversi/src/Server/cmake-build-debug /home/eliyahu/CLionProjects/raversi/src/Server/cmake-build-debug /home/eliyahu/CLionProjects/raversi/src/Server/cmake-build-debug/CMakeFiles/Server.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/orian/Videos/raversi/src/Server/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/orian/Videos/raversi/src/Server /home/orian/Videos/raversi/src/Server /home/orian/Videos/raversi/src/Server/cmake-build-debug /home/orian/Videos/raversi/src/Server/cmake-build-debug /home/orian/Videos/raversi/src/Server/cmake-build-debug/CMakeFiles/Server.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/Server.dir/depend
 

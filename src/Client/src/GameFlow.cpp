@@ -13,8 +13,8 @@
 #include "../include/LocalPlayer.h"
 
 GameFlow::GameFlow(Players *pX, Players *pO, GameLogic gameLogic, Print &printer) : pX(pX), pO(pO),
-                                                                                                gameL(gameLogic),
-                                                                                                printer(printer) {
+                                                                                    gameL(gameLogic),
+                                                                                    printer(printer) {
     this->xScore = 2;
     this->oScore = 2;
 }
