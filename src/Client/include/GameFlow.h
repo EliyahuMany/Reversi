@@ -21,7 +21,7 @@ public:
     /**
      * Constructor - create a game session.
      */
-    GameFlow(int size, int choose, Print &printer);
+    GameFlow(Players *pX, Players *pO, GameLogic gameLogic, Print &printer);
 
     /**
      * run the game until the players can't make a move.

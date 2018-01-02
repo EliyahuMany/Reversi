@@ -6,5 +6,5 @@ CXX_FLAGS = -g    -Wall -Wshadow -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/orian/Videos/raversi/src/Client/lib/googletest-release-1.8.0/googlemock/include -I/home/orian/Videos/raversi/src/Client/lib/googletest-release-1.8.0/googlemock -I/home/orian/Videos/raversi/src/Client/lib/googletest-release-1.8.0/googletest/include -I/home/orian/Videos/raversi/src/Client/lib/googletest-release-1.8.0/googletest 
+CXX_INCLUDES = -I/home/eliyahu/CLionProjects/raversi/src/Client/lib/googletest-release-1.8.0/googlemock/include -I/home/eliyahu/CLionProjects/raversi/src/Client/lib/googletest-release-1.8.0/googlemock -I/home/eliyahu/CLionProjects/raversi/src/Client/lib/googletest-release-1.8.0/googletest/include -I/home/eliyahu/CLionProjects/raversi/src/Client/lib/googletest-release-1.8.0/googletest 
 

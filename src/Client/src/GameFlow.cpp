@@ -12,18 +12,9 @@
 #include "../include/RemotePlayer.h"
 #include "../include/LocalPlayer.h"
 
-GameFlow::GameFlow(int size, int choose, Print &printer) : gameL(GameLogic(size)), printer(printer) {
-    //online game:
-    if (choose == 3) {
-
-    }//offline game:
-    else {
-        this->pX = new Human('X', printer);
-        if (choose == 1)
-            this->pO = new Human('O', printer);
-        else
-            this->pO = new AIPlayer('O', gameL, printer);
-    }
+GameFlow::GameFlow(Players *pX, Players *pO, GameLogic gameLogic, Print &printer) : pX(pX), pO(pO),
+                                                                                                gameL(gameLogic),
+                                                                                                printer(printer) {
     this->xScore = 2;
     this->oScore = 2;
 }
