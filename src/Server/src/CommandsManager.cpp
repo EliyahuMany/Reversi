@@ -7,10 +7,27 @@
 
 #include "../include/CommandsManager.h"
 #include "../include/StartCommand.h"
+#include "../include/JoinCommand.h"
+#include "../include/GameListCommand.h"
+
+CommandsManager *CommandsManager::instance = 0;
+pthread_mutex_t CommandsManager::lock;
+
+CommandsManager *CommandsManager::getInstance() {
+    if (instance == 0) {
+        pthread_mutex_lock(&lock);
+        if (instance == 0) {
+            instance = new CommandsManager();
+        }
+        pthread_mutex_unlock(&lock);
+    }
+    return instance;
+}
 
 CommandsManager::CommandsManager() {
-    commandsMap["start"] = new StartCommand(this->gamesList);
-// Add more commands...
+    commandsMap["start"] = new StartCommand();
+    commandsMap["join"] = new JoinCommand();
+    commandsMap["list_games"] = new GameListCommand();
 }
 
 void CommandsManager::executeCommand(string command, vector<string> args) {

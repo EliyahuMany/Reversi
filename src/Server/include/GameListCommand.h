@@ -12,8 +12,6 @@ using namespace std;
 
 class GameListCommand : public Command {
 public:
-    GameListCommand(vector<GameInfo> &gameList);
-
     virtual void execute(vector<string> &args);
 };
 

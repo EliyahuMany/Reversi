@@ -4,23 +4,24 @@
 
 #include <cstdlib>
 #include <unistd.h>
+#include <cstring>
 #include "../include/StartCommand.h"
-
-StartCommand::StartCommand(vector<GameInfo> &gamesList) : Command(gamesList) {}
+#include "../include/ServerGames.h"
 
 void StartCommand::execute(vector<string> &args) {
+    vector<GameInfo> *gamesList = ServerGames::getInstance()->getGamesList();
     int clientSocket = atoi(args[0].c_str());
     string msg;
 
-    for (int i = 0; i < this->gamesList.size(); i++) {
-        if (this->gamesList[i].getName().compare(args[1])) {
+    for (vector<GameInfo>::iterator it = gamesList->begin(); it != gamesList->end(); it++) {
+        if (!strcmp((*it).getName().c_str(), args[0].c_str())) {
             msg = "-1";
             this->commandNotify(clientSocket, msg);
             return;
         }
     }
     GameInfo game(args[1], atoi(args[0].c_str()));
-    this->gamesList.push_back(game);
+    gamesList->push_back(game);
     //write to the client to wait.
     msg = "Waiting to another player...";
     this->commandNotify(clientSocket, msg);

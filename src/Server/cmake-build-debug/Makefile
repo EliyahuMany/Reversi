@@ -123,33 +123,6 @@ Server/fast:
 	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/build
 .PHONY : Server/fast
 
-GameListCommand.o: GameListCommand.cpp.o
-
-.PHONY : GameListCommand.o
-
-# target to build an object file
-GameListCommand.cpp.o:
-	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/GameListCommand.cpp.o
-.PHONY : GameListCommand.cpp.o
-
-GameListCommand.i: GameListCommand.cpp.i
-
-.PHONY : GameListCommand.i
-
-# target to preprocess a source file
-GameListCommand.cpp.i:
-	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/GameListCommand.cpp.i
-.PHONY : GameListCommand.cpp.i
-
-GameListCommand.s: GameListCommand.cpp.s
-
-.PHONY : GameListCommand.s
-
-# target to generate assembly for a file
-GameListCommand.cpp.s:
-	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/GameListCommand.cpp.s
-.PHONY : GameListCommand.cpp.s
-
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -176,33 +149,6 @@ main.s: main.cpp.s
 main.cpp.s:
 	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/main.cpp.s
 .PHONY : main.cpp.s
-
-src/ClientHandler.o: src/ClientHandler.cpp.o
-
-.PHONY : src/ClientHandler.o
-
-# target to build an object file
-src/ClientHandler.cpp.o:
-	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/src/ClientHandler.cpp.o
-.PHONY : src/ClientHandler.cpp.o
-
-src/ClientHandler.i: src/ClientHandler.cpp.i
-
-.PHONY : src/ClientHandler.i
-
-# target to preprocess a source file
-src/ClientHandler.cpp.i:
-	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/src/ClientHandler.cpp.i
-.PHONY : src/ClientHandler.cpp.i
-
-src/ClientHandler.s: src/ClientHandler.cpp.s
-
-.PHONY : src/ClientHandler.s
-
-# target to generate assembly for a file
-src/ClientHandler.cpp.s:
-	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/src/ClientHandler.cpp.s
-.PHONY : src/ClientHandler.cpp.s
 
 src/Command.o: src/Command.cpp.o
 
@@ -285,6 +231,33 @@ src/GameInfo.cpp.s:
 	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/src/GameInfo.cpp.s
 .PHONY : src/GameInfo.cpp.s
 
+src/GameListCommand.o: src/GameListCommand.cpp.o
+
+.PHONY : src/GameListCommand.o
+
+# target to build an object file
+src/GameListCommand.cpp.o:
+	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/src/GameListCommand.cpp.o
+.PHONY : src/GameListCommand.cpp.o
+
+src/GameListCommand.i: src/GameListCommand.cpp.i
+
+.PHONY : src/GameListCommand.i
+
+# target to preprocess a source file
+src/GameListCommand.cpp.i:
+	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/src/GameListCommand.cpp.i
+.PHONY : src/GameListCommand.cpp.i
+
+src/GameListCommand.s: src/GameListCommand.cpp.s
+
+.PHONY : src/GameListCommand.s
+
+# target to generate assembly for a file
+src/GameListCommand.cpp.s:
+	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/src/GameListCommand.cpp.s
+.PHONY : src/GameListCommand.cpp.s
+
 src/JoinCommand.o: src/JoinCommand.cpp.o
 
 .PHONY : src/JoinCommand.o
@@ -339,6 +312,33 @@ src/Server.cpp.s:
 	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/src/Server.cpp.s
 .PHONY : src/Server.cpp.s
 
+src/ServerGames.o: src/ServerGames.cpp.o
+
+.PHONY : src/ServerGames.o
+
+# target to build an object file
+src/ServerGames.cpp.o:
+	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/src/ServerGames.cpp.o
+.PHONY : src/ServerGames.cpp.o
+
+src/ServerGames.i: src/ServerGames.cpp.i
+
+.PHONY : src/ServerGames.i
+
+# target to preprocess a source file
+src/ServerGames.cpp.i:
+	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/src/ServerGames.cpp.i
+.PHONY : src/ServerGames.cpp.i
+
+src/ServerGames.s: src/ServerGames.cpp.s
+
+.PHONY : src/ServerGames.s
+
+# target to generate assembly for a file
+src/ServerGames.cpp.s:
+	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/src/ServerGames.cpp.s
+.PHONY : src/ServerGames.cpp.s
+
 src/StartCommand.o: src/StartCommand.cpp.o
 
 .PHONY : src/StartCommand.o
@@ -375,15 +375,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... Server"
-	@echo "... GameListCommand.o"
-	@echo "... GameListCommand.i"
-	@echo "... GameListCommand.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... src/ClientHandler.o"
-	@echo "... src/ClientHandler.i"
-	@echo "... src/ClientHandler.s"
 	@echo "... src/Command.o"
 	@echo "... src/Command.i"
 	@echo "... src/Command.s"
@@ -393,12 +387,18 @@ help:
 	@echo "... src/GameInfo.o"
 	@echo "... src/GameInfo.i"
 	@echo "... src/GameInfo.s"
+	@echo "... src/GameListCommand.o"
+	@echo "... src/GameListCommand.i"
+	@echo "... src/GameListCommand.s"
 	@echo "... src/JoinCommand.o"
 	@echo "... src/JoinCommand.i"
 	@echo "... src/JoinCommand.s"
 	@echo "... src/Server.o"
 	@echo "... src/Server.i"
 	@echo "... src/Server.s"
+	@echo "... src/ServerGames.o"
+	@echo "... src/ServerGames.i"
+	@echo "... src/ServerGames.s"
 	@echo "... src/StartCommand.o"
 	@echo "... src/StartCommand.i"
 	@echo "... src/StartCommand.s"

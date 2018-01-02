@@ -8,8 +8,6 @@
 #include <unistd.h>
 #include "../include/Command.h"
 
-Command::Command(vector<GameInfo> &gamesList) : gamesList(gamesList) {}
-
 void Command::commandNotify(int clientSocket, string msg) {
     int n = write(clientSocket, msg.c_str(), msg.length());
     if (n == -1) {

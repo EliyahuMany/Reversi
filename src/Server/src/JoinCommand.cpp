@@ -3,20 +3,21 @@
 //
 
 #include <cstdlib>
-#include <unistd.h>
 #include "../include/JoinCommand.h"
+#include "../include/ServerGames.h"
 
 using namespace std;
 
-JoinCommand::JoinCommand(vector<GameInfo> &gamesList) : Command(gamesList) {}
-
 void JoinCommand::execute(vector<string> &args) {
-    int i, clientSocket = atoi(args[0].c_str());
+    vector<GameInfo> *gamesList = ServerGames::getInstance()->getGamesList();
+    int clientSocket = atoi(args[0].c_str());
     string msg = "";
     bool isInList = false;
-    for (i = 0; i < this->gamesList.size(); i++) {
-        if (!this->gamesList[i].getName().compare(args[1])) {
-            this->gamesList[i].setClientSocket2(atoi(args[0].c_str()));
+    gamesList[2];
+    vector<GameInfo>::iterator it;
+    for (it = gamesList->begin(); it != gamesList->end(); it++) {
+        if (!(*it).getName().compare(args[1])) {
+            (*it).setClientSocket2(atoi(args[0].c_str()));
             isInList = true;
             break;
         }
@@ -26,8 +27,8 @@ void JoinCommand::execute(vector<string> &args) {
         this->commandNotify(clientSocket, msg);
         return;
     }
+    GameInfo g = *it;
     pthread_t gameThread;
-    pthread_create(&gameThread, NULL, this->gamesList[i].gameHandler, (void *) &this->gamesList[i]);
+    pthread_create(&gameThread, NULL, GameInfo::gameHandler, (void *) &g);
     pthread_exit(NULL);
-
 }

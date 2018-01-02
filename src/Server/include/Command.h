@@ -16,14 +16,9 @@ using namespace std;
 
 class Command {
 public:
-    Command(vector<GameInfo> &gamesList);
-
     virtual void execute(vector<string> &args) = 0;
 
     void commandNotify(int clientSocket, string msg);
-
-protected:
-    vector<GameInfo> gamesList;
 };
 
 #endif //PROJECT_COMMAND_H

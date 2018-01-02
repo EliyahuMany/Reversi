@@ -11,8 +11,6 @@ using namespace std;
 
 class StartCommand : public Command {
 public:
-    StartCommand(vector<GameInfo> &gamesList);
-
     virtual void execute(vector<string> &args);
 };
 

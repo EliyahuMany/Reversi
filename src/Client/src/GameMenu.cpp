@@ -31,6 +31,16 @@ void GameMenu::menu() {
         cin.ignore(100, '\n');
     }
     size = 8;
+    switch (choose) {
+        case 1:
+            pX = new Human('X', printer);
+            pO = new Human('O', printer);
+            break;
+        case 2:
+            pX = new Human('X', printer);
+            pO = new AIPlayer('O', ,printer);
+            break;
+    }
     this->localPlayerContact(printer, pX, pO);
     GameFlow game = GameFlow(size, choose, printer);
     game.run();

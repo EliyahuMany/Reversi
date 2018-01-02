@@ -12,7 +12,6 @@
 using namespace std;
 
 int main() {
-    CommandsManager cmd;
     ifstream sFile;
     sFile.open("server_config.txt");
     string port;
@@ -21,9 +20,15 @@ int main() {
     else
         return 0;
     sFile.close();
-    Server server(atoi(port.c_str()),cmd);
+
+    Server server(atoi(port.c_str()));
     try {
         server.start();
+        cout << "Enter exit to stop server" << endl;
+        string str;
+        cin >> str;
+        if (str == "exit")
+            server.stop();
     } catch (const char *msg) {
         cout << "Cannot start server. Reason: " << msg << endl;
         exit(-1);

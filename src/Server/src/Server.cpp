@@ -5,18 +5,23 @@
  *      ID: 308335454
  */
 
+#include <sstream>
 #include "../include/Server.h"
-#include "../include/ClientHandler.h"
 
 using namespace std;
-#define MAX_CONNECTED_CLIENTS 2
+#define MAX_CONNECTED_CLIENTS 10
 
-Server::Server(int port, CommandsManager &cmd) : port(port), serverSocket(0), cmd(cmd) {
+static void *acceptClients(void *);
+
+static void *handleClient(void *);
+
+Server::Server(int port) : port(port), serverSocket(0) {
     cout << "Server" << endl;
 }
 
 void Server::start() {
     serverSocket = socket(AF_INET, SOCK_STREAM, 0);
+
     if (serverSocket == -1)
         throw "Error opening socket";
     struct sockaddr_in serverAddress;
@@ -29,7 +34,17 @@ void Server::start() {
     }
 
     listen(serverSocket, MAX_CONNECTED_CLIENTS);
+    pthread_create(&serverThreadId, NULL, &acceptClients, (void *) serverSocket);
+}
 
+void Server::stop() {
+    pthread_cancel(serverThreadId);
+    close(serverSocket);
+    cout << "Server stopped" << endl;
+}
+
+static void *acceptClients(void *socket) {
+    long serverSocket = (long) socket;
     struct sockaddr_in clientAddress;
     socklen_t clientAddressLen;
 
@@ -42,9 +57,7 @@ void Server::start() {
             throw "Error on accept";
 
         pthread_t newThread;
-        ClientHandler ch(clientSocket, cmd);
-        int rc = pthread_create(&newThread, NULL, ch.handleClient, (void *) &ch);
-        pthread_join(newThread, NULL);
+        int rc = pthread_create(&newThread, NULL, &handleClient, (void *) clientSocket);
         if (rc) {
             cout << "Error: unable to create thread, " << rc << endl;
             exit(-1);
@@ -53,6 +66,40 @@ void Server::start() {
     }
 }
 
-void Server::stop() {
-    close(serverSocket);
+void *handleClient(void *socket) {
+    long clientSocket = (long) socket;
+    char *buf;
+    string command;
+
+    while (true) {
+        int n = read(clientSocket, &buf, sizeof(buf));
+        if (n == -1) {
+            cout << "Error reading buf" << endl;
+            return 0;
+        }
+        if (n == 0) {
+            cout << "Client disconnected" << endl;
+            return 0;
+        }
+
+        //parse the string to command and args
+        char str[strlen(buf) + 1];
+        strcpy(str, buf);
+        char *w;
+        vector<string> args;
+        //convert the client socket to string and send it as first arg to the commands.
+        ostringstream ss;
+        ss << clientSocket;
+        args.push_back(ss.str());
+        w = strtok(buf, " ");
+        if (w)
+            command = w;
+        while (w) {
+            w = strtok(NULL, " ");
+            args.push_back(w);
+        }
+        CommandsManager::getInstance()->executeCommand(command, args);
+        if (command == "close")
+            break;
+    }
 }

@@ -11,8 +11,6 @@
 
 class JoinCommand : public Command {
 public:
-    JoinCommand(vector<GameInfo> &gamesList);
-
     virtual void execute(vector<string> &args);
 };
 

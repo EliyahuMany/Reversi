@@ -10,8 +10,8 @@
 
 #include <sys/socket.h>
 #include <netinet/in.h>
-#include <stdio.h>
-#include <string.h>
+#include <cstdio>
+#include <cstring>
 #include <iostream>
 #include <unistd.h>
 #include <pthread.h>
@@ -27,7 +27,7 @@ public:
      * constructor - make the server
      * @param port - port of the server
      */
-    Server(int port, CommandsManager &cmd);
+    Server(int port);
 
     /**
      * start the server
@@ -39,13 +39,11 @@ public:
      */
     void stop();
 
-    void *clientConnection(void *addressInfo);
-
 private:
     int port;
     int serverSocket; // the socket's file descriptor
-    vector<pthread_t *> serverThreads;
-    CommandsManager cmd;
+    //vector<pthread_t *> serverThreads;
+    pthread_t serverThreadId;
 };
 
 

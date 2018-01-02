@@ -13,15 +13,18 @@ using namespace std;
 
 class CommandsManager {
 public:
-    CommandsManager();
-
-    ~CommandsManager();
+    static CommandsManager *getInstance();
 
     void executeCommand(string command, vector<string> args);
 
 private:
+    CommandsManager();
+
+    ~CommandsManager();
+
+    static CommandsManager *instance;
+    static pthread_mutex_t lock;
     map<string, Command *> commandsMap;
-    vector<GameInfo> gamesList;
 };
 
 
