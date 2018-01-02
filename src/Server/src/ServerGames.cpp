@@ -23,7 +23,10 @@ ServerGames::ServerGames() {
 }
 
 ServerGames::~ServerGames() {
-    delete(gamesList);
+    while (!gamesList->empty()) {
+        gamesList->pop_back();
+    }
+    delete (gamesList);
 }
 
 vector<GameInfo> *ServerGames::getGamesList() {

@@ -20,8 +20,8 @@ void StartCommand::execute(vector<string> &args) {
             return;
         }
     }
-    GameInfo game(args[1], atoi(args[0].c_str()));
-    gamesList->push_back(game);
+    GameInfo *game = new GameInfo(args[1], atoi(args[0].c_str()));
+    gamesList->push_back(*game);
     //write to the client to wait.
     msg = "Waiting to another player...";
     this->commandNotify(clientSocket, msg);

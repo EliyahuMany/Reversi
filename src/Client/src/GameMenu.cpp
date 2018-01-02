@@ -74,15 +74,11 @@ void GameMenu::localPlayerContact(Print &printer, Players *pX, Players *pO) {
         printer.string((char *) "Enter command to the server:");
         cin.ignore();
         getline(cin, buffer);
-        char buf[buffer.length()];
-        bzero(buf, buffer.length());
-        for (int i = 0; i < buffer.length(); i++) {
-            buf[i] = buffer.at(i);
-        }
+        char *buf = new char[buffer.length()];
+        strcpy(buf, buffer.c_str());
         client.sendMove(buf);
 
         string command = strtok(buf, " ");
-
         client.receiveMove(buf);
         if (strcmp(buf, "-1") == 0) {
             if (strcmp(command.c_str(), "start") == 0)
@@ -94,6 +90,7 @@ void GameMenu::localPlayerContact(Print &printer, Players *pX, Players *pO) {
             printer.string(buf);
             break;
         }
+        delete buf;
     }
 
     client.getPlayerNum(playerNum);

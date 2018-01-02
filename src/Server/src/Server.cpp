@@ -10,6 +10,7 @@
 
 using namespace std;
 #define MAX_CONNECTED_CLIENTS 10
+#define MAX_COMMAND_LENGTH 50
 
 static void *acceptClients(void *);
 
@@ -69,9 +70,8 @@ static void *acceptClients(void *socket) {
 
 void *handleClient(void *socket) {
     long clientSocket = (long) socket;
-    char *buf;
+    char buf[MAX_COMMAND_LENGTH];
     string command;
-
     while (true) {
         int n = read(clientSocket, &buf, sizeof(buf));
         if (n == -1) {
@@ -82,9 +82,8 @@ void *handleClient(void *socket) {
             cout << "Client disconnected" << endl;
             return 0;
         }
-
         //parse the string to command and args
-        char str[strlen(buf) + 1];
+        char str[strlen(buf)];
         strcpy(str, buf);
         char *w;
         vector<string> args;
@@ -97,7 +96,8 @@ void *handleClient(void *socket) {
             command = w;
         while (w) {
             w = strtok(NULL, " ");
-            args.push_back(w);
+            if (w)
+                args.push_back(w);
         }
         CommandsManager::getInstance()->executeCommand(command, args);
         if (command == "close")
