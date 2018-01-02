@@ -34,19 +34,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /opt/clion-2017.3/bin/cmake/bin/cmake
+CMAKE_COMMAND = /home/eliyahu/Downloads/clion-2017.3.1/bin/cmake/bin/cmake
 
 # The command to remove a file.
-RM = /opt/clion-2017.3/bin/cmake/bin/cmake -E remove -f
+RM = /home/eliyahu/Downloads/clion-2017.3.1/bin/cmake/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/orian/Videos/raversi/src/Client
+CMAKE_SOURCE_DIR = /home/eliyahu/CLionProjects/Back/raversi/src/Client
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/orian/Videos/raversi/src/Client/cmake-build-debug
+CMAKE_BINARY_DIR = /home/eliyahu/CLionProjects/Back/raversi/src/Client/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include lib/googletest-release-1.8.0/googlemock/gtest/CMakeFiles/gtest.dir/depend.make
@@ -59,16 +59,16 @@ include lib/googletest-release-1.8.0/googlemock/gtest/CMakeFiles/gtest.dir/flags
 
 lib/googletest-release-1.8.0/googlemock/gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o: lib/googletest-release-1.8.0/googlemock/gtest/CMakeFiles/gtest.dir/flags.make
 lib/googletest-release-1.8.0/googlemock/gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o: ../lib/googletest-release-1.8.0/googletest/src/gtest-all.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/orian/Videos/raversi/src/Client/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object lib/googletest-release-1.8.0/googlemock/gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o"
-	cd /home/orian/Videos/raversi/src/Client/cmake-build-debug/lib/googletest-release-1.8.0/googlemock/gtest && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gtest.dir/src/gtest-all.cc.o -c /home/orian/Videos/raversi/src/Client/lib/googletest-release-1.8.0/googletest/src/gtest-all.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/eliyahu/CLionProjects/Back/raversi/src/Client/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object lib/googletest-release-1.8.0/googlemock/gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o"
+	cd /home/eliyahu/CLionProjects/Back/raversi/src/Client/cmake-build-debug/lib/googletest-release-1.8.0/googlemock/gtest && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gtest.dir/src/gtest-all.cc.o -c /home/eliyahu/CLionProjects/Back/raversi/src/Client/lib/googletest-release-1.8.0/googletest/src/gtest-all.cc
 
 lib/googletest-release-1.8.0/googlemock/gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gtest.dir/src/gtest-all.cc.i"
-	cd /home/orian/Videos/raversi/src/Client/cmake-build-debug/lib/googletest-release-1.8.0/googlemock/gtest && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/orian/Videos/raversi/src/Client/lib/googletest-release-1.8.0/googletest/src/gtest-all.cc > CMakeFiles/gtest.dir/src/gtest-all.cc.i
+	cd /home/eliyahu/CLionProjects/Back/raversi/src/Client/cmake-build-debug/lib/googletest-release-1.8.0/googlemock/gtest && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/eliyahu/CLionProjects/Back/raversi/src/Client/lib/googletest-release-1.8.0/googletest/src/gtest-all.cc > CMakeFiles/gtest.dir/src/gtest-all.cc.i
 
 lib/googletest-release-1.8.0/googlemock/gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gtest.dir/src/gtest-all.cc.s"
-	cd /home/orian/Videos/raversi/src/Client/cmake-build-debug/lib/googletest-release-1.8.0/googlemock/gtest && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/orian/Videos/raversi/src/Client/lib/googletest-release-1.8.0/googletest/src/gtest-all.cc -o CMakeFiles/gtest.dir/src/gtest-all.cc.s
+	cd /home/eliyahu/CLionProjects/Back/raversi/src/Client/cmake-build-debug/lib/googletest-release-1.8.0/googlemock/gtest && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/eliyahu/CLionProjects/Back/raversi/src/Client/lib/googletest-release-1.8.0/googletest/src/gtest-all.cc -o CMakeFiles/gtest.dir/src/gtest-all.cc.s
 
 lib/googletest-release-1.8.0/googlemock/gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o.requires:
 
@@ -91,9 +91,9 @@ gtest_EXTERNAL_OBJECTS =
 lib/googletest-release-1.8.0/googlemock/gtest/libgtest.a: lib/googletest-release-1.8.0/googlemock/gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o
 lib/googletest-release-1.8.0/googlemock/gtest/libgtest.a: lib/googletest-release-1.8.0/googlemock/gtest/CMakeFiles/gtest.dir/build.make
 lib/googletest-release-1.8.0/googlemock/gtest/libgtest.a: lib/googletest-release-1.8.0/googlemock/gtest/CMakeFiles/gtest.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/orian/Videos/raversi/src/Client/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libgtest.a"
-	cd /home/orian/Videos/raversi/src/Client/cmake-build-debug/lib/googletest-release-1.8.0/googlemock/gtest && $(CMAKE_COMMAND) -P CMakeFiles/gtest.dir/cmake_clean_target.cmake
-	cd /home/orian/Videos/raversi/src/Client/cmake-build-debug/lib/googletest-release-1.8.0/googlemock/gtest && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/gtest.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/eliyahu/CLionProjects/Back/raversi/src/Client/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libgtest.a"
+	cd /home/eliyahu/CLionProjects/Back/raversi/src/Client/cmake-build-debug/lib/googletest-release-1.8.0/googlemock/gtest && $(CMAKE_COMMAND) -P CMakeFiles/gtest.dir/cmake_clean_target.cmake
+	cd /home/eliyahu/CLionProjects/Back/raversi/src/Client/cmake-build-debug/lib/googletest-release-1.8.0/googlemock/gtest && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/gtest.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 lib/googletest-release-1.8.0/googlemock/gtest/CMakeFiles/gtest.dir/build: lib/googletest-release-1.8.0/googlemock/gtest/libgtest.a
@@ -105,10 +105,10 @@ lib/googletest-release-1.8.0/googlemock/gtest/CMakeFiles/gtest.dir/requires: lib
 .PHONY : lib/googletest-release-1.8.0/googlemock/gtest/CMakeFiles/gtest.dir/requires
 
 lib/googletest-release-1.8.0/googlemock/gtest/CMakeFiles/gtest.dir/clean:
-	cd /home/orian/Videos/raversi/src/Client/cmake-build-debug/lib/googletest-release-1.8.0/googlemock/gtest && $(CMAKE_COMMAND) -P CMakeFiles/gtest.dir/cmake_clean.cmake
+	cd /home/eliyahu/CLionProjects/Back/raversi/src/Client/cmake-build-debug/lib/googletest-release-1.8.0/googlemock/gtest && $(CMAKE_COMMAND) -P CMakeFiles/gtest.dir/cmake_clean.cmake
 .PHONY : lib/googletest-release-1.8.0/googlemock/gtest/CMakeFiles/gtest.dir/clean
 
 lib/googletest-release-1.8.0/googlemock/gtest/CMakeFiles/gtest.dir/depend:
-	cd /home/orian/Videos/raversi/src/Client/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/orian/Videos/raversi/src/Client /home/orian/Videos/raversi/src/Client/lib/googletest-release-1.8.0/googletest /home/orian/Videos/raversi/src/Client/cmake-build-debug /home/orian/Videos/raversi/src/Client/cmake-build-debug/lib/googletest-release-1.8.0/googlemock/gtest /home/orian/Videos/raversi/src/Client/cmake-build-debug/lib/googletest-release-1.8.0/googlemock/gtest/CMakeFiles/gtest.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/eliyahu/CLionProjects/Back/raversi/src/Client/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/eliyahu/CLionProjects/Back/raversi/src/Client /home/eliyahu/CLionProjects/Back/raversi/src/Client/lib/googletest-release-1.8.0/googletest /home/eliyahu/CLionProjects/Back/raversi/src/Client/cmake-build-debug /home/eliyahu/CLionProjects/Back/raversi/src/Client/cmake-build-debug/lib/googletest-release-1.8.0/googlemock/gtest /home/eliyahu/CLionProjects/Back/raversi/src/Client/cmake-build-debug/lib/googletest-release-1.8.0/googlemock/gtest/CMakeFiles/gtest.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : lib/googletest-release-1.8.0/googlemock/gtest/CMakeFiles/gtest.dir/depend
 

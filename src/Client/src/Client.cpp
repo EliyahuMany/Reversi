@@ -59,7 +59,7 @@ void Client::sendMove(char *move) {
 }
 
 void Client::receiveMove(char *move) {
-    int size;
+    int size = 0;
     int n = read(clientSocket, &size, sizeof(int));
     if (n == -1)
         throw "Error reading move";

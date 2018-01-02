@@ -14,7 +14,7 @@ void GameListCommand::execute(vector<string> &args) {
     string listToPrint = "";
 
     for (it = gamesList->begin(); it != gamesList->end(); it++) {
-        listToPrint.append((*it).getName() + "/n");
+        listToPrint.append((*it).getName() + "\n");
     }
     if (listToPrint == "")
         listToPrint.append("No games active");

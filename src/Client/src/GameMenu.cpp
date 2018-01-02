@@ -68,29 +68,29 @@ void GameMenu::localPlayerContact(Print &printer, Players *pX, Players *pO) {
         printer.connectionFailed(m);
         exit(1);
     }
-
+    cin.ignore();
     while (true) {
         string buffer;
         printer.string((char *) "Enter command to the server:");
-        cin.ignore();
         getline(cin, buffer);
         char *buf = new char[buffer.length()];
         strcpy(buf, buffer.c_str());
         client.sendMove(buf);
 
         string command = strtok(buf, " ");
+        memset(buf, NULL, buffer.length());
         client.receiveMove(buf);
         if (strcmp(buf, "-1") == 0) {
             if (strcmp(command.c_str(), "start") == 0)
                 strcpy(buf, "Room already exist choose again!");
             else if (strcmp(command.c_str(), "join") == 0)
                 strcpy(buf, "There is no such game name!");
-            printer.string(buf);
         } else if (strcmp(command.c_str(), "start") == 0 || strcmp(command.c_str(), "join") == 0) {
             printer.string(buf);
             break;
         }
-        delete buf;
+        printer.string(buf);
+        delete[] buf;
     }
 
     client.getPlayerNum(playerNum);

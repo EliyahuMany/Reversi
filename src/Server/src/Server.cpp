@@ -54,7 +54,7 @@ static void *acceptClients(void *socket) {
     while (true) {
         //first client
         int clientSocket = accept(serverSocket, (struct sockaddr *) &clientAddress, &clientAddressLen);
-        cout << "First client connected" << endl;
+        cout << "Client connected" << endl;
         if (clientSocket == -1)
             throw "Error on accept";
 
@@ -64,7 +64,6 @@ static void *acceptClients(void *socket) {
             cout << "Error: unable to create thread, " << rc << endl;
             exit(-1);
         }
-        pthread_exit(NULL);
     }
 }
 
@@ -72,35 +71,32 @@ void *handleClient(void *socket) {
     long clientSocket = (long) socket;
     char buf[MAX_COMMAND_LENGTH];
     string command;
-    while (true) {
-        int n = read(clientSocket, &buf, sizeof(buf));
-        if (n == -1) {
-            cout << "Error reading buf" << endl;
-            return 0;
-        }
-        if (n == 0) {
-            cout << "Client disconnected" << endl;
-            return 0;
-        }
-        //parse the string to command and args
-        char str[strlen(buf)];
-        strcpy(str, buf);
-        char *w;
-        vector<string> args;
-        //convert the client socket to string and send it as first arg to the commands.
-        ostringstream ss;
-        ss << clientSocket;
-        args.push_back(ss.str());
-        w = strtok(buf, " ");
-        if (w)
-            command = w;
-        while (w) {
-            w = strtok(NULL, " ");
-            if (w)
-                args.push_back(w);
-        }
-        CommandsManager::getInstance()->executeCommand(command, args);
-        if (command == "close")
-            break;
+
+    int n = read(clientSocket, &buf, sizeof(buf));
+    if (n == -1) {
+        cout << "Error reading buf" << endl;
+        return 0;
     }
+    if (n == 0) {
+        cout << "Client disconnected" << endl;
+        return 0;
+    }
+    //parse the string to command and args
+    char str[strlen(buf)];
+    strcpy(str, buf);
+    char *w;
+    vector<string> args;
+    //convert the client socket to string and send it as first arg to the commands.
+    ostringstream ss;
+    ss << clientSocket;
+    args.push_back(ss.str());
+    w = strtok(buf, " ");
+    if (w)
+        command = w;
+    while (w) {
+        w = strtok(NULL, " ");
+        if (w)
+            args.push_back(w);
+    }
+    CommandsManager::getInstance()->executeCommand(command, args);
 }
