@@ -85,6 +85,8 @@ fstream
 /home/orian/Videos/raversi/src/Server/src/Command.cpp
 unistd.h
 -
+csignal
+-
 ../include/Command.h
 /home/orian/Videos/raversi/src/Server/include/Command.h
 
@@ -104,6 +106,8 @@ unistd.h
 unistd.h
 -
 cstring
+-
+csignal
 -
 
 /home/orian/Videos/raversi/src/Server/src/GameListCommand.cpp
@@ -126,6 +130,8 @@ cstdlib
 
 /home/orian/Videos/raversi/src/Server/src/Server.cpp
 sstream
+-
+csignal
 -
 ../include/Server.h
 /home/orian/Videos/raversi/src/Server/include/Server.h

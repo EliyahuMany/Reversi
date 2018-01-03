@@ -153,6 +153,8 @@ unistd.h
 -
 cstdlib
 -
+csignal
+-
 
 /home/orian/Videos/raversi/src/Client/src/ConsolePrint.cpp
 ../include/ConsolePrint.h
