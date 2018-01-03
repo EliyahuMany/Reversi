@@ -15,7 +15,7 @@ class ServerGames {
 public:
     static ServerGames *getInstance();
 
-    vector<GameInfo> *getGamesList();
+    vector<GameInfo *> *getGamesList();
 
 private:
     // A singleton
@@ -25,7 +25,7 @@ private:
 
     static ServerGames *instance;
     static pthread_mutex_t lock;
-    vector<GameInfo> *gamesList;
+    vector<GameInfo *> *gamesList;
 };
 
 #endif //SERVER_SERVERGAMES_H

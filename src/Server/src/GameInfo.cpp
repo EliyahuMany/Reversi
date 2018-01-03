@@ -13,9 +13,9 @@ GameInfo::GameInfo(string name, int clientSocket1) : gameName(name), clientSocke
 
 void *GameInfo::gameHandler(void *args) {
 
-    GameInfo g = *(GameInfo *) args;
-    int client1Socket = g.getClientSocket1();
-    int client2Socket = g.getClientSocket2();
+    GameInfo *g = (GameInfo *) args;
+    int client1Socket = g->getClientSocket1();
+    int client2Socket = g->getClientSocket2();
 
     //send number for the player for their sign.
     int playerNum = 1;

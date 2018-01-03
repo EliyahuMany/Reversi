@@ -6,6 +6,9 @@
  */
 
 #include <iostream>
+#include "include/Print.h"
+#include "include/GameFlow.h"
+#include "include/ConsolePrint.h"
 #include "include/GameMenu.h"
 
 using namespace std;

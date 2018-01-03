@@ -68,8 +68,8 @@ void Client::receiveMove(char *move) {
         throw "Error reading move";
 }
 
-void Client::getPlayerNum(int &numOfPlayer) {
-    int n = read(clientSocket, &numOfPlayer, sizeof(numOfPlayer));
+void Client::getPlayerNum(int* numOfPlayer) {
+    int n = read(clientSocket, numOfPlayer, sizeof(*numOfPlayer));
     if (n == -1)
         throw "Error reading move";
 }

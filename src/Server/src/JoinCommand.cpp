@@ -9,15 +9,15 @@
 using namespace std;
 
 void JoinCommand::execute(vector<string> &args) {
-    vector<GameInfo> *gamesList = ServerGames::getInstance()->getGamesList();
+    vector<GameInfo *> *gamesList = ServerGames::getInstance()->getGamesList();
     int clientSocket = atoi(args[0].c_str());
     string msg = "";
     bool isInList = false;
     gamesList[2];
-    vector<GameInfo>::iterator it;
+    vector<GameInfo *>::iterator it;
     for (it = gamesList->begin(); it != gamesList->end(); it++) {
-        if (!(*it).getName().compare(args[1])) {
-            (*it).setClientSocket2(atoi(args[0].c_str()));
+        if (!(*it)->getName().compare(args[1])) {
+            (*it)->setClientSocket2(atoi(args[0].c_str()));
             isInList = true;
             break;
         }
@@ -27,10 +27,10 @@ void JoinCommand::execute(vector<string> &args) {
         this->commandNotify(clientSocket, msg);
         return;
     }
-    msg.append("Connected to " + (*it).getName());
+    msg.append("Connected to " + (*it)->getName());
     this->commandNotify(clientSocket, msg);
-    GameInfo g = *it;
+    GameInfo *g = *it;
     pthread_t gameThread;
-    pthread_create(&gameThread, NULL, &GameInfo::gameHandler, (void *) &g);
+    pthread_create(&gameThread, NULL, &GameInfo::gameHandler, (void *) g);
     pthread_exit(NULL);
 }

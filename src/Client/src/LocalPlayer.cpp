@@ -9,6 +9,14 @@
 
 LocalPlayer::LocalPlayer(char symbol, Client &client, Print &printer) : Players(symbol, printer), client(client),
                                                                         cell(Cell()) {
+    string s = "";
+    string sym;
+    sym.push_back(symbol);
+    s.append("You are: ");
+    s.append(sym);
+    char c[11];
+    strcpy(c, s.c_str());
+    printer.string(c);
 }
 
 Cell &LocalPlayer::play(Board &b, int &myScore, int &otherScore) {

@@ -8,13 +8,13 @@
 #include "../include/ServerGames.h"
 
 void GameListCommand::execute(vector<string> &args) {
-    vector<GameInfo> *gamesList = ServerGames::getInstance()->getGamesList();
+    vector<GameInfo *> *gamesList = ServerGames::getInstance()->getGamesList();
     int clientSocket = atoi(args[0].c_str());
-    vector<GameInfo>::iterator it;
+    vector<GameInfo *>::iterator it;
     string listToPrint = "";
 
     for (it = gamesList->begin(); it != gamesList->end(); it++) {
-        listToPrint.append((*it).getName() + "\n");
+        listToPrint.append((*it)->getName() + "\n");
     }
     if (listToPrint == "")
         listToPrint.append("No games active");

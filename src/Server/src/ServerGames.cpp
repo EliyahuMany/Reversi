@@ -19,7 +19,7 @@ ServerGames *ServerGames::getInstance() {
 }
 
 ServerGames::ServerGames() {
-    this->gamesList = new vector<GameInfo>;
+    this->gamesList = new vector<GameInfo *>;
 }
 
 ServerGames::~ServerGames() {
@@ -29,6 +29,6 @@ ServerGames::~ServerGames() {
     delete (gamesList);
 }
 
-vector<GameInfo> *ServerGames::getGamesList() {
+vector<GameInfo*> *ServerGames::getGamesList() {
     return gamesList;
 }

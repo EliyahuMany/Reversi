@@ -39,7 +39,7 @@ public:
     */
     void receiveMove(char *move);
 
-    void getPlayerNum(int &numOfPlayer);
+    void getPlayerNum(int* numOfPlayer);
 
 private:
     const char *serverIP;

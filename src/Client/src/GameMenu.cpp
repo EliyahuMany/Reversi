@@ -16,7 +16,6 @@ GameMenu::GameMenu() {}
 void GameMenu::menu() {
     int size, choose;
     ConsolePrint printer;
-    Players *pX, *pO;
 
     while (true) {
         printer.string((char *) "Choose an option from the menu:");
@@ -33,15 +32,21 @@ void GameMenu::menu() {
     size = 8;
     GameLogic gameLogic(size);
     switch (choose) {
-        case 1:
-            pX = new Human('X', printer);
-            pO = new Human('O', printer);
+        case 1: {
+            Players *pX = new Human('X', printer);
+            Players *pO = new Human('O', printer);
+            GameFlow game = GameFlow(pX, pO, gameLogic, printer);
+            game.run();
             break;
-        case 2:
-            pX = new Human('X', printer);
-            pO = new AIPlayer('O', gameLogic, printer);
+        }
+        case 2: {
+            Players *pX = new Human('X', printer);
+            Players *pO = new AIPlayer('O', gameLogic, printer);
+            GameFlow game = GameFlow(pX, pO, gameLogic, printer);
+            game.run();
             break;
-        case 3:
+        }
+        case 3: {
             int playerNum;
             ifstream cFile;
             cFile.open("client_config.txt");
@@ -62,22 +67,26 @@ void GameMenu::menu() {
             cin.ignore();
 
             localPlayerContact(printer, client);
-
-            client.getPlayerNum(playerNum);
+            client.getPlayerNum(&playerNum);
+            cout << playerNum << endl;
             if (playerNum == 1) {
-                pX = new LocalPlayer('X', client, printer);
-                pO = new RemotePlayer('O', client, printer);
+                Players *pX = new LocalPlayer('X', client, printer);
+                Players *pO = new RemotePlayer('O', client, printer);
+                GameFlow game = GameFlow(pX, pO, gameLogic, printer);
+                game.run();
             } else if (playerNum == 2) {
-                pX = new RemotePlayer('X', client, printer);
-                pO = new LocalPlayer('O', client, printer);
+                Players *pX = new RemotePlayer('X', client, printer);
+                Players *pO = new LocalPlayer('O', client, printer);
+                GameFlow game = GameFlow(pX, pO, gameLogic, printer);
+                game.run();
             }
+
             break;
+        }
     }
-    GameFlow game = GameFlow(pX, pO, gameLogic, printer);
-    game.run();
 }
 
-void GameMenu::localPlayerContact(Print &printer,Client &client) {
+void GameMenu::localPlayerContact(Print &printer, Client &client) {
     while (true) {
         string buffer;
         printer.string((char *) "Enter command to the server:");
