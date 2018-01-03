@@ -14,6 +14,7 @@
 #include <netdb.h>
 #include <string.h>
 #include <unistd.h>
+#include <cstdlib>
 
 using namespace std;
 
@@ -53,7 +54,7 @@ void Client::connectToServer() {
 }
 
 void Client::sendMove(string str) {
-    int size = str.size() +1;
+    int size = str.size() + 1;
     char move[size];
     strcpy(move, str.c_str());
 
@@ -70,14 +71,20 @@ void Client::receiveMove(string &str) {
     int n = read(clientSocket, &size, sizeof(int));
     if (n == -1)
         throw "Error reading move";
+    cout << size << endl;
     char move[size];
-    n = read(clientSocket, move, size);
+    n = read(clientSocket, move, sizeof(move));
+    cout << move << endl;
+    if (strcmp(move, "exit") == 0) {
+        printer.string((char *) "server is closed");
+        exit(0);
+    }
     if (n == -1)
         throw "Error reading move";
     str = move;
 }
 
-void Client::getPlayerNum(int* numOfPlayer) {
+void Client::getPlayerNum(int *numOfPlayer) {
     int n = read(clientSocket, numOfPlayer, sizeof(*numOfPlayer));
     if (n == -1)
         throw "Error reading move";

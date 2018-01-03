@@ -22,8 +22,11 @@ LocalPlayer::LocalPlayer(char symbol, Client &client, Print &printer) : Players(
 Cell &LocalPlayer::play(Board &b, int &myScore, int &otherScore) {
     if (this->moves.empty()) {
         string s = "NoMove";
-
-        this->client.sendMove(s);
+        try {
+            this->client.sendMove(s);
+        } catch(const char* msg) {
+            cout<<msg<<endl;
+        }
         return this->cell;
     } else {
         string choose;
@@ -38,7 +41,11 @@ Cell &LocalPlayer::play(Board &b, int &myScore, int &otherScore) {
                         this->moves.pop_back();
                     }
 
-                    client.sendMove(choose);
+                    try {
+                        this->client.sendMove(choose);
+                    } catch(const char* msg) {
+                        cout<<msg<<endl;
+                    }
                     return this->moves[i];
                 }
             }

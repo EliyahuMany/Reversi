@@ -17,27 +17,6 @@ void *GameInfo::gameHandler(void *args) {
     int client1Socket = g->getClientSocket1();
     int client2Socket = g->getClientSocket2();
 
-//    //send number for the player for their sign.
-//    int playerNum = 1;
-//    int n = write(client1Socket, &playerNum, sizeof(playerNum));
-//    if (n == -1) {
-//        cout << "Error reading buf" << endl;
-//        return 0;
-//    } else if (n == 0) {
-//        cout << "Client disconnected" << endl;
-//        return 0;
-//    }
-//    playerNum = 2;
-//    n = write(client2Socket, &playerNum, sizeof(playerNum));
-//    if (n == -1) {
-//        cout << "Error reading buf" << endl;
-//        return 0;
-//    } else if (n == 0) {
-//        cout << "Client disconnected" << endl;
-//        return 0;
-//    }
-
-
     while (true) {
         int size;
         int n = read(client1Socket, &size, sizeof(size));
@@ -57,7 +36,6 @@ void *GameInfo::gameHandler(void *args) {
             return 0;
         }
         cout << buf << endl;
-
         n = write(client2Socket, &size, sizeof(size));
         if (n == -1) {
             cout << "Error writing to socket" << endl;
@@ -74,6 +52,8 @@ void *GameInfo::gameHandler(void *args) {
         client1Socket = client2Socket;
         client2Socket = temp;
     }
+    close(client1Socket);
+    close(client2Socket);
 }
 
 const string &GameInfo::getName() const {

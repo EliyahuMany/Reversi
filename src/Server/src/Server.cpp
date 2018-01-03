@@ -37,13 +37,37 @@ void Server::start() {
 
     listen(serverSocket, MAX_CONNECTED_CLIENTS);
     pthread_create(&serverThreadId, NULL, acceptClients, (void *) serverSocket);
-    pthread_join(serverThreadId, NULL);
+//    pthread_join(serverThreadId, NULL);
 }
 
 void Server::stop() {
-    pthread_cancel(serverThreadId);
-    close(serverSocket);
     cout << "Server stopped" << endl;
+    vector<GameInfo *> *gamesList = ServerGames::getInstance()->getGamesList();
+    char exit[5] = "exit";
+    int size = strlen(exit) + 1;
+    for (vector<GameInfo *>::iterator it = gamesList->begin(); it != gamesList->end(); it++) {
+        int n = write((*it)->getClientSocket1(), &size, sizeof(size));
+        if (n == -1) {
+            cout << "Client doesn't exist" << endl;
+        }
+        n = write((*it)->getClientSocket1(), &exit, sizeof(exit));
+        if (n == -1) {
+            cout << "Client doesn't exist" << endl;
+        }
+        n = write((*it)->getClientSocket2(), &size, sizeof(size));
+        if (n == -1) {
+            cout << "Client doesn't exist" << endl;
+        }
+        n = write((*it)->getClientSocket2(), &exit, sizeof(exit));
+        if (n == -1) {
+            cout << "Client doesn't exist" << endl;
+        }
+        close((*it)->getClientSocket2());
+        close((*it)->getClientSocket2());
+    }
+    pthread_cancel(serverThreadId);
+    pthread_join(serverThreadId, NULL);
+    close(serverSocket);
 }
 
 static void *acceptClients(void *socket) {

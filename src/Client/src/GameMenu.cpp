@@ -96,6 +96,10 @@ void GameMenu::localPlayerContact(Print &printer, Client &client, int &playerNum
         string command = strtok(buf, " ");
         memset(buf, NULL, buffer.length());
         client.receiveMove(getMsg);
+        if(strcmp(getMsg.c_str(), "exit") == 0) {
+            printer.string((char *) "server is close");
+            exit(0);
+        }
         if (getMsg== "-1") {
             if (command== "start")
                 getMsg= "Room already exist choose again!";
@@ -112,6 +116,10 @@ void GameMenu::localPlayerContact(Print &printer, Client &client, int &playerNum
             printer.string(msg);
             if(command == "start") {
                 client.receiveMove(getMsg);
+                if(strcmp(getMsg.c_str(), "exit") == 0) {
+                    printer.string((char *) "server is close");
+                    exit(0);
+                }
                 printer.string(msg);
             }
             break;

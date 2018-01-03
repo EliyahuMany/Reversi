@@ -151,6 +151,8 @@ string.h
 -
 unistd.h
 -
+cstdlib
+-
 
 /home/orian/Videos/raversi/src/Client/src/ConsolePrint.cpp
 ../include/ConsolePrint.h
@@ -209,6 +211,8 @@ cstdlib
 /home/orian/Videos/raversi/src/Client/include/Print.h
 
 /home/orian/Videos/raversi/src/Client/src/RemotePlayer.cpp
+cstdlib
+-
 ../include/RemotePlayer.h
 /home/orian/Videos/raversi/src/Client/include/RemotePlayer.h
 
