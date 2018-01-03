@@ -16,7 +16,7 @@ Cell &RemotePlayer::play(Board &b, int &myScore, int &otherScore) {
     this->printer.string((char *) "Waiting for other player move..");
     string s;
     client.receiveMove(s);
-    char *c = new char[s.size()];
+    char *c = new char[s.size() + 1];
     strcpy(c, s.c_str());
     if (strcmp(c, "NoMove") == 0) {
         this->printer.string((char *) "No possible move");

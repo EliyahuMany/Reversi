@@ -124,7 +124,7 @@ void GameMenu::localPlayerContact(Print &printer, Client &client, int &playerNum
             } else {
                 playerNum = 2;
             }
-            char msg[getMsg.size()];
+            char msg[getMsg.size()+1];
             strcpy(msg, getMsg.c_str());
             printer.string(msg);
             if (command == "start") {
