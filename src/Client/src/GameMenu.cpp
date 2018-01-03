@@ -99,7 +99,7 @@ void GameMenu::localPlayerContact(Print &printer, Client &client, int &playerNum
         printer.string((char *) "Enter command to the server:");
 //        while (true) {
         getline(cin, buffer);
-        buf = new char[buffer.length() + 1];
+        buf = new char[buffer.length()];
         strcpy(buf, buffer.c_str());
         client.sendMove(buffer);
 
