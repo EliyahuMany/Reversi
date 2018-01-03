@@ -65,49 +65,56 @@ void GameMenu::menu() {
                 exit(1);
             }
             cin.ignore();
+            localPlayerContact(printer, client, playerNum);
 
-            localPlayerContact(printer, client);
-            client.getPlayerNum(&playerNum);
-            cout << playerNum << endl;
+            Players *pX;
+            Players *pO;
             if (playerNum == 1) {
-                Players *pX = new LocalPlayer('X', client, printer);
-                Players *pO = new RemotePlayer('O', client, printer);
-                GameFlow game = GameFlow(pX, pO, gameLogic, printer);
-                game.run();
-            } else if (playerNum == 2) {
-                Players *pX = new RemotePlayer('X', client, printer);
-                Players *pO = new LocalPlayer('O', client, printer);
-                GameFlow game = GameFlow(pX, pO, gameLogic, printer);
-                game.run();
+                pX = new LocalPlayer('X', client, printer);
+                pO = new RemotePlayer('O', client, printer);
+            } else {
+                pX = new RemotePlayer('X', client, printer);
+                pO = new LocalPlayer('O', client, printer);
             }
-
+            GameFlow game = GameFlow(pX, pO, gameLogic, printer);
+            game.run();
             break;
         }
     }
 }
 
-void GameMenu::localPlayerContact(Print &printer, Client &client) {
+void GameMenu::localPlayerContact(Print &printer, Client &client, int &playerNum) {
     while (true) {
         string buffer;
         printer.string((char *) "Enter command to the server:");
         getline(cin, buffer);
         char *buf = new char[buffer.length()];
         strcpy(buf, buffer.c_str());
-        client.sendMove(buf);
+        string getMsg;
+        client.sendMove(buffer);
 
         string command = strtok(buf, " ");
         memset(buf, NULL, buffer.length());
-        client.receiveMove(buf);
-        if (strcmp(buf, "-1") == 0) {
-            if (strcmp(command.c_str(), "start") == 0)
-                strcpy(buf, "Room already exist choose again!");
-            else if (strcmp(command.c_str(), "join") == 0)
-                strcpy(buf, "There is no such game name!");
-        } else if (strcmp(command.c_str(), "start") == 0 || strcmp(command.c_str(), "join") == 0) {
-            printer.string(buf);
+        client.receiveMove(getMsg);
+        if (getMsg== "-1") {
+            if (command== "start")
+                getMsg= "Room already exist choose again!";
+            else if (command== "join")
+                getMsg = "There is no such game name!";
+        } else if ((command == "start")|| command== "join") {
+            if(command == "start") {
+                playerNum =1;
+            } else {
+                playerNum = 2;
+            }
+            char msg[getMsg.size()];
+            strcpy(msg, getMsg.c_str());
+            printer.string(msg);
             break;
         }
-        printer.string(buf);
+        char msg[getMsg.size()];
+        strcpy(msg, getMsg.c_str());
+        printer.string(msg);
         delete[] buf;
-    }
 }
+    }

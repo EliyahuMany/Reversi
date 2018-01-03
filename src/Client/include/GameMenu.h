@@ -18,7 +18,7 @@ public:
 
     void menu();
 
-    void localPlayerContact(Print &printer, Client &client);
+    void localPlayerContact(Print &printer, Client &client, int &);
 
 private:
 //    Players *pX, *pO;

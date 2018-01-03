@@ -31,13 +31,13 @@ public:
      * write the given massage to the server
      * @param move - massage from the player
      */
-    void sendMove(char *move);
+    void sendMove(string);
 
     /**
     * read a masssage from the server to his parama
     * @param move - char* to save the massage
     */
-    void receiveMove(char *move);
+    void receiveMove(string &);
 
     void getPlayerNum(int* numOfPlayer);
 

@@ -22,10 +22,8 @@ LocalPlayer::LocalPlayer(char symbol, Client &client, Print &printer) : Players(
 Cell &LocalPlayer::play(Board &b, int &myScore, int &otherScore) {
     if (this->moves.empty()) {
         string s = "NoMove";
-        char *c = new char[s.length() + 1];
-        strcpy(c, s.c_str());
-        this->client.sendMove(c);
-        delete[] c;
+
+        this->client.sendMove(s);
         return this->cell;
     } else {
         string choose;
@@ -39,10 +37,8 @@ Cell &LocalPlayer::play(Board &b, int &myScore, int &otherScore) {
                     while (!this->moves.empty()) {
                         this->moves.pop_back();
                     }
-                    char *c = new char[choose.length() + 1];
-                    strcpy(c, choose.c_str());
-                    client.sendMove(c);
-                    delete[] c;
+
+                    client.sendMove(choose);
                     return this->moves[i];
                 }
             }

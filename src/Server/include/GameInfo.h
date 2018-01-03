@@ -26,11 +26,12 @@ public:
     void setClientSocket2(int clientSocket2);
 
     static void *gameHandler(void *args);
-
+    bool getAvail();
 private:
     string gameName;
     int clientSocket1;
     int clientSocket2;
+    bool avail;
 };
 
 #endif //SERVER_GAMEINFO_H

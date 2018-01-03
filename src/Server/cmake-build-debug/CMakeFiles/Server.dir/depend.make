@@ -40,6 +40,7 @@ CMakeFiles/Server.dir/src/Server.cpp.o: ../include/Command.h
 CMakeFiles/Server.dir/src/Server.cpp.o: ../include/CommandsManager.h
 CMakeFiles/Server.dir/src/Server.cpp.o: ../include/GameInfo.h
 CMakeFiles/Server.dir/src/Server.cpp.o: ../include/Server.h
+CMakeFiles/Server.dir/src/Server.cpp.o: ../include/ServerGames.h
 CMakeFiles/Server.dir/src/Server.cpp.o: ../src/Server.cpp
 
 CMakeFiles/Server.dir/src/ServerGames.cpp.o: ../include/Command.h

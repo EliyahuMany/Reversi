@@ -7,6 +7,7 @@
 
 #include <sstream>
 #include "../include/Server.h"
+#include "../include/ServerGames.h"
 
 using namespace std;
 #define MAX_CONNECTED_CLIENTS 10
@@ -69,10 +70,15 @@ static void *acceptClients(void *socket) {
 
 void *handleClient(void *socket) {
     long clientSocket = (long) socket;
-    char buf[MAX_COMMAND_LENGTH];
+    int size;
+    int n = read(clientSocket, &size, sizeof(size));
+    if (n == -1) {
+        cout << "Error reading buf" << endl;
+        return 0;
+    }
+    char buf[size];
     string command;
-
-    int n = read(clientSocket, &buf, sizeof(buf));
+    n = read(clientSocket, &buf, sizeof(buf));
     if (n == -1) {
         cout << "Error reading buf" << endl;
         return 0;
@@ -99,4 +105,5 @@ void *handleClient(void *socket) {
             args.push_back(w);
     }
     CommandsManager::getInstance()->executeCommand(command, args);
+
 }

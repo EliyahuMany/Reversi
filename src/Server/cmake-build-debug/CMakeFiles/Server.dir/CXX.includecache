@@ -129,6 +129,8 @@ sstream
 -
 ../include/Server.h
 /home/orian/Videos/raversi/src/Server/include/Server.h
+../include/ServerGames.h
+/home/orian/Videos/raversi/src/Server/include/ServerGames.h
 
 /home/orian/Videos/raversi/src/Server/src/ServerGames.cpp
 ../include/ServerGames.h

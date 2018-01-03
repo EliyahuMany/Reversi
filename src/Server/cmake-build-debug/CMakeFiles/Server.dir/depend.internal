@@ -41,6 +41,7 @@ CMakeFiles/Server.dir/src/Server.cpp.o
  /home/orian/Videos/raversi/src/Server/include/CommandsManager.h
  /home/orian/Videos/raversi/src/Server/include/GameInfo.h
  /home/orian/Videos/raversi/src/Server/include/Server.h
+ /home/orian/Videos/raversi/src/Server/include/ServerGames.h
  /home/orian/Videos/raversi/src/Server/src/Server.cpp
 CMakeFiles/Server.dir/src/ServerGames.cpp.o
  /home/orian/Videos/raversi/src/Server/include/Command.h

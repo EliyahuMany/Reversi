@@ -9,7 +9,7 @@
 #include <unistd.h>
 #include <cstring>
 
-GameInfo::GameInfo(string name, int clientSocket1) : gameName(name), clientSocket1(clientSocket1) {}
+GameInfo::GameInfo(string name, int clientSocket1) : gameName(name), clientSocket1(clientSocket1), avail(true) {}
 
 void *GameInfo::gameHandler(void *args) {
 
@@ -17,29 +17,37 @@ void *GameInfo::gameHandler(void *args) {
     int client1Socket = g->getClientSocket1();
     int client2Socket = g->getClientSocket2();
 
-    //send number for the player for their sign.
-    int playerNum = 1;
-    int n = write(client1Socket, &playerNum, sizeof(playerNum));
-    if (n == -1) {
-        cout << "Error reading buf" << endl;
-        return 0;
-    } else if (n == 0) {
-        cout << "Client disconnected" << endl;
-        return 0;
-    }
-    playerNum = 2;
-    n = write(client2Socket, &playerNum, sizeof(playerNum));
-    if (n == -1) {
-        cout << "Error reading buf" << endl;
-        return 0;
-    } else if (n == 0) {
-        cout << "Client disconnected" << endl;
-        return 0;
-    }
+//    //send number for the player for their sign.
+//    int playerNum = 1;
+//    int n = write(client1Socket, &playerNum, sizeof(playerNum));
+//    if (n == -1) {
+//        cout << "Error reading buf" << endl;
+//        return 0;
+//    } else if (n == 0) {
+//        cout << "Client disconnected" << endl;
+//        return 0;
+//    }
+//    playerNum = 2;
+//    n = write(client2Socket, &playerNum, sizeof(playerNum));
+//    if (n == -1) {
+//        cout << "Error reading buf" << endl;
+//        return 0;
+//    } else if (n == 0) {
+//        cout << "Client disconnected" << endl;
+//        return 0;
+//    }
 
-    char *buf;
+
     while (true) {
-        int n = read(client1Socket, &buf, sizeof(buf));
+        int size;
+        int n = read(client1Socket, &size, sizeof(size));
+        if (n == -1) {
+            cout << "Error reading buf" << endl;
+            return 0;
+        }
+        char buf[size];
+        bzero(buf, sizeof(buf));
+        n = read(client1Socket, &buf, sizeof(buf));
         if (n == -1) {
             cout << "Error reading buf" << endl;
             return 0;
@@ -48,8 +56,11 @@ void *GameInfo::gameHandler(void *args) {
             cout << "Client disconnected" << endl;
             return 0;
         }
+        cout << buf << endl;
 
-        if (!strcmp(buf, "END")) {
+        n = write(client2Socket, &size, sizeof(size));
+        if (n == -1) {
+            cout << "Error writing to socket" << endl;
             return 0;
         }
         n = write(client2Socket, &buf, sizeof(buf));
@@ -79,4 +90,8 @@ int GameInfo::getClientSocket2() const {
 
 void GameInfo::setClientSocket2(int clientSocket2) {
     GameInfo::clientSocket2 = clientSocket2;
+    avail = false;
+}
+bool GameInfo::getAvail() {
+    return this->avail;
 }

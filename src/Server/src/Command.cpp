@@ -9,7 +9,7 @@
 #include "../include/Command.h"
 
 void Command::commandNotify(int clientSocket, string msg) {
-    int size = msg.length();
+    int size = msg.length() +1;
     int n = write(clientSocket, &size, sizeof(int));
     if (n == -1) {
         throw "Error int writing to client";

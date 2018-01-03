@@ -59,6 +59,7 @@ public:
      * @param cell the cell who played.
      */
     virtual void played(char sign, char *cell) = 0;
+
 };
 
 

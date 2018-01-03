@@ -52,20 +52,29 @@ void Client::connectToServer() {
     this->printer.string((char *) "Connected to server");
 }
 
-void Client::sendMove(char *move) {
-    int n = write(clientSocket, move, strlen(move));
+void Client::sendMove(string str) {
+    int size = str.size() +1;
+    char move[size];
+    strcpy(move, str.c_str());
+
+    int n = write(clientSocket, &size, sizeof(size));
+    if (n == -1)
+        throw "Error writing move";
+    n = write(clientSocket, move, sizeof(move));
     if (n == -1)
         throw "Error writing move";
 }
 
-void Client::receiveMove(char *move) {
+void Client::receiveMove(string &str) {
     int size = 0;
     int n = read(clientSocket, &size, sizeof(int));
     if (n == -1)
         throw "Error reading move";
+    char move[size];
     n = read(clientSocket, move, size);
     if (n == -1)
         throw "Error reading move";
+    str = move;
 }
 
 void Client::getPlayerNum(int* numOfPlayer) {
