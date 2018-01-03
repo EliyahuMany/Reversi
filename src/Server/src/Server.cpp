@@ -16,7 +16,7 @@ using namespace std;
 struct args {
     int serverSocket;
     int clientSocket;
-    vector<pthread_t> threadsVector;
+    vector<pthread_t> *threadsVector;
 };
 
 static void *acceptClients(void *);
@@ -43,7 +43,7 @@ void Server::start() {
 
     args *args1 = new args();
     args1->serverSocket = serverSocket;
-    args1->threadsVector = this->serverThreads;
+    args1->threadsVector = &this->serverThreads;
 
     listen(serverSocket, MAX_CONNECTED_CLIENTS);
     pthread_create(&serverThreadId, NULL, acceptClients, (void *) args1);
@@ -105,7 +105,7 @@ static void *acceptClients(void *obj) {
             cout << "Error: unable to create thread, " << rc << endl;
             exit(-1);
         }
-        args1->threadsVector.push_back(newThread);
+        args1->threadsVector->push_back(newThread);
 
     }
 }
@@ -148,7 +148,7 @@ void *handleClient(void *obj) {
             if (w)
                 args.push_back(w);
         }
-        CommandsManager::getInstance()->executeCommand(command, args, args1->threadsVector);
+        CommandsManager::getInstance()->executeCommand(command, args, *args1->threadsVector);
         if (command == "start" || command == "join")
             break;
     }

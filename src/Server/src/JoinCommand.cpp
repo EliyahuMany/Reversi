@@ -8,6 +8,8 @@
 
 using namespace std;
 
+pthread_mutex_t joinMutex;
+
 void JoinCommand::execute(vector<string> &args, vector<pthread_t> threadsVector) {
     int clientSocket1;
     vector<GameInfo *> *gamesList = ServerGames::getInstance()->getGamesList();
@@ -18,9 +20,11 @@ void JoinCommand::execute(vector<string> &args, vector<pthread_t> threadsVector)
     vector<GameInfo *>::iterator it;
     for (it = gamesList->begin(); it != gamesList->end(); it++) {
         if (!(*it)->getName().compare(args[1])) {
+            pthread_mutex_lock(&joinMutex);
             (*it)->setClientSocket2(atoi(args[0].c_str()));
             (*it)->setClientSocket2(atoi(args[0].c_str()));
             clientSocket1 = (*it)->getClientSocket1();
+            pthread_mutex_unlock(&joinMutex);
             isInList = true;
             break;
         }

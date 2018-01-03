@@ -8,6 +8,8 @@
 #include "../include/StartCommand.h"
 #include "../include/ServerGames.h"
 
+pthread_mutex_t startMutex;
+
 void StartCommand::execute(vector<string> &args, vector<pthread_t> threadsVector) {
     vector<GameInfo *> *gamesList = ServerGames::getInstance()->getGamesList();
     int clientSocket = atoi(args[0].c_str());
@@ -20,8 +22,10 @@ void StartCommand::execute(vector<string> &args, vector<pthread_t> threadsVector
             return;
         }
     }
+    pthread_mutex_lock(&startMutex);
     GameInfo *game = new GameInfo(args[1], atoi(args[0].c_str()));
     gamesList->push_back(game);
+    pthread_mutex_unlock(&startMutex);
     //write to the client to wait.
     msg = "Waiting to another player...";
     this->commandNotify(clientSocket, msg);
