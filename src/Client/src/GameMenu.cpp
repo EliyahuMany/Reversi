@@ -40,6 +40,8 @@ void GameMenu::menu() {
             Players *pO = new Human('O', printer);
             GameFlow game = GameFlow(pX, pO, gameLogic, printer);
             game.run();
+            delete pX;
+            delete pO;
             break;
         }
         case 2: {
@@ -47,6 +49,8 @@ void GameMenu::menu() {
             Players *pO = new AIPlayer('O', gameLogic, printer);
             GameFlow game = GameFlow(pX, pO, gameLogic, printer);
             game.run();
+            delete pX;
+            delete pO;
             break;
         }
         case 3: {
@@ -81,6 +85,8 @@ void GameMenu::menu() {
             }
             GameFlow game = GameFlow(pX, pO, gameLogic, printer);
             game.run();
+            delete pX;
+            delete pO;
             break;
         }
     }
@@ -90,46 +96,47 @@ void GameMenu::localPlayerContact(Print &printer, Client &client, int &playerNum
     while (true) {
         string buffer;
         printer.string((char *) "Enter command to the server:");
-        getline(cin, buffer);
-        char *buf = new char[buffer.length()];
-        strcpy(buf, buffer.c_str());
-        string getMsg;
-        client.sendMove(buffer);
+        while (true) {
+            getline(cin, buffer);
+            char *buf = new char[buffer.length()];
+            strcpy(buf, buffer.c_str());
+            string getMsg;
+            client.sendMove(buffer);
 
-        string command = strtok(buf, " ");
-        memset(buf, NULL, buffer.length());
-        client.receiveMove(getMsg);
-        if(strcmp(getMsg.c_str(), "exit") == 0) {
-            printer.string((char *) "server is close");
-            exit(0);
-        }
-        if (getMsg== "-1") {
-            if (command== "start")
-                getMsg= "Room already exist choose again!";
-            else if (command== "join")
-                getMsg = "There is no such game name!";
-        } else if ((command == "start")|| command== "join") {
-            if(command == "start") {
-                playerNum =1;
-            } else {
-                playerNum = 2;
+            string command = strtok(buf, " ");
+            memset(buf, NULL, buffer.length());
+            client.receiveMove(getMsg);
+            if (strcmp(getMsg.c_str(), "exit") == 0) {
+                printer.string((char *) "server is close");
+                exit(0);
+            }
+            if (getMsg == "-1") {
+                if (command == "start")
+                    getMsg = "Room already exist choose again!";
+                else if (command == "join")
+                    getMsg = "There is no such game name!";
+            } else if ((command == "start") || command == "join") {
+                if (command == "start") {
+                    playerNum = 1;
+                } else {
+                    playerNum = 2;
+                }
+                char msg[getMsg.size()];
+                strcpy(msg, getMsg.c_str());
+                printer.string(msg);
+                if (command == "start") {
+                    client.receiveMove(getMsg);
+                    if (strcmp(getMsg.c_str(), "exit") == 0) {
+                        printer.string((char *) "server is close");
+                        exit(0);
+                    }
+                    printer.string(msg);
+                }
+                break;
             }
             char msg[getMsg.size()];
             strcpy(msg, getMsg.c_str());
             printer.string(msg);
-            if(command == "start") {
-                client.receiveMove(getMsg);
-                if(strcmp(getMsg.c_str(), "exit") == 0) {
-                    printer.string((char *) "server is close");
-                    exit(0);
-                }
-                printer.string(msg);
-            }
-            break;
+            delete[] buf;
         }
-        char msg[getMsg.size()];
-        strcpy(msg, getMsg.c_str());
-        printer.string(msg);
-        delete[] buf;
-}
     }

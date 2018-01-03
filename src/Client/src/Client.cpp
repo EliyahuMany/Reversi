@@ -15,6 +15,7 @@
 #include <string.h>
 #include <unistd.h>
 #include <cstdlib>
+#include <csignal>
 
 using namespace std;
 
@@ -54,6 +55,7 @@ void Client::connectToServer() {
 }
 
 void Client::sendMove(string str) {
+    signal(SIGPIPE, SIG_IGN);
     int size = str.size() + 1;
     char move[size];
     strcpy(move, str.c_str());
@@ -67,6 +69,7 @@ void Client::sendMove(string str) {
 }
 
 void Client::receiveMove(string &str) {
+    signal(SIGPIPE, SIG_IGN);
     int size = 0;
     int n = read(clientSocket, &size, sizeof(int));
     if (n == -1)

@@ -32,6 +32,6 @@ ServerGames::~ServerGames() {
     delete (gamesList);
 }
 
-vector<GameInfo*> *ServerGames::getGamesList() {
+vector<GameInfo *> *ServerGames::getGamesList() {
     return gamesList;
 }
