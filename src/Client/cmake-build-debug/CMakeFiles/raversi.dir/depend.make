@@ -3,6 +3,7 @@
 
 CMakeFiles/raversi.dir/main.cpp.o: ../include/Board.h
 CMakeFiles/raversi.dir/main.cpp.o: ../include/Cell.h
+CMakeFiles/raversi.dir/main.cpp.o: ../include/Client.h
 CMakeFiles/raversi.dir/main.cpp.o: ../include/GameMenu.h
 CMakeFiles/raversi.dir/main.cpp.o: ../include/Players.h
 CMakeFiles/raversi.dir/main.cpp.o: ../include/Print.h

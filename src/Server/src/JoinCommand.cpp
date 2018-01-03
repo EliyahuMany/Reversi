@@ -31,6 +31,6 @@ void JoinCommand::execute(vector<string> &args) {
     this->commandNotify(clientSocket, msg);
     GameInfo g = *it;
     pthread_t gameThread;
-    pthread_create(&gameThread, NULL, GameInfo::gameHandler, (void *) &g);
+    pthread_create(&gameThread, NULL, &GameInfo::gameHandler, (void *) &g);
     pthread_exit(NULL);
 }

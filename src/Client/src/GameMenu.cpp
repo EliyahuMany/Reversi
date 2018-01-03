@@ -42,33 +42,42 @@ void GameMenu::menu() {
             pO = new AIPlayer('O', gameLogic, printer);
             break;
         case 3:
-            this->localPlayerContact(printer, pX, pO);
+            int playerNum;
+            ifstream cFile;
+            cFile.open("client_config.txt");
+            string ip, port;
+            if (cFile.is_open()) {
+                getline(cFile, ip);
+                getline(cFile, port);
+            } else
+                exit(1);
+            cFile.close();
+            Client client(ip.c_str(), atoi(port.c_str()), printer);
+            try {
+                client.connectToServer();
+            } catch (const char *m) {
+                printer.connectionFailed(m);
+                exit(1);
+            }
+            cin.ignore();
+
+            localPlayerContact(printer, client);
+
+            client.getPlayerNum(playerNum);
+            if (playerNum == 1) {
+                pX = new LocalPlayer('X', client, printer);
+                pO = new RemotePlayer('O', client, printer);
+            } else if (playerNum == 2) {
+                pX = new RemotePlayer('X', client, printer);
+                pO = new LocalPlayer('O', client, printer);
+            }
             break;
     }
     GameFlow game = GameFlow(pX, pO, gameLogic, printer);
     game.run();
 }
 
-void GameMenu::localPlayerContact(Print &printer, Players *pX, Players *pO) {
-    int playerNum;
-    ifstream cFile;
-
-    cFile.open("client_config.txt");
-    string ip, port;
-    if (cFile.is_open()) {
-        getline(cFile, ip);
-        getline(cFile, port);
-    } else
-        exit(1);
-    cFile.close();
-    Client client(ip.c_str(), atoi(port.c_str()), printer);
-    try {
-        client.connectToServer();
-    } catch (const char *m) {
-        printer.connectionFailed(m);
-        exit(1);
-    }
-    cin.ignore();
+void GameMenu::localPlayerContact(Print &printer,Client &client) {
     while (true) {
         string buffer;
         printer.string((char *) "Enter command to the server:");
@@ -91,14 +100,5 @@ void GameMenu::localPlayerContact(Print &printer, Players *pX, Players *pO) {
         }
         printer.string(buf);
         delete[] buf;
-    }
-
-    client.getPlayerNum(playerNum);
-    if (playerNum == 1) {
-        pX = new LocalPlayer('X', client, printer);
-        pO = new RemotePlayer('O', client, printer);
-    } else if (playerNum == 2) {
-        pX = new RemotePlayer('X', client, printer);
-        pO = new LocalPlayer('O', client, printer);
     }
 }

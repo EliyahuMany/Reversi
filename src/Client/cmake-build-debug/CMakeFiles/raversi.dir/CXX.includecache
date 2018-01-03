@@ -63,6 +63,8 @@ Print.h
 /home/eliyahu/CLionProjects/Back/raversi/src/Client/include/Print.h
 Players.h
 /home/eliyahu/CLionProjects/Back/raversi/src/Client/include/Players.h
+Client.h
+/home/eliyahu/CLionProjects/Back/raversi/src/Client/include/Client.h
 
 /home/eliyahu/CLionProjects/Back/raversi/src/Client/include/Human.h
 iostream

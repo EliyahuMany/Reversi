@@ -8,6 +8,7 @@
 #include <iostream>
 #include "Print.h"
 #include "Players.h"
+#include "Client.h"
 
 using namespace std;
 
@@ -17,7 +18,7 @@ public:
 
     void menu();
 
-    void localPlayerContact(Print &printer, Players *pX,Players *pO);
+    void localPlayerContact(Print &printer, Client &client);
 };
 
 
