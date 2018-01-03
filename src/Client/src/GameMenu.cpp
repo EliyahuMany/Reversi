@@ -110,6 +110,10 @@ void GameMenu::localPlayerContact(Print &printer, Client &client, int &playerNum
             char msg[getMsg.size()];
             strcpy(msg, getMsg.c_str());
             printer.string(msg);
+            if(command == "start") {
+                client.receiveMove(getMsg);
+                printer.string(msg);
+            }
             break;
         }
         char msg[getMsg.size()];
