@@ -8,7 +8,7 @@
 #include "../include/StartCommand.h"
 #include "../include/ServerGames.h"
 
-void StartCommand::execute(vector<string> &args) {
+void StartCommand::execute(vector<string> &args, vector<pthread_t> threadsVector) {
     vector<GameInfo *> *gamesList = ServerGames::getInstance()->getGamesList();
     int clientSocket = atoi(args[0].c_str());
     string msg;

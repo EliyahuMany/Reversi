@@ -12,7 +12,7 @@ using namespace std;
 
 class GameListCommand : public Command {
 public:
-    virtual void execute(vector<string> &args);
+    virtual void execute(vector<string> &args,vector<pthread_t> threadsVector);
 };
 
 

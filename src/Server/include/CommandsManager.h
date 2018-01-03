@@ -15,7 +15,7 @@ class CommandsManager {
 public:
     static CommandsManager *getInstance();
 
-    void executeCommand(string command, vector<string> args);
+    void executeCommand(string command, vector<string> args, vector<pthread_t> threadsVector);
 
 private:
     CommandsManager();

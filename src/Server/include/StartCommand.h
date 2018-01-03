@@ -11,7 +11,7 @@ using namespace std;
 
 class StartCommand : public Command {
 public:
-    virtual void execute(vector<string> &args);
+    virtual void execute(vector<string> &args,vector<pthread_t> threadsVector);
 };
 
 

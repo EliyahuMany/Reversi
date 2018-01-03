@@ -8,7 +8,7 @@
 
 using namespace std;
 
-void JoinCommand::execute(vector<string> &args) {
+void JoinCommand::execute(vector<string> &args, vector<pthread_t> threadsVector) {
     int clientSocket1;
     vector<GameInfo *> *gamesList = ServerGames::getInstance()->getGamesList();
     int clientSocket = atoi(args[0].c_str());
@@ -20,7 +20,7 @@ void JoinCommand::execute(vector<string> &args) {
         if (!(*it)->getName().compare(args[1])) {
             (*it)->setClientSocket2(atoi(args[0].c_str()));
             (*it)->setClientSocket2(atoi(args[0].c_str()));
-            clientSocket1=(*it)->getClientSocket1();
+            clientSocket1 = (*it)->getClientSocket1();
             isInList = true;
             break;
         }
@@ -36,5 +36,6 @@ void JoinCommand::execute(vector<string> &args) {
     GameInfo *g = *it;
     pthread_t gameThread;
     pthread_create(&gameThread, NULL, g->gameHandler, (void *) g);
+    threadsVector.push_back(gameThread);
 
 }

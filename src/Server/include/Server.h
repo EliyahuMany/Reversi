@@ -42,7 +42,7 @@ public:
 private:
     int port;
     int serverSocket; // the socket's file descriptor
-    //vector<pthread_t *> serverThreads;
+    vector<pthread_t> serverThreads;
     pthread_t serverThreadId;
 };
 

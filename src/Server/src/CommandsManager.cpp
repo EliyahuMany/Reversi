@@ -30,10 +30,10 @@ CommandsManager::CommandsManager() {
     commandsMap["list_games"] = new GameListCommand();
 }
 
-void CommandsManager::executeCommand(string command, vector<string> args) {
+void CommandsManager::executeCommand(string command, vector<string> args,vector<pthread_t> threadsVector) {
     Command *commandObj = commandsMap[command];
     if (commandObj) {
-        commandObj->execute(args);
+        commandObj->execute(args,threadsVector);
     }
 }
 

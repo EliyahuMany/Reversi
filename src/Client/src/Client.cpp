@@ -71,10 +71,8 @@ void Client::receiveMove(string &str) {
     int n = read(clientSocket, &size, sizeof(int));
     if (n == -1)
         throw "Error reading move";
-    cout << size << endl;
     char move[size];
     n = read(clientSocket, move, sizeof(move));
-    cout << move << endl;
     if (strcmp(move, "exit") == 0) {
         printer.string((char *) "server is closed");
         exit(0);
