@@ -6,10 +6,12 @@
  */
 
 #include <unistd.h>
+#include <csignal>
 #include "../include/Command.h"
 
 void Command::commandNotify(int clientSocket, string msg) {
-    int size = msg.length() +1;
+    signal(SIGPIPE, SIG_IGN);
+    int size = msg.length() + 1;
     int n = write(clientSocket, &size, sizeof(int));
     if (n == -1) {
         throw "Error int writing to client";

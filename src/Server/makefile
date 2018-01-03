@@ -3,9 +3,12 @@
 # Orian Edri
 # 308335454
 
-a.out: compileAll
-	g++ *.o 
+a.out: compile
+	g++ *.o -pthread
 	rm -f *.o
 
-compileAll: *.h *.cpp
-	g++ -c *.cpp
+compile:
+	g++ -g -Iinclude/ -c src/*.cpp main.cpp
+
+run:
+	./a.out

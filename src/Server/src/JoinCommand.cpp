@@ -1,6 +1,9 @@
-//
-// Created by eliyahu on 12/31/17.
-//
+/**
+ *      Author: Eliyahu Many
+ *      ID: 308249150
+ *      Author: Orian Edri
+ *      ID: 308335454
+ */
 
 #include <cstdlib>
 #include "../include/JoinCommand.h"
@@ -10,7 +13,7 @@ using namespace std;
 
 pthread_mutex_t joinMutex;
 
-void JoinCommand::execute(vector<string> &args, vector<pthread_t> threadsVector) {
+void JoinCommand::execute(vector<string> &args, vector<pthread_t> *threadsVector) {
     int clientSocket1;
     vector<GameInfo *> *gamesList = ServerGames::getInstance()->getGamesList();
     int clientSocket = atoi(args[0].c_str());
@@ -40,6 +43,6 @@ void JoinCommand::execute(vector<string> &args, vector<pthread_t> threadsVector)
     GameInfo *g = *it;
     pthread_t gameThread;
     pthread_create(&gameThread, NULL, g->gameHandler, (void *) g);
-    threadsVector.push_back(gameThread);
+    threadsVector->push_back(gameThread);
 
 }

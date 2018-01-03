@@ -8,11 +8,12 @@
 #include "../include/GameInfo.h"
 #include <unistd.h>
 #include <cstring>
+#include <csignal>
 
 GameInfo::GameInfo(string name, int clientSocket1) : gameName(name), clientSocket1(clientSocket1), avail(true) {}
 
 void *GameInfo::gameHandler(void *args) {
-
+    signal(SIGPIPE, SIG_IGN);
     GameInfo *g = (GameInfo *) args;
     int client1Socket = g->getClientSocket1();
     int client2Socket = g->getClientSocket2();
@@ -52,8 +53,6 @@ void *GameInfo::gameHandler(void *args) {
         client1Socket = client2Socket;
         client2Socket = temp;
     }
-    close(client1Socket);
-    close(client2Socket);
 }
 
 const string &GameInfo::getName() const {
@@ -72,6 +71,7 @@ void GameInfo::setClientSocket2(int clientSocket2) {
     GameInfo::clientSocket2 = clientSocket2;
     avail = false;
 }
+
 bool GameInfo::getAvail() {
     return this->avail;
 }

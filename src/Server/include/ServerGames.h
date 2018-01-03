@@ -1,6 +1,9 @@
-//
-// Created by orian on 1/2/18.
-//
+/**
+ *      Author: Eliyahu Many
+ *      ID: 308249150
+ *      Author: Orian Edri
+ *      ID: 308335454
+ */
 
 #ifndef SERVER_SERVERGAMES_H
 #define SERVER_SERVERGAMES_H
@@ -13,8 +16,15 @@ using namespace std;
 
 class ServerGames {
 public:
+    /**
+     * make the object only 1 time
+     * @return an object from this class.
+     */
     static ServerGames *getInstance();
 
+    /**
+     * @return vector<GameInfo *> - the games list
+     */
     vector<GameInfo *> *getGamesList();
 
 private:

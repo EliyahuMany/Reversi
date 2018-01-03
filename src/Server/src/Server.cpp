@@ -6,8 +6,10 @@
  */
 
 #include <sstream>
+#include <csignal>
 #include "../include/Server.h"
 #include "../include/ServerGames.h"
+
 
 using namespace std;
 #define MAX_CONNECTED_CLIENTS 10
@@ -50,9 +52,9 @@ void Server::start() {
 }
 
 void Server::stop() {
+    signal(SIGPIPE,SIG_IGN);
     cout << "Server stopped" << endl;
     vector<GameInfo *> *gamesList = ServerGames::getInstance()->getGamesList();
-    cout << this->serverThreads.size() << endl;
     for (int i = 0; i < this->serverThreads.size(); i++) {
         pthread_cancel(this->serverThreads[i]);
         pthread_join(this->serverThreads[i], NULL);
@@ -111,6 +113,7 @@ static void *acceptClients(void *obj) {
 }
 
 void *handleClient(void *obj) {
+    signal(SIGPIPE,SIG_IGN);
     args *args1 = (args *) obj;
     int clientSocket = args1->clientSocket;
     int size;
@@ -148,7 +151,7 @@ void *handleClient(void *obj) {
             if (w)
                 args.push_back(w);
         }
-        CommandsManager::getInstance()->executeCommand(command, args, *args1->threadsVector);
+        CommandsManager::getInstance()->executeCommand(command, args, args1->threadsVector);
         if (command == "start" || command == "join")
             break;
     }

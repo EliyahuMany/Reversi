@@ -1,13 +1,16 @@
-//
-// Created by orian on 12/31/17.
-//
+/**
+ *      Author: Eliyahu Many
+ *      ID: 308249150
+ *      Author: Orian Edri
+ *      ID: 308335454
+ */
 
 #include <cstdlib>
 #include <unistd.h>
 #include "../include/GameListCommand.h"
 #include "../include/ServerGames.h"
 
-void GameListCommand::execute(vector<string> &args,vector<pthread_t> threadsVector) {
+void GameListCommand::execute(vector<string> &args,vector<pthread_t> *threadsVector) {
     vector<GameInfo *> *gamesList = ServerGames::getInstance()->getGamesList();
     int clientSocket = atoi(args[0].c_str());
     vector<GameInfo *>::iterator it;

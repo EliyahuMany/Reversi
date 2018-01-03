@@ -1,6 +1,9 @@
-//
-// Created by orian on 12/30/17.
-//
+/**
+ *      Author: Eliyahu Many
+ *      ID: 308249150
+ *      Author: Orian Edri
+ *      ID: 308335454
+ */
 
 #include <cstdlib>
 #include <unistd.h>
@@ -10,7 +13,7 @@
 
 pthread_mutex_t startMutex;
 
-void StartCommand::execute(vector<string> &args, vector<pthread_t> threadsVector) {
+void StartCommand::execute(vector<string> &args, vector<pthread_t> *threadsVector) {
     vector<GameInfo *> *gamesList = ServerGames::getInstance()->getGamesList();
     int clientSocket = atoi(args[0].c_str());
     string msg;
