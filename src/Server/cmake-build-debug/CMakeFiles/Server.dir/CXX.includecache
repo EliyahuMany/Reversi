@@ -61,6 +61,8 @@ vector
 -
 CommandsManager.h
 /home/orian/Videos/raversi/src/Server/include/CommandsManager.h
+ThreadPool.h
+/home/orian/Videos/raversi/src/Server/include/ThreadPool.h
 
 /home/orian/Videos/raversi/src/Server/include/ServerGames.h
 vector
@@ -73,6 +75,16 @@ CommandsManager.h
 /home/orian/Videos/raversi/src/Server/include/StartCommand.h
 Command.h
 /home/orian/Videos/raversi/src/Server/include/Command.h
+
+/home/orian/Videos/raversi/src/Server/include/Task.h
+
+/home/orian/Videos/raversi/src/Server/include/ThreadPool.h
+Task.h
+/home/orian/Videos/raversi/src/Server/include/Task.h
+queue
+-
+pthread.h
+-
 
 /home/orian/Videos/raversi/src/Server/main.cpp
 include/Server.h
@@ -153,4 +165,12 @@ cstring
 /home/orian/Videos/raversi/src/Server/include/StartCommand.h
 ../include/ServerGames.h
 /home/orian/Videos/raversi/src/Server/include/ServerGames.h
+
+/home/orian/Videos/raversi/src/Server/src/ThreadPool.cpp
+../include/ThreadPool.h
+/home/orian/Videos/raversi/src/Server/include/ThreadPool.h
+unistd.h
+-
+iostream
+-
 

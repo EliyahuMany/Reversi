@@ -12,13 +12,14 @@
 
 
 using namespace std;
-#define MAX_CONNECTED_CLIENTS 10
-#define MAX_COMMAND_LENGTH 50
+#define MAX_CONNECTED_CLIENTS 30
+#define MAX_THREADS 1
 
 struct args {
     int serverSocket;
     int clientSocket;
     vector<pthread_t> *threadsVector;
+    ThreadPool *pool;
 };
 
 static void *acceptClients(void *);
@@ -26,6 +27,7 @@ static void *acceptClients(void *);
 static void *handleClient(void *);
 
 Server::Server(int port) : port(port), serverSocket(0) {
+    threadPool = new ThreadPool(MAX_THREADS);
     cout << "Server" << endl;
 }
 
@@ -46,15 +48,17 @@ void Server::start() {
     args *args1 = new args();
     args1->serverSocket = serverSocket;
     args1->threadsVector = &this->serverThreads;
+    args1->pool = threadPool;
 
     listen(serverSocket, MAX_CONNECTED_CLIENTS);
     pthread_create(&serverThreadId, NULL, acceptClients, (void *) args1);
 }
 
 void Server::stop() {
-    signal(SIGPIPE,SIG_IGN);
+    signal(SIGPIPE, SIG_IGN);
     cout << "Server stopped" << endl;
     vector<GameInfo *> *gamesList = ServerGames::getInstance()->getGamesList();
+    threadPool->terminate();
     for (int i = 0; i < this->serverThreads.size(); i++) {
         pthread_cancel(this->serverThreads[i]);
         pthread_join(this->serverThreads[i], NULL);
@@ -84,6 +88,7 @@ void Server::stop() {
     pthread_cancel(serverThreadId);
     pthread_join(serverThreadId, NULL);
     close(serverSocket);
+    delete(threadPool);
 }
 
 static void *acceptClients(void *obj) {
@@ -101,19 +106,21 @@ static void *acceptClients(void *obj) {
             throw "Error on accept";
 
         args1->clientSocket = clientSocket;
-        pthread_t newThread;
-        int rc = pthread_create(&newThread, NULL, handleClient, (void *) args1);
-        if (rc) {
-            cout << "Error: unable to create thread, " << rc << endl;
-            exit(-1);
-        }
-        args1->threadsVector->push_back(newThread);
+        Task* task = new Task(handleClient, (void *) args1);
+        args1->pool->addTask(task);
+//        pthread_t newThread;
+//        int rc = pthread_create(&newThread, NULL, handleClient, (void *) args1);
+//        if (rc) {
+//            cout << "Error: unable to create thread, " << rc << endl;
+//            exit(-1);
+//        }
+//        args1->threadsVector->push_back(newThread);
 
     }
 }
 
 void *handleClient(void *obj) {
-    signal(SIGPIPE,SIG_IGN);
+    signal(SIGPIPE, SIG_IGN);
     args *args1 = (args *) obj;
     int clientSocket = args1->clientSocket;
     int size;

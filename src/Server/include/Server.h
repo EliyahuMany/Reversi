@@ -18,6 +18,7 @@
 #include <cstdlib>
 #include <vector>
 #include "CommandsManager.h"
+#include "ThreadPool.h"
 
 using namespace std;
 
@@ -44,6 +45,7 @@ private:
     int serverSocket; // the socket's file descriptor
     vector<pthread_t> serverThreads;
     pthread_t serverThreadId;
+    ThreadPool *threadPool;
 };
 
 

@@ -105,6 +105,12 @@
 		<Unit filename="/home/orian/Videos/raversi/src/Server/include/StartCommand.h">
 			<Option target="Server"/>
 		</Unit>
+		<Unit filename="/home/orian/Videos/raversi/src/Server/include/Task.h">
+			<Option target="Server"/>
+		</Unit>
+		<Unit filename="/home/orian/Videos/raversi/src/Server/include/ThreadPool.h">
+			<Option target="Server"/>
+		</Unit>
 		<Unit filename="/home/orian/Videos/raversi/src/Server/main.cpp">
 			<Option target="Server"/>
 		</Unit>
@@ -130,6 +136,9 @@
 			<Option target="Server"/>
 		</Unit>
 		<Unit filename="/home/orian/Videos/raversi/src/Server/src/StartCommand.cpp">
+			<Option target="Server"/>
+		</Unit>
+		<Unit filename="/home/orian/Videos/raversi/src/Server/src/ThreadPool.cpp">
 			<Option target="Server"/>
 		</Unit>
 		<Unit filename="/home/orian/Videos/raversi/src/Server/CMakeLists.txt">

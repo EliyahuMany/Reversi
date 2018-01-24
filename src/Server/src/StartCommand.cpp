@@ -25,10 +25,10 @@ void StartCommand::execute(vector<string> &args, vector<pthread_t> *threadsVecto
             return;
         }
     }
-    pthread_mutex_lock(&startMutex);
+//    pthread_mutex_lock(&startMutex);
     GameInfo *game = new GameInfo(args[1], atoi(args[0].c_str()));
     gamesList->push_back(game);
-    pthread_mutex_unlock(&startMutex);
+//    pthread_mutex_unlock(&startMutex);
     //write to the client to wait.
     msg = "Waiting to another player...";
     this->commandNotify(clientSocket, msg);

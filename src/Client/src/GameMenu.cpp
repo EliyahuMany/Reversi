@@ -96,17 +96,19 @@ void GameMenu::localPlayerContact(Print &printer, Client &client, int &playerNum
     while (true) {
         string buffer, getMsg, command;
         char *buf;
-        printer.string((char *) "Enter command to the server:");
-//        while (true) {
-        getline(cin, buffer);
-        buf = new char[buffer.length()];
-        strcpy(buf, buffer.c_str());
-        client.sendMove(buffer);
+        while (true) {
+            printer.string((char *) "Enter command to the server:");
+            getline(cin, buffer);
+            buf = new char[buffer.length()];
+            strcpy(buf, buffer.c_str());
+            client.sendMove(buffer);
 
-        command = strtok(buf, " ");
-//            if (command == "start" || command == "join" || command == "list_games")
-//                break;
-//        }
+            command = strtok(buf, " ");
+            if (command == "start" || command == "join" || command == "list_games") {
+                break;
+            }
+            printer.string((char *) "Invalid input!");
+        }
         memset(buf, NULL, buffer.length());
         client.receiveMove(getMsg);
         if (strcmp(getMsg.c_str(), "exit") == 0) {

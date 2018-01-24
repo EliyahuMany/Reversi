@@ -12,11 +12,11 @@ pthread_mutex_t ServerGames::lock;
 
 ServerGames *ServerGames::getInstance() {
     if (instance == 0) {
-        pthread_mutex_lock(&lock);
+//        pthread_mutex_lock(&lock);
         if (instance == 0) {
             instance = new ServerGames();
         }
-        pthread_mutex_unlock(&lock);
+//        pthread_mutex_unlock(&lock);
     }
     return instance;
 }

@@ -15,11 +15,11 @@ pthread_mutex_t CommandsManager::lock;
 
 CommandsManager *CommandsManager::getInstance() {
     if (instance == 0) {
-        pthread_mutex_lock(&lock);
+//        pthread_mutex_lock(&lock);
         if (instance == 0) {
             instance = new CommandsManager();
         }
-        pthread_mutex_unlock(&lock);
+//        pthread_mutex_unlock(&lock);
     }
     return instance;
 }

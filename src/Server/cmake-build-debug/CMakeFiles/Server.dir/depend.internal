@@ -6,6 +6,8 @@ CMakeFiles/Server.dir/main.cpp.o
  /home/orian/Videos/raversi/src/Server/include/CommandsManager.h
  /home/orian/Videos/raversi/src/Server/include/GameInfo.h
  /home/orian/Videos/raversi/src/Server/include/Server.h
+ /home/orian/Videos/raversi/src/Server/include/Task.h
+ /home/orian/Videos/raversi/src/Server/include/ThreadPool.h
  /home/orian/Videos/raversi/src/Server/main.cpp
 CMakeFiles/Server.dir/src/Command.cpp.o
  /home/orian/Videos/raversi/src/Server/include/Command.h
@@ -42,6 +44,8 @@ CMakeFiles/Server.dir/src/Server.cpp.o
  /home/orian/Videos/raversi/src/Server/include/GameInfo.h
  /home/orian/Videos/raversi/src/Server/include/Server.h
  /home/orian/Videos/raversi/src/Server/include/ServerGames.h
+ /home/orian/Videos/raversi/src/Server/include/Task.h
+ /home/orian/Videos/raversi/src/Server/include/ThreadPool.h
  /home/orian/Videos/raversi/src/Server/src/Server.cpp
 CMakeFiles/Server.dir/src/ServerGames.cpp.o
  /home/orian/Videos/raversi/src/Server/include/Command.h
@@ -56,3 +60,7 @@ CMakeFiles/Server.dir/src/StartCommand.cpp.o
  /home/orian/Videos/raversi/src/Server/include/ServerGames.h
  /home/orian/Videos/raversi/src/Server/include/StartCommand.h
  /home/orian/Videos/raversi/src/Server/src/StartCommand.cpp
+CMakeFiles/Server.dir/src/ThreadPool.cpp.o
+ /home/orian/Videos/raversi/src/Server/include/Task.h
+ /home/orian/Videos/raversi/src/Server/include/ThreadPool.h
+ /home/orian/Videos/raversi/src/Server/src/ThreadPool.cpp

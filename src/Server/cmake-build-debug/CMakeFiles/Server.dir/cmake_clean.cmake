@@ -8,6 +8,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Server.dir/src/JoinCommand.cpp.o"
   "CMakeFiles/Server.dir/src/GameListCommand.cpp.o"
   "CMakeFiles/Server.dir/src/ServerGames.cpp.o"
+  "CMakeFiles/Server.dir/src/ThreadPool.cpp.o"
   "Server.pdb"
   "Server"
 )

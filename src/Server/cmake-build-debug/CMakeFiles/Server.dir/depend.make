@@ -5,6 +5,8 @@ CMakeFiles/Server.dir/main.cpp.o: ../include/Command.h
 CMakeFiles/Server.dir/main.cpp.o: ../include/CommandsManager.h
 CMakeFiles/Server.dir/main.cpp.o: ../include/GameInfo.h
 CMakeFiles/Server.dir/main.cpp.o: ../include/Server.h
+CMakeFiles/Server.dir/main.cpp.o: ../include/Task.h
+CMakeFiles/Server.dir/main.cpp.o: ../include/ThreadPool.h
 CMakeFiles/Server.dir/main.cpp.o: ../main.cpp
 
 CMakeFiles/Server.dir/src/Command.cpp.o: ../include/Command.h
@@ -41,6 +43,8 @@ CMakeFiles/Server.dir/src/Server.cpp.o: ../include/CommandsManager.h
 CMakeFiles/Server.dir/src/Server.cpp.o: ../include/GameInfo.h
 CMakeFiles/Server.dir/src/Server.cpp.o: ../include/Server.h
 CMakeFiles/Server.dir/src/Server.cpp.o: ../include/ServerGames.h
+CMakeFiles/Server.dir/src/Server.cpp.o: ../include/Task.h
+CMakeFiles/Server.dir/src/Server.cpp.o: ../include/ThreadPool.h
 CMakeFiles/Server.dir/src/Server.cpp.o: ../src/Server.cpp
 
 CMakeFiles/Server.dir/src/ServerGames.cpp.o: ../include/Command.h
@@ -55,4 +59,8 @@ CMakeFiles/Server.dir/src/StartCommand.cpp.o: ../include/GameInfo.h
 CMakeFiles/Server.dir/src/StartCommand.cpp.o: ../include/ServerGames.h
 CMakeFiles/Server.dir/src/StartCommand.cpp.o: ../include/StartCommand.h
 CMakeFiles/Server.dir/src/StartCommand.cpp.o: ../src/StartCommand.cpp
+
+CMakeFiles/Server.dir/src/ThreadPool.cpp.o: ../include/Task.h
+CMakeFiles/Server.dir/src/ThreadPool.cpp.o: ../include/ThreadPool.h
+CMakeFiles/Server.dir/src/ThreadPool.cpp.o: ../src/ThreadPool.cpp
 
